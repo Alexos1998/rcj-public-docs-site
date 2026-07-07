@@ -1,0 +1,353 @@
+{
+  "teams_total": 71,
+  "teams_with_scores": 71,
+  "physical_teams_with_scores": 58,
+  "sensor_weight_policy": {
+    "touch_switch_encoder": 0.5,
+    "color_reflectance": 1.0,
+    "distance_tof_ultrasonic_ir": 1.25,
+    "imu_gyro": 1.5,
+    "camera_vision": 2.0,
+    "lidar_depth": 3.0
+  },
+  "distribution": [
+    {
+      "league_scope": "Line",
+      "metric": "sensor_count_estimated",
+      "n": 27,
+      "min": 0.0,
+      "p25": 1.0,
+      "median": 4.0,
+      "p75": 15.5,
+      "p90": 20.800000000000004,
+      "max": 37.0
+    },
+    {
+      "league_scope": "Line",
+      "metric": "sensor_weighted_points",
+      "n": 27,
+      "min": 0.0,
+      "p25": 0.75,
+      "median": 4.25,
+      "p75": 17.375,
+      "p90": 23.800000000000004,
+      "max": 34.0
+    },
+    {
+      "league_scope": "Line",
+      "metric": "robot_cost_usd_priced_rows",
+      "n": 16,
+      "min": 6.43,
+      "p25": 369.21,
+      "median": 572.3299999999999,
+      "p75": 1386.7724999999998,
+      "p90": 2054.19,
+      "max": 2652.27
+    },
+    {
+      "league_scope": "Maze",
+      "metric": "sensor_count_estimated",
+      "n": 31,
+      "min": 0.0,
+      "p25": 0.5,
+      "median": 5.0,
+      "p75": 10.0,
+      "p90": 20.0,
+      "max": 29.0
+    },
+    {
+      "league_scope": "Maze",
+      "metric": "sensor_weighted_points",
+      "n": 31,
+      "min": 0.0,
+      "p25": 0.5,
+      "median": 6.5,
+      "p75": 13.25,
+      "p90": 31.0,
+      "max": 45.5
+    },
+    {
+      "league_scope": "Maze",
+      "metric": "robot_cost_usd_priced_rows",
+      "n": 20,
+      "min": 46.0,
+      "p25": 562.52,
+      "median": 853.115,
+      "p75": 1638.7975000000001,
+      "p90": 3591.079000000009,
+      "max": 11754.38
+    },
+    {
+      "league_scope": "Line+Maze",
+      "metric": "sensor_count_estimated",
+      "n": 58,
+      "min": 0.0,
+      "p25": 1.0,
+      "median": 4.0,
+      "p75": 13.25,
+      "p90": 20.60000000000001,
+      "max": 37.0
+    },
+    {
+      "league_scope": "Line+Maze",
+      "metric": "sensor_weighted_points",
+      "n": 58,
+      "min": 0.0,
+      "p25": 0.625,
+      "median": 5.875,
+      "p75": 14.9375,
+      "p90": 26.77500000000002,
+      "max": 45.5
+    },
+    {
+      "league_scope": "Line+Maze",
+      "metric": "robot_cost_usd_priced_rows",
+      "n": 36,
+      "min": 6.43,
+      "p25": 388.9175,
+      "median": 715.9200000000001,
+      "p75": 1544.435,
+      "p90": 2382.4300000000003,
+      "max": 11754.38
+    }
+  ],
+  "correlations": [
+    {
+      "league_scope": "Line",
+      "metric": "robot_cost_usd_priced_rows",
+      "n": 16,
+      "pearson_vs_score_percentile": 0.07952868057028324,
+      "spearman_vs_score_percentile": 0.12941176470588237,
+      "metric_median": 572.3299999999999,
+      "metric_p75": 1386.7724999999998,
+      "metric_p90": 2054.19
+    },
+    {
+      "league_scope": "Line",
+      "metric": "sensor_count_estimated",
+      "n": 27,
+      "pearson_vs_score_percentile": 0.6051333215546163,
+      "spearman_vs_score_percentile": 0.7175614238714286,
+      "metric_median": 4.0,
+      "metric_p75": 15.5,
+      "metric_p90": 20.800000000000004
+    },
+    {
+      "league_scope": "Line",
+      "metric": "sensor_weighted_points",
+      "n": 27,
+      "pearson_vs_score_percentile": 0.6649375568478759,
+      "spearman_vs_score_percentile": 0.7391150251247057,
+      "metric_median": 4.25,
+      "metric_p75": 17.375,
+      "metric_p90": 23.800000000000004
+    },
+    {
+      "league_scope": "Line",
+      "metric": "sensor_type_count",
+      "n": 27,
+      "pearson_vs_score_percentile": 0.7070157995267373,
+      "spearman_vs_score_percentile": 0.7110708242798458,
+      "metric_median": 2.0,
+      "metric_p75": 3.5,
+      "metric_p90": 5.0
+    },
+    {
+      "league_scope": "Line",
+      "metric": "sensor_model_count",
+      "n": 27,
+      "pearson_vs_score_percentile": 0.6912492176211977,
+      "spearman_vs_score_percentile": 0.6971937108016653,
+      "metric_median": 3.0,
+      "metric_p75": 4.0,
+      "metric_p90": 6.400000000000002
+    },
+    {
+      "league_scope": "Maze",
+      "metric": "robot_cost_usd_priced_rows",
+      "n": 20,
+      "pearson_vs_score_percentile": -0.2028141977747011,
+      "spearman_vs_score_percentile": -0.016541353383458645,
+      "metric_median": 853.115,
+      "metric_p75": 1638.7975000000001,
+      "metric_p90": 3591.079000000009
+    },
+    {
+      "league_scope": "Maze",
+      "metric": "sensor_count_estimated",
+      "n": 31,
+      "pearson_vs_score_percentile": 0.36286429283812094,
+      "spearman_vs_score_percentile": 0.29151489997847213,
+      "metric_median": 5.0,
+      "metric_p75": 10.0,
+      "metric_p90": 20.0
+    },
+    {
+      "league_scope": "Maze",
+      "metric": "sensor_weighted_points",
+      "n": 31,
+      "pearson_vs_score_percentile": 0.4128262894423855,
+      "spearman_vs_score_percentile": 0.28183215637200004,
+      "metric_median": 6.5,
+      "metric_p75": 13.25,
+      "metric_p90": 31.0
+    },
+    {
+      "league_scope": "Maze",
+      "metric": "sensor_type_count",
+      "n": 31,
+      "pearson_vs_score_percentile": 0.203174855319405,
+      "spearman_vs_score_percentile": 0.2731335699684218,
+      "metric_median": 3.0,
+      "metric_p75": 4.5,
+      "metric_p90": 5.0
+    },
+    {
+      "league_scope": "Maze",
+      "metric": "sensor_model_count",
+      "n": 31,
+      "pearson_vs_score_percentile": 0.22365467188799737,
+      "spearman_vs_score_percentile": 0.24985137661614065,
+      "metric_median": 3.0,
+      "metric_p75": 5.0,
+      "metric_p90": 6.0
+    },
+    {
+      "league_scope": "Erebus",
+      "metric": "robot_cost_usd_priced_rows",
+      "n": 0,
+      "pearson_vs_score_percentile": null,
+      "spearman_vs_score_percentile": null,
+      "metric_median": null,
+      "metric_p75": null,
+      "metric_p90": null
+    },
+    {
+      "league_scope": "Erebus",
+      "metric": "sensor_count_estimated",
+      "n": 13,
+      "pearson_vs_score_percentile": null,
+      "spearman_vs_score_percentile": null,
+      "metric_median": 0.0,
+      "metric_p75": 0.0,
+      "metric_p90": 0.0
+    },
+    {
+      "league_scope": "Erebus",
+      "metric": "sensor_weighted_points",
+      "n": 13,
+      "pearson_vs_score_percentile": null,
+      "spearman_vs_score_percentile": null,
+      "metric_median": 0.0,
+      "metric_p75": 0.0,
+      "metric_p90": 0.0
+    },
+    {
+      "league_scope": "Erebus",
+      "metric": "sensor_type_count",
+      "n": 13,
+      "pearson_vs_score_percentile": null,
+      "spearman_vs_score_percentile": null,
+      "metric_median": 0.0,
+      "metric_p75": 0.0,
+      "metric_p90": 0.0
+    },
+    {
+      "league_scope": "Erebus",
+      "metric": "sensor_model_count",
+      "n": 13,
+      "pearson_vs_score_percentile": null,
+      "spearman_vs_score_percentile": null,
+      "metric_median": 0.0,
+      "metric_p75": 0.0,
+      "metric_p90": 0.0
+    },
+    {
+      "league_scope": "Line+Maze",
+      "metric": "robot_cost_usd_priced_rows",
+      "n": 36,
+      "pearson_vs_score_percentile": -0.15675858060927045,
+      "spearman_vs_score_percentile": 0.012485519475292495,
+      "metric_median": 715.9200000000001,
+      "metric_p75": 1544.435,
+      "metric_p90": 2382.4300000000003
+    },
+    {
+      "league_scope": "Line+Maze",
+      "metric": "sensor_count_estimated",
+      "n": 58,
+      "pearson_vs_score_percentile": 0.4850035686681448,
+      "spearman_vs_score_percentile": 0.48232143195291893,
+      "metric_median": 4.0,
+      "metric_p75": 13.25,
+      "metric_p90": 20.60000000000001
+    },
+    {
+      "league_scope": "Line+Maze",
+      "metric": "sensor_weighted_points",
+      "n": 58,
+      "pearson_vs_score_percentile": 0.5136558568386996,
+      "spearman_vs_score_percentile": 0.4871857909523745,
+      "metric_median": 5.875,
+      "metric_p75": 14.9375,
+      "metric_p90": 26.77500000000002
+    },
+    {
+      "league_scope": "Line+Maze",
+      "metric": "sensor_type_count",
+      "n": 58,
+      "pearson_vs_score_percentile": 0.4165729009205154,
+      "spearman_vs_score_percentile": 0.42913421543253855,
+      "metric_median": 3.0,
+      "metric_p75": 4.0,
+      "metric_p90": 5.0
+    },
+    {
+      "league_scope": "Line+Maze",
+      "metric": "sensor_model_count",
+      "n": 58,
+      "pearson_vs_score_percentile": 0.4469276200242668,
+      "spearman_vs_score_percentile": 0.4295474910813946,
+      "metric_median": 3.0,
+      "metric_p75": 5.0,
+      "metric_p90": 6.300000000000004
+    }
+  ],
+  "cap_impact": [
+    {
+      "cap_points": 6,
+      "teams_over_cap": 27,
+      "teams_over_cap_pct": 0.46551724137931033,
+      "avg_score_percentile_over_cap": 0.6500474833808167,
+      "avg_score_percentile_at_or_below_cap": 0.369313482216708
+    },
+    {
+      "cap_points": 8,
+      "teams_over_cap": 23,
+      "teams_over_cap_pct": 0.39655172413793105,
+      "avg_score_percentile_over_cap": 0.6595317725752509,
+      "avg_score_percentile_at_or_below_cap": 0.39516483516483514
+    },
+    {
+      "cap_points": 10,
+      "teams_over_cap": 22,
+      "teams_over_cap_pct": 0.3793103448275862,
+      "avg_score_percentile_over_cap": 0.6607226107226107,
+      "avg_score_percentile_at_or_below_cap": 0.40178062678062676
+    },
+    {
+      "cap_points": 12,
+      "teams_over_cap": 19,
+      "teams_over_cap_pct": 0.3275862068965517,
+      "avg_score_percentile_over_cap": 0.6738191632928475,
+      "avg_score_percentile_at_or_below_cap": 0.41531886916502303
+    },
+    {
+      "cap_points": 15,
+      "teams_over_cap": 14,
+      "teams_over_cap_pct": 0.2413793103448276,
+      "avg_score_percentile_over_cap": 0.7945054945054946,
+      "avg_score_percentile_at_or_below_cap": 0.4062937062937063
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+team_code,team_name,league,country,team_id,team_dir,poster_file,poster_file_status,poster_file_bytes,document_public_flag,tdp_consent,video_consent,poster_consent,bom_consent,source_code_consent,publication_consent_status,disagreed_artifacts,missing_consent_artifacts,unknown_consent_values,poster_publication_allowed_by_consent,all_publication_consents_agree
+L01,Alpha,Line,Mexico,6a25ee91105b411f7b065475,teams/L01_Alpha,teams/L01_Alpha/poster.pdf,ok,8667383,False,Agree,Disagree,Agree,Agree,Disagree,partial_or_declined,Video;Source Code,,,True,False
+L02,Angora Goasbock,Line,Austria,6a25ee91105b411f7b065477,teams/L02_Angora Goasbock,teams/L02_Angora Goasbock/poster.pdf,ok,1015519,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L03,Antares,Line,Uruguay,6a25ee91105b411f7b065479,teams/L03_Antares,teams/L03_Antares/poster.pdf,ok,205903,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L04,BioBrause,Line,Germany,6a25ee91105b411f7b06547b,teams/L04_BioBrause,teams/L04_BioBrause/poster.pdf,ok,1074105,False,Agree,Disagree,Agree,Disagree,Disagree,partial_or_declined,Video;BOM;Source Code,,,True,False
+L05,Brainbots,Line,Brazil,6a25ee91105b411f7b06547d,teams/L05_Brainbots,teams/L05_Brainbots/poster.pdf,ok,6035625,False,Agree,Agree,Agree,Agree,Disagree,partial_or_declined,Source Code,,,True,False
+L06,Bricks,Line,Republic of Korea,6a25ee91105b411f7b06547f,teams/L06_Bricks,teams/L06_Bricks/poster.pdf,ok,2423425,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L07,Chien-Tai && Min-Jen Joint Team,Line,Taiwan,6a25ee91105b411f7b065481,teams/L07_Chien-Tai && Min-Jen Joint Team,teams/L07_Chien-Tai && Min-Jen Joint Team/poster.pdf,ok,4451307,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L08,DMS-Kaede,Line,Japan,6a25ee91105b411f7b065483,teams/L08_DMS-Kaede,teams/L08_DMS-Kaede/poster.pdf,ok,399039,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L09,Dry Lettuce,Line,Australia,6a25ee91105b411f7b065485,teams/L09_Dry Lettuce,teams/L09_Dry Lettuce/poster.pdf,ok,2642665,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L10,ERROR404,Line,Kazakhstan,6a25ee91105b411f7b065487,teams/L10_ERROR404,teams/L10_ERROR404/poster.pdf,error,0,False,Missing,Missing,Missing,Missing,Missing,incomplete,,TDP;Video;Poster;BOM;Source Code,,False,False
+L11,FATEN,Line,USA,6a25ee91105b411f7b065489,teams/L11_FATEN,teams/L11_FATEN/poster.pdf,ok,2410350,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L12,Fusion Zero,Line,New Zealand,6a25ee91105b411f7b06548b,teams/L12_Fusion Zero,teams/L12_Fusion Zero/poster.pdf,ok,5300947,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L13,IES-SÄ,Line,Sweden,6a25ee91105b411f7b06548d,teams/L13_IES-SÄ,teams/L13_IES-SÄ/poster.pdf,ok,565721,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L14,IITA Rescuebot,Line,Argentina,6a25ee91105b411f7b06548f,teams/L14_IITA Rescuebot,teams/L14_IITA Rescuebot/poster.pdf,ok,15037628,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L15,Inžinieri,Line,Slovakia,6a25ee91105b411f7b065491,teams/L15_Inžinieri,teams/L15_Inžinieri/poster.pdf,ok,18216914,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L16,Kavosh_Line,Line,Canada,6a25ee91105b411f7b065493,teams/L16_Kavosh_Line,teams/L16_Kavosh_Line/poster.pdf,ok,4693143,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L17,Mittens,Line,Singapore,6a25ee91105b411f7b065495,teams/L17_Mittens,teams/L17_Mittens/poster.pdf,ok,593633,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L18,NLO Rescue CRO Team,Line,Croatia,6a25ee91105b411f7b065497,teams/L18_NLO Rescue CRO Team,teams/L18_NLO Rescue CRO Team/poster.pdf,ok,2561792,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L19,Pharaoh,Line,Egypt,6a25ee91105b411f7b065499,teams/L19_Pharaoh,teams/L19_Pharaoh/poster.pdf,ok,8046162,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L20,Pishnam,Line,Iran,6a25ee91105b411f7b06549b,teams/L20_Pishnam,teams/L20_Pishnam/poster.pdf,ok,7314248,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L21,QuantumSpeed,Line,Italy,6a25ee91105b411f7b06549d,teams/L21_QuantumSpeed,teams/L21_QuantumSpeed/poster.pdf,ok,6524106,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L22,Sleeping,Line,Macao (SAR China),6a25ee91105b411f7b06549f,teams/L22_Sleeping,teams/L22_Sleeping/poster.pdf,ok,4305321,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L23,Smart,Line,Republic of Korea,6a25ee91105b411f7b0654a1,teams/L23_Smart,teams/L23_Smart/poster.pdf,ok,13221889,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L24,System Override,Line,India,6a25ee91105b411f7b0654a3,teams/L24_System Override,teams/L24_System Override/poster.pdf,ok,3379679,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L25,TOKAI Ghost,Line,Japan,6a25ee91105b411f7b0654a5,teams/L25_TOKAI Ghost,teams/L25_TOKAI Ghost/poster.pdf,ok,8920943,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+L26,TPA Thailand RLine,Line,Thailand,6a25ee91105b411f7b0654a7,teams/L26_TPA Thailand RLine,teams/L26_TPA Thailand RLine/poster.pdf,ok,11861953,False,Agree,Disagree,Agree,Agree,Disagree,partial_or_declined,Video;Source Code,,,True,False
+L27,Titãs da Robótica - Ligeirinho,Line,Brazil,6a25ee91105b411f7b0654a9,teams/L27_Titãs da Robótica - Ligeirinho,teams/L27_Titãs da Robótica - Ligeirinho/poster.pdf,ok,6303309,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M41,AURAT,Maze,Italy,6a25ee91105b411f7b0654ab,teams/M41_AURAT,teams/M41_AURAT/poster.pdf,ok,7402480,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M42,B.Robots Seniors,Maze,Austria,6a25ee91105b411f7b0654ad,teams/M42_B.Robots Seniors,teams/M42_B.Robots Seniors/poster.pdf,ok,7440786,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M43,Bodensee Dogs,Maze,Germany,6a25ee91105b411f7b0654af,teams/M43_Bodensee Dogs,teams/M43_Bodensee Dogs/poster.pdf,ok,14415422,False,Agree,Disagree,Agree,Disagree,Disagree,partial_or_declined,Video;BOM;Source Code,,,True,False
+M44,Byte Volta,Maze,Brazil,6a25ee91105b411f7b0654b1,teams/M44_Byte Volta,teams/M44_Byte Volta/poster.pdf,ok,8300033,False,Agree,Agree,Agree,Agree,Disagree,partial_or_declined,Source Code,,,True,False
+M45,CEBELÜ,Maze,Türkiye,6a25ee91105b411f7b0654b3,teams/M45_CEBELÜ,teams/M45_CEBELÜ/poster.pdf,ok,4696275,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M46,Delta,Maze,Australia,6a25ee91105b411f7b0654b5,teams/M46_Delta,teams/M46_Delta/poster.pdf,ok,2395055,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M47,ERROR404,Maze,Kazakhstan,6a25ee91105b411f7b0654b7,teams/M47_ERROR404,teams/M47_ERROR404/poster.pdf,error,0,False,Missing,Missing,Missing,Missing,Missing,incomplete,,TDP;Video;Poster;BOM;Source Code,,False,False
+M48,Flying Pig,Maze,Taiwan,6a25ee91105b411f7b0654b9,teams/M48_Flying Pig,teams/M48_Flying Pig/poster.pdf,ok,20167077,False,Agree,Disagree,Disagree,Disagree,Disagree,partial_or_declined,Video;Poster;BOM;Source Code,,,False,False
+M49,Gebruder Weiss CRO team,Maze,Croatia,6a25ee91105b411f7b0654bb,teams/M49_Gebruder Weiss CRO team,teams/M49_Gebruder Weiss CRO team/poster.pdf,ok,2828928,False,Agree,Disagree,Agree,Disagree,Disagree,partial_or_declined,Video;BOM;Source Code,,,True,False
+M50,LF Rescue Unit,Maze,Portugal,6a25ee91105b411f7b0654bd,teams/M50_LF Rescue Unit,teams/M50_LF Rescue Unit/poster.pdf,ok,4599193,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M51,LIGHTNING,Maze,Hungary,6a25ee91105b411f7b0654bf,teams/M51_LIGHTNING,teams/M51_LIGHTNING/poster.pdf,ok,11230943,False,Agree,Agree,Agree,Agree,Disagree,partial_or_declined,Source Code,,,True,False
+M52,Optimaze,Maze,Israel,6a25ee91105b411f7b0654c1,teams/M52_Optimaze,teams/M52_Optimaze/poster.pdf,ok,11947004,False,Agree,Agree,Agree,Agree,Disagree,partial_or_declined,Source Code,,,True,False
+M53,PCMS_ET,Maze,China,6a25ee91105b411f7b0654c3,teams/M53_PCMS_ET,teams/M53_PCMS_ET/poster.pdf,ok,2210813,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M54,PERSEUS,Maze,Panama,6a25ee91105b411f7b0654c5,teams/M54_PERSEUS,teams/M54_PERSEUS/poster.pdf,ok,14120202,False,Missing,Missing,Missing,Missing,Missing,incomplete,,TDP;Video;Poster;BOM;Source Code,,False,False
+M55,PRIMEX FCoEE,Maze,Malaysia,6a25ee91105b411f7b0654c7,teams/M55_PRIMEX FCoEE,teams/M55_PRIMEX FCoEE/poster.pdf,ok,1442982,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M56,Pi-rates,Maze,USA,6a25ee91105b411f7b0654c9,teams/M56_Pi-rates,teams/M56_Pi-rates/poster.pdf,ok,18445626,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M57,RC UANL,Maze,Mexico,6a25ee91105b411f7b0654cb,teams/M57_RC UANL,teams/M57_RC UANL/poster.pdf,ok,4352298,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M58,RRR Kabelmüsli,Maze,Germany,6a25ee91105b411f7b0654cd,teams/M58_RRR Kabelmüsli,teams/M58_RRR Kabelmüsli/poster.pdf,ok,4310642,False,Agree,Agree,Agree,Agree,Disagree,partial_or_declined,Source Code,,,True,False
+M59,Rescue Rats,Maze,Slovakia,6a25ee91105b411f7b0654cf,teams/M59_Rescue Rats,teams/M59_Rescue Rats/poster.pdf,ok,3852097,False,Agree,Agree,Agree,Agree,Disagree,partial_or_declined,Source Code,,,True,False
+M60,Robodanesh,Maze,Iran,6a25ee91105b411f7b0654d1,teams/M60_Robodanesh,teams/M60_Robodanesh/poster.pdf,ok,10903358,False,Agree,Agree,Agree,Disagree,Disagree,partial_or_declined,BOM;Source Code,,,True,False
+M61,SERŠ TEAM,Maze,Slovenia,6a25ee91105b411f7b0654d3,teams/M61_SERŠ TEAM,teams/M61_SERŠ TEAM/poster.pdf,ok,2546192,False,Agree,Agree,Agree,Agree,Disagree,partial_or_declined,Source Code,,,True,False
+M62,Simple,Maze,Republic of Korea,6a25ee91105b411f7b0654d5,teams/M62_Simple,teams/M62_Simple/poster.pdf,ok,13408911,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M63,Stenbackens Gård Robotik,Maze,Sweden,6a25ee91105b411f7b0654d7,teams/M63_Stenbackens Gård Robotik,teams/M63_Stenbackens Gård Robotik/poster.pdf,ok,468917,False,Agree,Agree,Agree,Agree,Disagree,partial_or_declined,Source Code,,,True,False
+M64,TOKAI Susano,Maze,Japan,6a25ee91105b411f7b0654d9,teams/M64_TOKAI Susano,teams/M64_TOKAI Susano/poster.pdf,ok,1535522,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M65,Tachyons,Maze,Italy,6a25ee91105b411f7b0654db,teams/M65_Tachyons,teams/M65_Tachyons/poster.pdf,ok,19609215,False,Agree,Agree,Agree,Disagree,Disagree,partial_or_declined,BOM;Source Code,,,True,False
+M66,Team Jup Maze,Maze,Netherlands,6a25ee91105b411f7b0654dd,teams/M66_Team Jup Maze,teams/M66_Team Jup Maze/poster.pdf,ok,1993716,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M67,The Worriers,Maze,India,6a25ee91105b411f7b0654df,teams/M67_The Worriers,teams/M67_The Worriers/poster.pdf,ok,3837319,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M68,Theseus,Maze,Canada,6a25ee91105b411f7b0654e1,teams/M68_Theseus,teams/M68_Theseus/poster.pdf,ok,9502193,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M69,Top Class,Maze,Republic of Korea,6a25ee91105b411f7b0654e3,teams/M69_Top Class,teams/M69_Top Class/poster.pdf,ok,8620512,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M70,Tuton,Maze,Japan,6a25ee91105b411f7b0654e5,teams/M70_Tuton,teams/M70_Tuton/poster.pdf,ok,2729825,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+M71,VAST,Maze,India,6a25ee91105b411f7b0654e7,teams/M71_VAST,teams/M71_VAST/poster.pdf,ok,2721608,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S81,Anyang,Erebus,Republic of Korea,6a25ee91105b411f7b0654e9,teams/S81_Anyang,teams/S81_Anyang/poster.pdf,ok,6208383,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S82,Black Radiators,Erebus,Italy,6a25ee91105b411f7b0654eb,teams/S82_Black Radiators,teams/S82_Black Radiators/poster.pdf,ok,8322258,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S83,CAETI UAI,Erebus,Argentina,6a25ee91105b411f7b0654ed,teams/S83_CAETI UAI,teams/S83_CAETI UAI/poster.pdf,ok,1718168,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S84,Danesh Auriga,Erebus,Iran,6a25ee91105b411f7b0654ef,teams/S84_Danesh Auriga,teams/S84_Danesh Auriga/poster.pdf,ok,6398552,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S85,Kavosh_Simul,Erebus,Canada,6a25ee91105b411f7b0654f1,teams/S85_Kavosh_Simul,teams/S85_Kavosh_Simul/poster.pdf,ok,2216213,False,Agree,Agree,Agree,Agree,Disagree,partial_or_declined,Source Code,,,True,False
+S86,Labyrinthos,Erebus,Taiwan,6a25ee91105b411f7b0654f3,teams/S86_Labyrinthos,teams/S86_Labyrinthos/poster.pdf,ok,16293250,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S87,OGEE,Erebus,Türkiye,6a25ee91105b411f7b0654f5,teams/S87_OGEE,teams/S87_OGEE/poster.pdf,ok,645208,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S88,Robomanics,Erebus,Egypt,6a25ee91105b411f7b0654f7,teams/S88_Robomanics,teams/S88_Robomanics/poster.pdf,ok,19103478,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S89,Robotics Barcelinhos,Erebus,Portugal,6a25ee91105b411f7b0654f9,teams/S89_Robotics Barcelinhos,teams/S89_Robotics Barcelinhos/poster.pdf,ok,221524,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S90,Speshari,Erebus,Slovakia,6a25ee91105b411f7b0654fb,teams/S90_Speshari,teams/S90_Speshari/poster.pdf,ok,10958022,False,Agree,Agree,Agree,Agree,Disagree,partial_or_declined,Source Code,,,True,False
+S91,UNIQA CRO Team,Erebus,Croatia,6a25ee91105b411f7b0654fd,teams/S91_UNIQA CRO Team,teams/S91_UNIQA CRO Team/poster.pdf,ok,3439830,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S92,learnsteam,Erebus,Republic of Korea,6a25ee91105b411f7b0654ff,teams/S92_learnsteam,teams/S92_learnsteam/poster.pdf,ok,148191,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S93,Águabots,Erebus,Brazil,6a25ee91105b411f7b065501,teams/S93_Águabots,teams/S93_Águabots/poster.pdf,ok,6227325,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True

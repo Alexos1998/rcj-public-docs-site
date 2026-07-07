@@ -1,0 +1,10 @@
+league_scope,max,median,metric,min,n,p25,p75,p90
+Line,37.0,4.0,sensor_count_estimated,0.0,27,1.0,15.5,20.800000000000004
+Line,34.0,4.25,sensor_weighted_points,0.0,27,0.75,17.375,23.800000000000004
+Line,2652.27,572.3299999999999,robot_cost_usd_priced_rows,6.43,16,369.21,1386.7724999999998,2054.19
+Maze,29.0,5.0,sensor_count_estimated,0.0,31,0.5,10.0,20.0
+Maze,45.5,6.5,sensor_weighted_points,0.0,31,0.5,13.25,31.0
+Maze,11754.38,853.115,robot_cost_usd_priced_rows,46.0,20,562.52,1638.7975000000001,3591.079000000009
+Line+Maze,37.0,4.0,sensor_count_estimated,0.0,58,1.0,13.25,20.60000000000001
+Line+Maze,45.5,5.875,sensor_weighted_points,0.0,58,0.625,14.9375,26.77500000000002
+Line+Maze,11754.38,715.9200000000001,robot_cost_usd_priced_rows,6.43,36,388.9175,1544.435,2382.4300000000003

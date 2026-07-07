@@ -1,0 +1,30 @@
+{
+  "bom_pdfs": 69,
+  "extracted_items": 2033,
+  "teams_with_items": 66,
+  "part_count": 734,
+  "price_country_comparisons": 8,
+  "category_counts": {
+    "other": 1191,
+    "pcb/electronics": 150,
+    "software/tool": 123,
+    "mechanical/frame": 99,
+    "battery/power": 54,
+    "tof distance sensor": 51,
+    "switch/button": 45,
+    "servo": 37,
+    "color sensor": 37,
+    "microcontroller": 33,
+    "camera": 32,
+    "raspberry pi": 31,
+    "imu/gyro": 31,
+    "arduino": 27,
+    "voltage regulator": 27,
+    "dc motor": 20,
+    "openmv": 13,
+    "teensy": 11,
+    "lidar": 9,
+    "esp32/esp8266": 6,
+    "motor driver": 6
+  }
+}

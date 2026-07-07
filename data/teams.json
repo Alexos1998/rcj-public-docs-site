@@ -1,0 +1,998 @@
+{
+  "teams": [
+    {
+      "team_code": "L01",
+      "team_name": "Alpha",
+      "league": "Line",
+      "country": "Mexico",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Disagree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "L02",
+      "team_name": "Angora Goasbock",
+      "league": "Line",
+      "country": "Austria",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L03",
+      "team_name": "Antares",
+      "league": "Line",
+      "country": "Uruguay",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L04",
+      "team_name": "BioBrause",
+      "league": "Line",
+      "country": "Germany",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Disagree",
+        "poster": "Agree",
+        "bom": "Disagree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "L05",
+      "team_name": "Brainbots",
+      "league": "Line",
+      "country": "Brazil",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "L06",
+      "team_name": "Bricks",
+      "league": "Line",
+      "country": "Republic of Korea",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L07",
+      "team_name": "Chien-Tai && Min-Jen Joint Team",
+      "league": "Line",
+      "country": "Taiwan",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L08",
+      "team_name": "DMS-Kaede",
+      "league": "Line",
+      "country": "Japan",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L09",
+      "team_name": "Dry Lettuce",
+      "league": "Line",
+      "country": "Australia",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L10",
+      "team_name": "ERROR404",
+      "league": "Line",
+      "country": "Kazakhstan",
+      "consent": {
+        "tdp": "Missing",
+        "video": "Missing",
+        "poster": "Missing",
+        "bom": "Missing",
+        "source_code": "Missing",
+        "overall": "incomplete"
+      }
+    },
+    {
+      "team_code": "L11",
+      "team_name": "FATEN",
+      "league": "Line",
+      "country": "USA",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L12",
+      "team_name": "Fusion Zero",
+      "league": "Line",
+      "country": "New Zealand",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L13",
+      "team_name": "IES-SÄ",
+      "league": "Line",
+      "country": "Sweden",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L14",
+      "team_name": "IITA Rescuebot",
+      "league": "Line",
+      "country": "Argentina",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L15",
+      "team_name": "Inžinieri",
+      "league": "Line",
+      "country": "Slovakia",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L16",
+      "team_name": "Kavosh_Line",
+      "league": "Line",
+      "country": "Canada",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L17",
+      "team_name": "Mittens",
+      "league": "Line",
+      "country": "Singapore",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L18",
+      "team_name": "NLO Rescue CRO Team",
+      "league": "Line",
+      "country": "Croatia",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L19",
+      "team_name": "Pharaoh",
+      "league": "Line",
+      "country": "Egypt",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L20",
+      "team_name": "Pishnam",
+      "league": "Line",
+      "country": "Iran",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L21",
+      "team_name": "QuantumSpeed",
+      "league": "Line",
+      "country": "Italy",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L22",
+      "team_name": "Sleeping",
+      "league": "Line",
+      "country": "Macao (SAR China)",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L23",
+      "team_name": "Smart",
+      "league": "Line",
+      "country": "Republic of Korea",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L24",
+      "team_name": "System Override",
+      "league": "Line",
+      "country": "India",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L25",
+      "team_name": "TOKAI Ghost",
+      "league": "Line",
+      "country": "Japan",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "L26",
+      "team_name": "TPA Thailand RLine",
+      "league": "Line",
+      "country": "Thailand",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Disagree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "L27",
+      "team_name": "Titãs da Robótica - Ligeirinho",
+      "league": "Line",
+      "country": "Brazil",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M41",
+      "team_name": "AURAT",
+      "league": "Maze",
+      "country": "Italy",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M42",
+      "team_name": "B.Robots Seniors",
+      "league": "Maze",
+      "country": "Austria",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M43",
+      "team_name": "Bodensee Dogs",
+      "league": "Maze",
+      "country": "Germany",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Disagree",
+        "poster": "Agree",
+        "bom": "Disagree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "M44",
+      "team_name": "Byte Volta",
+      "league": "Maze",
+      "country": "Brazil",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "M45",
+      "team_name": "CEBELÜ",
+      "league": "Maze",
+      "country": "Türkiye",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M46",
+      "team_name": "Delta",
+      "league": "Maze",
+      "country": "Australia",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M47",
+      "team_name": "ERROR404",
+      "league": "Maze",
+      "country": "Kazakhstan",
+      "consent": {
+        "tdp": "Missing",
+        "video": "Missing",
+        "poster": "Missing",
+        "bom": "Missing",
+        "source_code": "Missing",
+        "overall": "incomplete"
+      }
+    },
+    {
+      "team_code": "M48",
+      "team_name": "Flying Pig",
+      "league": "Maze",
+      "country": "Taiwan",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Disagree",
+        "poster": "Disagree",
+        "bom": "Disagree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "M49",
+      "team_name": "Gebruder Weiss CRO team",
+      "league": "Maze",
+      "country": "Croatia",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Disagree",
+        "poster": "Agree",
+        "bom": "Disagree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "M50",
+      "team_name": "LF Rescue Unit",
+      "league": "Maze",
+      "country": "Portugal",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M51",
+      "team_name": "LIGHTNING",
+      "league": "Maze",
+      "country": "Hungary",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "M52",
+      "team_name": "Optimaze",
+      "league": "Maze",
+      "country": "Israel",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "M53",
+      "team_name": "PCMS_ET",
+      "league": "Maze",
+      "country": "China",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M54",
+      "team_name": "PERSEUS",
+      "league": "Maze",
+      "country": "Panama",
+      "consent": {
+        "tdp": "Missing",
+        "video": "Missing",
+        "poster": "Missing",
+        "bom": "Missing",
+        "source_code": "Missing",
+        "overall": "incomplete"
+      }
+    },
+    {
+      "team_code": "M55",
+      "team_name": "PRIMEX FCoEE",
+      "league": "Maze",
+      "country": "Malaysia",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M56",
+      "team_name": "Pi-rates",
+      "league": "Maze",
+      "country": "USA",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M57",
+      "team_name": "RC UANL",
+      "league": "Maze",
+      "country": "Mexico",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M58",
+      "team_name": "RRR Kabelmüsli",
+      "league": "Maze",
+      "country": "Germany",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "M59",
+      "team_name": "Rescue Rats",
+      "league": "Maze",
+      "country": "Slovakia",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "M60",
+      "team_name": "Robodanesh",
+      "league": "Maze",
+      "country": "Iran",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Disagree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "M61",
+      "team_name": "SERŠ TEAM",
+      "league": "Maze",
+      "country": "Slovenia",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "M62",
+      "team_name": "Simple",
+      "league": "Maze",
+      "country": "Republic of Korea",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M63",
+      "team_name": "Stenbackens Gård Robotik",
+      "league": "Maze",
+      "country": "Sweden",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "M64",
+      "team_name": "TOKAI Susano",
+      "league": "Maze",
+      "country": "Japan",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M65",
+      "team_name": "Tachyons",
+      "league": "Maze",
+      "country": "Italy",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Disagree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "M66",
+      "team_name": "Team Jup Maze",
+      "league": "Maze",
+      "country": "Netherlands",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M67",
+      "team_name": "The Worriers",
+      "league": "Maze",
+      "country": "India",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M68",
+      "team_name": "Theseus",
+      "league": "Maze",
+      "country": "Canada",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M69",
+      "team_name": "Top Class",
+      "league": "Maze",
+      "country": "Republic of Korea",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M70",
+      "team_name": "Tuton",
+      "league": "Maze",
+      "country": "Japan",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "M71",
+      "team_name": "VAST",
+      "league": "Maze",
+      "country": "India",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "S81",
+      "team_name": "Anyang",
+      "league": "Erebus",
+      "country": "Republic of Korea",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "S82",
+      "team_name": "Black Radiators",
+      "league": "Erebus",
+      "country": "Italy",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "S83",
+      "team_name": "CAETI UAI",
+      "league": "Erebus",
+      "country": "Argentina",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "S84",
+      "team_name": "Danesh Auriga",
+      "league": "Erebus",
+      "country": "Iran",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "S85",
+      "team_name": "Kavosh_Simul",
+      "league": "Erebus",
+      "country": "Canada",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "S86",
+      "team_name": "Labyrinthos",
+      "league": "Erebus",
+      "country": "Taiwan",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "S87",
+      "team_name": "OGEE",
+      "league": "Erebus",
+      "country": "Türkiye",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "S88",
+      "team_name": "Robomanics",
+      "league": "Erebus",
+      "country": "Egypt",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "S89",
+      "team_name": "Robotics Barcelinhos",
+      "league": "Erebus",
+      "country": "Portugal",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "S90",
+      "team_name": "Speshari",
+      "league": "Erebus",
+      "country": "Slovakia",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Disagree",
+        "overall": "partial_or_declined"
+      }
+    },
+    {
+      "team_code": "S91",
+      "team_name": "UNIQA CRO Team",
+      "league": "Erebus",
+      "country": "Croatia",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "S92",
+      "team_name": "learnsteam",
+      "league": "Erebus",
+      "country": "Republic of Korea",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    },
+    {
+      "team_code": "S93",
+      "team_name": "Águabots",
+      "league": "Erebus",
+      "country": "Brazil",
+      "consent": {
+        "tdp": "Agree",
+        "video": "Agree",
+        "poster": "Agree",
+        "bom": "Agree",
+        "source_code": "Agree",
+        "overall": "all_agree"
+      }
+    }
+  ]
+}

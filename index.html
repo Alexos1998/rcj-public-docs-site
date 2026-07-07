@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RCJ Public Team Documents</title>
+  <style>
+    :root{--bg:#0f172a;--panel:#111827;--panel2:#1f2937;--line:#334155;--text:#e5e7eb;--muted:#94a3b8;--accent:#38bdf8;--good:#22c55e;--bad:#ef4444;--warn:#f59e0b}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} a{color:#7dd3fc}
+    header{position:sticky;top:0;z-index:20;background:rgba(15,23,42,.96);border-bottom:1px solid var(--line);padding:14px 18px} h1{margin:0;font-size:22px}.subtle{color:var(--muted)}
+    .filters{display:grid;grid-template-columns:2fr repeat(4,1fr);gap:8px;margin-top:12px} input,select,button{background:var(--panel);border:1px solid var(--line);border-radius:8px;color:var(--text);padding:8px 10px} button{cursor:pointer} button:hover{border-color:var(--accent)}
+    main{padding:16px;display:grid;gap:12px}.team{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}.team-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}.team h2{margin:0 0 4px}.badges{display:flex;gap:5px;flex-wrap:wrap}.badge{border:1px solid var(--line);background:var(--panel2);border-radius:999px;padding:2px 8px;font-size:12px}.good{color:#bbf7d0;border-color:rgba(34,197,94,.5);background:rgba(34,197,94,.12)}.bad{color:#fecaca;border-color:rgba(239,68,68,.5);background:rgba(239,68,68,.12)}.warn{color:#fde68a;border-color:rgba(245,158,11,.5);background:rgba(245,158,11,.12)}
+    .asset-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;margin-top:12px}.asset{background:#0b1220;border:1px solid var(--line);border-radius:10px;padding:10px}.asset h3{margin:0 0 6px;text-transform:capitalize}.asset iframe,.asset video{width:100%;height:320px;border:1px solid var(--line);border-radius:8px;background:#020617}.asset video{height:auto;max-height:420px}.notice{border-left:5px solid var(--warn);background:rgba(245,158,11,.12);padding:10px;border-radius:8px}.hidden{display:none}
+    @media(max-width:900px){.filters{grid-template-columns:1fr}.asset iframe{height:260px}}
+  </style>
+</head>
+<body>
+<header>
+  <h1>RCJ Public Team Documents</h1>
+  <div id="summary" class="subtle">Loading…</div>
+  <div class="filters">
+    <input id="q" placeholder="Search team, country, league…" />
+    <select id="league"><option value="">All leagues</option></select>
+    <select id="country"><option value="">All countries</option></select>
+    <select id="artifact"><option value="">All artifacts</option><option value="video">Video</option><option value="launching_video">Launching video</option><option value="poster">Poster</option><option value="bom">BOM</option><option value="source_code">Source code</option><option value="tdp_pdf_optional">TDP PDF</option><option value="engineering_journal_optional">Engineering journal</option></select>
+    <select id="visibility"><option value="">All visibility states</option><option value="publishable">Publishable</option><option value="hidden">Hidden by consent/missing URL</option></select>
+  </div>
+</header>
+<main>
+  <section class="notice">This static site is consent-gated. It renders only files with status <b>ok</b>, consent <b>Agree</b>, and an external URL in <code>data/assets.json</code>. Google Drive files render via <code>/preview</code> iframes; CDN video files render with native <code>&lt;video&gt;</code>.</section>
+  <section id="teams"></section>
+</main>
+<script>
+'use strict';
+const $=s=>document.querySelector(s); const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let teams=[], assets=[], assetsByTeam=new Map();
+function badge(label,value){let cls=value==='Agree'||value===true||value==='ok'?'good':(value==='Disagree'||value===false?'bad':'warn');return `<span class="badge ${cls}">${esc(label)}: ${esc(value)}</span>`}
+function canRender(a){return a.status==='ok'&&a.consent==='Agree'&&a.publishable&&(a.preview_url||a.view_url||a.download_url)}
+function renderAsset(a){
+  const renderable=canRender(a);
+  let body='';
+  if(!renderable){body=`<p class="subtle">Not embedded. status=${esc(a.status)}, consent=${esc(a.consent)}, url=${a.preview_url?'present':'missing'}</p>`}
+  else if(a.backend==='google_drive') body=`<iframe src="${esc(a.preview_url)}" allow="autoplay" allowfullscreen loading="lazy"></iframe><p><a href="${esc(a.view_url)}" target="_blank" rel="noopener">Open in Drive</a></p>`;
+  else if((a.mime_hint||'').startsWith('video/')) body=`<video controls preload="metadata" src="${esc(a.preview_url||a.download_url)}"></video>`;
+  else body=`<p><a href="${esc(a.view_url||a.preview_url||a.download_url)}" target="_blank" rel="noopener">Open file</a></p>`;
+  return `<article class="asset"><h3>${esc(a.artifact.replaceAll('_',' '))}</h3><div class="badges">${badge('status',a.status)}${badge('consent',a.consent)}${badge('backend',a.backend||'not configured')}</div>${body}</article>`;
+}
+function passes(team){
+  const q=$('#q').value.toLowerCase(), league=$('#league').value, country=$('#country').value, artifact=$('#artifact').value, vis=$('#visibility').value;
+  if(league&&team.league!==league) return false; if(country&&team.country!==country) return false;
+  const hay=`${team.team_code} ${team.team_name} ${team.country} ${team.league}`.toLowerCase(); if(q&&!hay.includes(q)) return false;
+  const list=assetsByTeam.get(team.team_code)||[]; if(artifact&&!list.some(a=>a.artifact===artifact)) return false;
+  if(vis==='publishable'&&!list.some(canRender)) return false; if(vis==='hidden'&&!list.some(a=>!canRender(a))) return false;
+  return true;
+}
+function render(){
+  const root=$('#teams'); const visible=teams.filter(passes); $('#summary').textContent=`${visible.length}/${teams.length} teams · ${assets.filter(canRender).length}/${assets.length} renderable configured assets`;
+  root.innerHTML=visible.map(t=>{let list=assetsByTeam.get(t.team_code)||[]; const artifact=$('#artifact').value; if(artifact) list=list.filter(a=>a.artifact===artifact); return `<article class="team"><div class="team-head"><div><h2>${esc(t.team_code)} — ${esc(t.team_name)}</h2><div class="subtle">${esc(t.league)} · ${esc(t.country)}</div></div><div class="badges">${badge('overall',t.consent.overall)}${badge('video',t.consent.video)}${badge('poster',t.consent.poster)}${badge('bom',t.consent.bom)}${badge('code',t.consent.source_code)}</div></div><div class="asset-grid">${list.map(renderAsset).join('')||'<p class="subtle">No assets in manifest.</p>'}</div></article>`}).join('');
+}
+async function init(){
+  const [teamData,assetData]=await Promise.all([fetch('data/teams.json').then(r=>r.json()),fetch('data/assets.json').then(r=>r.json())]);
+  teams=teamData.teams; assets=assetData.assets; assetsByTeam=new Map(); for(const a of assets){ if(!assetsByTeam.has(a.team_code)) assetsByTeam.set(a.team_code,[]); assetsByTeam.get(a.team_code).push(a); }
+  for(const l of [...new Set(teams.map(t=>t.league))].sort()) $('#league').insertAdjacentHTML('beforeend',`<option>${esc(l)}</option>`);
+  for(const c of [...new Set(teams.map(t=>t.country))].filter(Boolean).sort()) $('#country').insertAdjacentHTML('beforeend',`<option>${esc(c)}</option>`);
+  ['q','league','country','artifact','visibility'].forEach(id=>$('#'+id).addEventListener('input',render)); render();
+}
+init().catch(err=>{document.body.insertAdjacentHTML('beforeend',`<pre>${esc(err.stack||err)}</pre>`)});
+</script>
+</body>
+</html>
