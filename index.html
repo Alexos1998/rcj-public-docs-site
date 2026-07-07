@@ -27,7 +27,7 @@
   </div>
 </header>
 <main>
-  <section class="notice">This static site is consent-gated. It renders only files with status <b>ok</b>, consent <b>Agree</b>, and an external URL in <code>data/assets.json</code>. Google Drive files render via <code>/preview</code> iframes; CDN video files render with native <code>&lt;video&gt;</code>.</section>
+  <section class="notice">If cards say <b>backend: not configured</b> / <b>url=missing</b>, the file exists locally and consent was checked, but no Google Drive/CDN URL has been merged yet. Fill <code>tools/drive_file_map_template.csv</code> with Drive file IDs, run <code>python3 tools/merge_drive_file_ids.py tools/drive_file_map_template.csv</code>, commit, and push. The site embeds only files with status <b>ok</b>, consent <b>Agree</b>, and an external URL.</section>
   <section id="teams"></section>
 </main>
 <script>
