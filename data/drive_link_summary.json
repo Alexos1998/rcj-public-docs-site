@@ -1,0 +1,79 @@
+{
+  "assets": 646,
+  "drive_mapped_assets": 482,
+  "renderable_configured_assets": 482,
+  "missing_drive_uploads": [
+    {
+      "team_code": "M63",
+      "artifact": "video",
+      "local_path": "teams/M63_Stenbackens Gård Robotik/video.mp4",
+      "stage_relpath": "M63/video.mp4",
+      "bytes": "209390801"
+    },
+    {
+      "team_code": "M65",
+      "artifact": "video",
+      "local_path": "teams/M65_Tachyons/video.mp4",
+      "stage_relpath": "M65/video.mp4",
+      "bytes": "327030104"
+    },
+    {
+      "team_code": "M67",
+      "artifact": "video",
+      "local_path": "teams/M67_The Worriers/video.mp4",
+      "stage_relpath": "M67/video.mp4",
+      "bytes": "417787049"
+    },
+    {
+      "team_code": "M68",
+      "artifact": "video",
+      "local_path": "teams/M68_Theseus/video.mp4",
+      "stage_relpath": "M68/video.mp4",
+      "bytes": "188900538"
+    },
+    {
+      "team_code": "M68",
+      "artifact": "video_thumbnail",
+      "local_path": "teams/M68_Theseus/video-thumbnail.png",
+      "stage_relpath": "M68/video_thumbnail.png",
+      "bytes": "152841"
+    },
+    {
+      "team_code": "S93",
+      "artifact": "video",
+      "local_path": "teams/S93_Águabots/video.mp4",
+      "stage_relpath": "S93/video.mp4",
+      "bytes": "212530483"
+    }
+  ],
+  "missing_drive_uploads_by_artifact": {
+    "video": 5,
+    "video_thumbnail": 1
+  },
+  "configured_artifact_counts": {
+    "team_photo": 68,
+    "poster": 67,
+    "bom": 62,
+    "video_thumbnail": 59,
+    "robot_photo": 55,
+    "video": 55,
+    "source_code": 50,
+    "tdp_pdf_optional": 35,
+    "launching_video": 12,
+    "launching_video_thumbnail": 12,
+    "engineering_journal_optional": 7
+  },
+  "renderable_artifact_counts": {
+    "team_photo": 68,
+    "poster": 67,
+    "bom": 62,
+    "video_thumbnail": 59,
+    "robot_photo": 55,
+    "video": 55,
+    "source_code": 50,
+    "tdp_pdf_optional": 35,
+    "launching_video": 12,
+    "launching_video_thumbnail": 12,
+    "engineering_journal_optional": 7
+  }
+}
