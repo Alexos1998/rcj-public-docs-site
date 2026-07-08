@@ -1,0 +1,489 @@
+team_code,artifact,local_path,stage_relpath,bytes
+L01,team_photo,teams/L01_Alpha/team_photo.jpeg,L01/team_photo.jpeg,245789
+L01,robot_photo,teams/L01_Alpha/robot_photo.png,L01/robot_photo.png,741056
+L01,poster,teams/L01_Alpha/poster.pdf,L01/poster.pdf,8667383
+L01,bom,teams/L01_Alpha/bom.pdf,L01/bom.pdf,168544
+L02,team_photo,teams/L02_Angora Goasbock/team_photo.JPEG,L02/team_photo.JPEG,719079
+L02,robot_photo,teams/L02_Angora Goasbock/robot_photo.png,L02/robot_photo.png,175570
+L02,poster,teams/L02_Angora Goasbock/poster.pdf,L02/poster.pdf,1015519
+L02,video,teams/L02_Angora Goasbock/video.mp4,L02/video.mp4,98954352
+L02,video_thumbnail,teams/L02_Angora Goasbock/video-thumbnail.png,L02/video_thumbnail.png,114468
+L02,bom,teams/L02_Angora Goasbock/bom.pdf,L02/bom.pdf,360427
+L02,source_code,teams/L02_Angora Goasbock/code.zip,L02/source_code.zip,1771583
+L02,tdp_pdf_optional,teams/L02_Angora Goasbock/tdp.pdf,L02/tdp_pdf_optional.pdf,5850095
+L03,team_photo,teams/L03_Antares/team_photo.jpeg,L03/team_photo.jpeg,240959
+L03,robot_photo,teams/L03_Antares/robot_photo.png,L03/robot_photo.png,714142
+L03,poster,teams/L03_Antares/poster.pdf,L03/poster.pdf,205903
+L03,video,teams/L03_Antares/video.mp4,L03/video.mp4,349768027
+L03,video_thumbnail,teams/L03_Antares/video-thumbnail.png,L03/video_thumbnail.png,272386
+L03,bom,teams/L03_Antares/bom.pdf,L03/bom.pdf,1294649
+L03,source_code,teams/L03_Antares/code.zip,L03/source_code.zip,4063
+L03,tdp_pdf_optional,teams/L03_Antares/tdp.pdf,L03/tdp_pdf_optional.pdf,2255649
+L04,team_photo,teams/L04_BioBrause/team_photo.jpeg,L04/team_photo.jpeg,766904
+L04,robot_photo,teams/L04_BioBrause/robot_photo.jpg,L04/robot_photo.jpg,520410
+L04,poster,teams/L04_BioBrause/poster.pdf,L04/poster.pdf,1074105
+L05,team_photo,teams/L05_Brainbots/team_photo.jpg,L05/team_photo.jpg,1406976
+L05,robot_photo,teams/L05_Brainbots/robot_photo.jpeg,L05/robot_photo.jpeg,136488
+L05,poster,teams/L05_Brainbots/poster.pdf,L05/poster.pdf,6035625
+L05,video,teams/L05_Brainbots/video.mp4,L05/video.mp4,500695401
+L05,video_thumbnail,teams/L05_Brainbots/video-thumbnail.png,L05/video_thumbnail.png,251947
+L05,bom,teams/L05_Brainbots/bom.pdf,L05/bom.pdf,152997
+L05,tdp_pdf_optional,teams/L05_Brainbots/tdp.pdf,L05/tdp_pdf_optional.pdf,6014811
+L06,team_photo,teams/L06_Bricks/team_photo.jpg,L06/team_photo.jpg,2099026
+L06,robot_photo,teams/L06_Bricks/robot_photo.jpg,L06/robot_photo.jpg,1357685
+L06,poster,teams/L06_Bricks/poster.pdf,L06/poster.pdf,2423425
+L06,video,teams/L06_Bricks/video.mp4,L06/video.mp4,71371385
+L06,video_thumbnail,teams/L06_Bricks/video-thumbnail.png,L06/video_thumbnail.png,57413
+L06,bom,teams/L06_Bricks/bom.pdf,L06/bom.pdf,152766
+L06,source_code,teams/L06_Bricks/code.zip,L06/source_code.zip,36314
+L06,tdp_pdf_optional,teams/L06_Bricks/tdp.pdf,L06/tdp_pdf_optional.pdf,989028
+L07,team_photo,teams/L07_Chien-Tai && Min-Jen Joint Team/team_photo.jpg,L07/team_photo.jpg,97137
+L07,robot_photo,teams/L07_Chien-Tai && Min-Jen Joint Team/robot_photo.jpg,L07/robot_photo.jpg,52975
+L07,poster,teams/L07_Chien-Tai && Min-Jen Joint Team/poster.pdf,L07/poster.pdf,4451307
+L07,video,teams/L07_Chien-Tai && Min-Jen Joint Team/video.mp4,L07/video.mp4,22358975
+L07,video_thumbnail,teams/L07_Chien-Tai && Min-Jen Joint Team/video-thumbnail.png,L07/video_thumbnail.png,255698
+L07,bom,teams/L07_Chien-Tai && Min-Jen Joint Team/bom.pdf,L07/bom.pdf,152988
+L07,source_code,teams/L07_Chien-Tai && Min-Jen Joint Team/code.zip,L07/source_code.zip,1842097
+L08,team_photo,teams/L08_DMS-Kaede/team_photo.jpg,L08/team_photo.jpg,207367
+L08,robot_photo,teams/L08_DMS-Kaede/robot_photo.png,L08/robot_photo.png,295228
+L08,poster,teams/L08_DMS-Kaede/poster.pdf,L08/poster.pdf,399039
+L08,video,teams/L08_DMS-Kaede/video.mp4,L08/video.mp4,164748599
+L08,video_thumbnail,teams/L08_DMS-Kaede/video-thumbnail.png,L08/video_thumbnail.png,258501
+L08,bom,teams/L08_DMS-Kaede/bom.pdf,L08/bom.pdf,213802
+L08,source_code,teams/L08_DMS-Kaede/code.zip,L08/source_code.zip,4582
+L09,team_photo,teams/L09_Dry Lettuce/team_photo.jpg,L09/team_photo.jpg,1752257
+L09,robot_photo,teams/L09_Dry Lettuce/robot_photo.jpg,L09/robot_photo.jpg,2545682
+L09,poster,teams/L09_Dry Lettuce/poster.pdf,L09/poster.pdf,2642665
+L09,video,teams/L09_Dry Lettuce/video.mp4,L09/video.mp4,167628015
+L09,video_thumbnail,teams/L09_Dry Lettuce/video-thumbnail.png,L09/video_thumbnail.png,56871
+L09,bom,teams/L09_Dry Lettuce/bom.pdf,L09/bom.pdf,63722
+L09,source_code,teams/L09_Dry Lettuce/code.zip,L09/source_code.zip,46592073
+L11,team_photo,teams/L11_FATEN/team_photo.jpeg,L11/team_photo.jpeg,219760
+L11,robot_photo,teams/L11_FATEN/robot_photo.jpeg,L11/robot_photo.jpeg,90285
+L11,poster,teams/L11_FATEN/poster.pdf,L11/poster.pdf,2410350
+L11,video,teams/L11_FATEN/video.mp4,L11/video.mp4,138953997
+L11,video_thumbnail,teams/L11_FATEN/video-thumbnail.png,L11/video_thumbnail.png,109941
+L11,bom,teams/L11_FATEN/bom.pdf,L11/bom.pdf,90078
+L11,source_code,teams/L11_FATEN/code.zip,L11/source_code.zip,33150936
+L11,tdp_pdf_optional,teams/L11_FATEN/tdp.pdf,L11/tdp_pdf_optional.pdf,484626
+L12,team_photo,teams/L12_Fusion Zero/team_photo.png,L12/team_photo.png,1596334
+L12,robot_photo,teams/L12_Fusion Zero/robot_photo.jpg,L12/robot_photo.jpg,998538
+L12,poster,teams/L12_Fusion Zero/poster.pdf,L12/poster.pdf,5300947
+L12,video,teams/L12_Fusion Zero/video.mp4,L12/video.mp4,118964800
+L12,video_thumbnail,teams/L12_Fusion Zero/video-thumbnail.png,L12/video_thumbnail.png,109134
+L12,bom,teams/L12_Fusion Zero/bom.pdf,L12/bom.pdf,9743
+L12,source_code,teams/L12_Fusion Zero/code.zip,L12/source_code.zip,26877510
+L13,team_photo,teams/L13_IES-SÄ/team_photo.jpg,L13/team_photo.jpg,172426
+L13,robot_photo,teams/L13_IES-SÄ/robot_photo.jpg,L13/robot_photo.jpg,179577
+L13,poster,teams/L13_IES-SÄ/poster.pdf,L13/poster.pdf,565721
+L13,video,teams/L13_IES-SÄ/video.mp4,L13/video.mp4,93916461
+L13,video_thumbnail,teams/L13_IES-SÄ/video-thumbnail.png,L13/video_thumbnail.png,185337
+L13,bom,teams/L13_IES-SÄ/bom.pdf,L13/bom.pdf,60339
+L13,source_code,teams/L13_IES-SÄ/code.zip,L13/source_code.zip,1664
+L14,team_photo,teams/L14_IITA Rescuebot/team_photo.jpg,L14/team_photo.jpg,163637
+L14,robot_photo,teams/L14_IITA Rescuebot/robot_photo.jpg,L14/robot_photo.jpg,3094340
+L14,poster,teams/L14_IITA Rescuebot/poster.pdf,L14/poster.pdf,15037628
+L14,video,teams/L14_IITA Rescuebot/video.mp4,L14/video.mp4,148088705
+L14,video_thumbnail,teams/L14_IITA Rescuebot/video-thumbnail.png,L14/video_thumbnail.png,129153
+L14,bom,teams/L14_IITA Rescuebot/bom.pdf,L14/bom.pdf,155059
+L14,source_code,teams/L14_IITA Rescuebot/code.zip,L14/source_code.zip,24372558
+L15,team_photo,teams/L15_Inžinieri/team_photo.jpg,L15/team_photo.jpg,2941447
+L15,robot_photo,teams/L15_Inžinieri/robot_photo.png,L15/robot_photo.png,3523234
+L15,poster,teams/L15_Inžinieri/poster.pdf,L15/poster.pdf,18216914
+L15,video,teams/L15_Inžinieri/video.mp4,L15/video.mp4,332815262
+L15,video_thumbnail,teams/L15_Inžinieri/video-thumbnail.png,L15/video_thumbnail.png,310753
+L15,bom,teams/L15_Inžinieri/bom.pdf,L15/bom.pdf,35339
+L15,source_code,teams/L15_Inžinieri/code.zip,L15/source_code.zip,17119
+L16,team_photo,teams/L16_Kavosh_Line/team_photo.jpeg,L16/team_photo.jpeg,85304
+L16,robot_photo,teams/L16_Kavosh_Line/robot_photo.jpeg,L16/robot_photo.jpeg,152176
+L16,poster,teams/L16_Kavosh_Line/poster.pdf,L16/poster.pdf,4693143
+L16,bom,teams/L16_Kavosh_Line/bom.pdf,L16/bom.pdf,70513
+L16,source_code,teams/L16_Kavosh_Line/code.zip,L16/source_code.zip,7610
+L16,tdp_pdf_optional,teams/L16_Kavosh_Line/tdp.pdf,L16/tdp_pdf_optional.pdf,753967
+L17,team_photo,teams/L17_Mittens/team_photo.jpeg,L17/team_photo.jpeg,769959
+L17,robot_photo,teams/L17_Mittens/robot_photo.jpeg,L17/robot_photo.jpeg,556075
+L17,poster,teams/L17_Mittens/poster.pdf,L17/poster.pdf,593633
+L17,video,teams/L17_Mittens/video.mp4,L17/video.mp4,36624568
+L17,video_thumbnail,teams/L17_Mittens/video-thumbnail.png,L17/video_thumbnail.png,228520
+L17,bom,teams/L17_Mittens/bom.pdf,L17/bom.pdf,415129
+L17,source_code,teams/L17_Mittens/code.zip,L17/source_code.zip,1815
+L18,team_photo,teams/L18_NLO Rescue CRO Team/team_photo.jpeg,L18/team_photo.jpeg,328891
+L18,robot_photo,teams/L18_NLO Rescue CRO Team/robot_photo.jpeg,L18/robot_photo.jpeg,210639
+L18,poster,teams/L18_NLO Rescue CRO Team/poster.pdf,L18/poster.pdf,2561792
+L18,video,teams/L18_NLO Rescue CRO Team/video.mp4,L18/video.mp4,403359978
+L18,video_thumbnail,teams/L18_NLO Rescue CRO Team/video-thumbnail.png,L18/video_thumbnail.png,280615
+L18,bom,teams/L18_NLO Rescue CRO Team/bom.pdf,L18/bom.pdf,131289
+L18,source_code,teams/L18_NLO Rescue CRO Team/code.zip,L18/source_code.zip,5746
+L18,tdp_pdf_optional,teams/L18_NLO Rescue CRO Team/tdp.pdf,L18/tdp_pdf_optional.pdf,806735
+L19,team_photo,teams/L19_Pharaoh/team_photo.jpeg,L19/team_photo.jpeg,303521
+L19,robot_photo,teams/L19_Pharaoh/robot_photo.jpeg,L19/robot_photo.jpeg,110783
+L19,poster,teams/L19_Pharaoh/poster.pdf,L19/poster.pdf,8046162
+L19,video,teams/L19_Pharaoh/video.mp4,L19/video.mp4,305487720
+L19,video_thumbnail,teams/L19_Pharaoh/video-thumbnail.png,L19/video_thumbnail.png,156782
+L19,bom,teams/L19_Pharaoh/bom.pdf,L19/bom.pdf,140180
+L19,source_code,teams/L19_Pharaoh/code.zip,L19/source_code.zip,12938
+L19,tdp_pdf_optional,teams/L19_Pharaoh/tdp.pdf,L19/tdp_pdf_optional.pdf,7429303
+L20,team_photo,teams/L20_Pishnam/team_photo.jpg,L20/team_photo.jpg,3746087
+L20,robot_photo,teams/L20_Pishnam/robot_photo.jpg,L20/robot_photo.jpg,1683388
+L20,poster,teams/L20_Pishnam/poster.pdf,L20/poster.pdf,7314248
+L20,video,teams/L20_Pishnam/video.mp4,L20/video.mp4,196045791
+L20,video_thumbnail,teams/L20_Pishnam/video-thumbnail.png,L20/video_thumbnail.png,98808
+L20,bom,teams/L20_Pishnam/bom.pdf,L20/bom.pdf,293624
+L20,source_code,teams/L20_Pishnam/code.zip,L20/source_code.zip,697058
+L20,tdp_pdf_optional,teams/L20_Pishnam/tdp.pdf,L20/tdp_pdf_optional.pdf,2072791
+L21,team_photo,teams/L21_QuantumSpeed/team_photo.JPEG,L21/team_photo.JPEG,87920
+L21,robot_photo,teams/L21_QuantumSpeed/robot_photo.jpg,L21/robot_photo.jpg,450672
+L21,poster,teams/L21_QuantumSpeed/poster.pdf,L21/poster.pdf,6524106
+L21,video,teams/L21_QuantumSpeed/video.mp4,L21/video.mp4,491077097
+L21,video_thumbnail,teams/L21_QuantumSpeed/video-thumbnail.png,L21/video_thumbnail.png,210863
+L21,bom,teams/L21_QuantumSpeed/bom.pdf,L21/bom.pdf,207150
+L21,source_code,teams/L21_QuantumSpeed/code.zip,L21/source_code.zip,8270304
+L21,tdp_pdf_optional,teams/L21_QuantumSpeed/tdp.pdf,L21/tdp_pdf_optional.pdf,1862646
+L22,team_photo,teams/L22_Sleeping/team_photo.jpg,L22/team_photo.jpg,217511
+L22,robot_photo,teams/L22_Sleeping/robot_photo.jpg,L22/robot_photo.jpg,3906796
+L22,poster,teams/L22_Sleeping/poster.pdf,L22/poster.pdf,4305321
+L22,video,teams/L22_Sleeping/video.mp4,L22/video.mp4,35216337
+L22,video_thumbnail,teams/L22_Sleeping/video-thumbnail.png,L22/video_thumbnail.png,111194
+L22,bom,teams/L22_Sleeping/bom.pdf,L22/bom.pdf,348462
+L22,source_code,teams/L22_Sleeping/code.zip,L22/source_code.zip,4191275
+L22,engineering_journal_optional,teams/L22_Sleeping/journal.pdf,L22/engineering_journal_optional.pdf,7716188
+L23,team_photo,teams/L23_Smart/team_photo.jpg,L23/team_photo.jpg,1511371
+L23,robot_photo,teams/L23_Smart/robot_photo.jpg,L23/robot_photo.jpg,1615583
+L23,poster,teams/L23_Smart/poster.pdf,L23/poster.pdf,13221889
+L23,video,teams/L23_Smart/video.mp4,L23/video.mp4,68809957
+L23,video_thumbnail,teams/L23_Smart/video-thumbnail.png,L23/video_thumbnail.png,50806
+L23,bom,teams/L23_Smart/bom.pdf,L23/bom.pdf,22890
+L23,source_code,teams/L23_Smart/code.zip,L23/source_code.zip,176686
+L24,team_photo,teams/L24_System Override/team_photo.jpg,L24/team_photo.jpg,1847685
+L24,robot_photo,teams/L24_System Override/robot_photo.jpeg,L24/robot_photo.jpeg,2272769
+L24,poster,teams/L24_System Override/poster.pdf,L24/poster.pdf,3379679
+L24,video,teams/L24_System Override/video.mp4,L24/video.mp4,271072588
+L24,video_thumbnail,teams/L24_System Override/video-thumbnail.png,L24/video_thumbnail.png,104995
+L24,bom,teams/L24_System Override/bom.pdf,L24/bom.pdf,222189
+L24,source_code,teams/L24_System Override/code.zip,L24/source_code.zip,24383
+L24,tdp_pdf_optional,teams/L24_System Override/tdp.pdf,L24/tdp_pdf_optional.pdf,3317684
+L25,team_photo,teams/L25_TOKAI Ghost/team_photo.jpg,L25/team_photo.jpg,358193
+L25,robot_photo,teams/L25_TOKAI Ghost/robot_photo.jpg,L25/robot_photo.jpg,690067
+L25,poster,teams/L25_TOKAI Ghost/poster.pdf,L25/poster.pdf,8920943
+L25,video,teams/L25_TOKAI Ghost/video.mp4,L25/video.mp4,280841984
+L25,video_thumbnail,teams/L25_TOKAI Ghost/video-thumbnail.png,L25/video_thumbnail.png,103999
+L25,bom,teams/L25_TOKAI Ghost/bom.pdf,L25/bom.pdf,259890
+L25,source_code,teams/L25_TOKAI Ghost/code.zip,L25/source_code.zip,25890260
+L26,team_photo,teams/L26_TPA Thailand RLine/team_photo.jpg,L26/team_photo.jpg,248226
+L26,robot_photo,teams/L26_TPA Thailand RLine/robot_photo.jpg,L26/robot_photo.jpg,156077
+L26,poster,teams/L26_TPA Thailand RLine/poster.pdf,L26/poster.pdf,11861953
+L26,bom,teams/L26_TPA Thailand RLine/bom.pdf,L26/bom.pdf,39894
+L27,team_photo,teams/L27_Titãs da Robótica - Ligeirinho/team_photo.jpeg,L27/team_photo.jpeg,143758
+L27,robot_photo,teams/L27_Titãs da Robótica - Ligeirinho/robot_photo.jpg,L27/robot_photo.jpg,80375
+L27,poster,teams/L27_Titãs da Robótica - Ligeirinho/poster.pdf,L27/poster.pdf,6303309
+L27,video,teams/L27_Titãs da Robótica - Ligeirinho/video.mp4,L27/video.mp4,14336905
+L27,video_thumbnail,teams/L27_Titãs da Robótica - Ligeirinho/video-thumbnail.png,L27/video_thumbnail.png,127328
+L27,bom,teams/L27_Titãs da Robótica - Ligeirinho/bom.pdf,L27/bom.pdf,68711
+L27,source_code,teams/L27_Titãs da Robótica - Ligeirinho/code.zip,L27/source_code.zip,58946
+M41,team_photo,teams/M41_AURAT/team_photo.png,M41/team_photo.png,3017241
+M41,robot_photo,teams/M41_AURAT/robot_photo.jpeg,M41/robot_photo.jpeg,1162005
+M41,poster,teams/M41_AURAT/poster.pdf,M41/poster.pdf,7402480
+M41,video,teams/M41_AURAT/video.mp4,M41/video.mp4,444326187
+M41,video_thumbnail,teams/M41_AURAT/video-thumbnail.png,M41/video_thumbnail.png,62611
+M41,bom,teams/M41_AURAT/bom.pdf,M41/bom.pdf,1080063
+M41,source_code,teams/M41_AURAT/code.zip,M41/source_code.zip,20969
+M41,tdp_pdf_optional,teams/M41_AURAT/tdp.pdf,M41/tdp_pdf_optional.pdf,1042777
+M42,team_photo,teams/M42_B.Robots Seniors/team_photo.jpg,M42/team_photo.jpg,1249863
+M42,robot_photo,teams/M42_B.Robots Seniors/robot_photo.JPG,M42/robot_photo.JPG,3499718
+M42,poster,teams/M42_B.Robots Seniors/poster.pdf,M42/poster.pdf,7440786
+M42,video,teams/M42_B.Robots Seniors/video.mp4,M42/video.mp4,427282081
+M42,video_thumbnail,teams/M42_B.Robots Seniors/video-thumbnail.png,M42/video_thumbnail.png,177418
+M42,bom,teams/M42_B.Robots Seniors/bom.pdf,M42/bom.pdf,58101
+M42,source_code,teams/M42_B.Robots Seniors/code.zip,M42/source_code.zip,278276
+M42,tdp_pdf_optional,teams/M42_B.Robots Seniors/tdp.pdf,M42/tdp_pdf_optional.pdf,1649947
+M43,team_photo,teams/M43_Bodensee Dogs/team_photo.JPEG,M43/team_photo.JPEG,2646146
+M43,robot_photo,teams/M43_Bodensee Dogs/robot_photo.jpg,M43/robot_photo.jpg,2609746
+M43,poster,teams/M43_Bodensee Dogs/poster.pdf,M43/poster.pdf,14415422
+M44,team_photo,teams/M44_Byte Volta/team_photo.jpg,M44/team_photo.jpg,165864
+M44,robot_photo,teams/M44_Byte Volta/robot_photo.png,M44/robot_photo.png,761994
+M44,poster,teams/M44_Byte Volta/poster.pdf,M44/poster.pdf,8300033
+M44,video,teams/M44_Byte Volta/video.mp4,M44/video.mp4,302446120
+M44,video_thumbnail,teams/M44_Byte Volta/video-thumbnail.png,M44/video_thumbnail.png,1098830
+M44,bom,teams/M44_Byte Volta/bom.pdf,M44/bom.pdf,140921
+M44,tdp_pdf_optional,teams/M44_Byte Volta/tdp.pdf,M44/tdp_pdf_optional.pdf,5242880
+M45,team_photo,teams/M45_CEBELÜ/team_photo.jpeg,M45/team_photo.jpeg,196163
+M45,robot_photo,teams/M45_CEBELÜ/robot_photo.jpeg,M45/robot_photo.jpeg,159844
+M45,poster,teams/M45_CEBELÜ/poster.pdf,M45/poster.pdf,4696275
+M45,bom,teams/M45_CEBELÜ/bom.pdf,M45/bom.pdf,35432
+M45,source_code,teams/M45_CEBELÜ/code.zip,M45/source_code.zip,9246639
+M46,team_photo,teams/M46_Delta/team_photo.jpg,M46/team_photo.jpg,169340
+M46,robot_photo,teams/M46_Delta/robot_photo.jpg,M46/robot_photo.jpg,2118271
+M46,poster,teams/M46_Delta/poster.pdf,M46/poster.pdf,2395055
+M46,video,teams/M46_Delta/video.mp4,M46/video.mp4,475550487
+M46,video_thumbnail,teams/M46_Delta/video-thumbnail.png,M46/video_thumbnail.png,318865
+M46,bom,teams/M46_Delta/bom.pdf,M46/bom.pdf,207160
+M46,source_code,teams/M46_Delta/code.zip,M46/source_code.zip,34791
+M48,team_photo,teams/M48_Flying Pig/team_photo.jpg,M48/team_photo.jpg,468868
+M48,robot_photo,teams/M48_Flying Pig/robot_photo.jpg,M48/robot_photo.jpg,812690
+M48,tdp_pdf_optional,teams/M48_Flying Pig/tdp.pdf,M48/tdp_pdf_optional.pdf,2374910
+M48,engineering_journal_optional,teams/M48_Flying Pig/journal.pdf,M48/engineering_journal_optional.pdf,141835
+M49,team_photo,teams/M49_Gebruder Weiss CRO team/team_photo.jpg,M49/team_photo.jpg,2766318
+M49,robot_photo,teams/M49_Gebruder Weiss CRO team/robot_photo.jpg,M49/robot_photo.jpg,695070
+M49,poster,teams/M49_Gebruder Weiss CRO team/poster.pdf,M49/poster.pdf,2828928
+M49,tdp_pdf_optional,teams/M49_Gebruder Weiss CRO team/tdp.pdf,M49/tdp_pdf_optional.pdf,862086
+M50,team_photo,teams/M50_LF Rescue Unit/team_photo.jpeg,M50/team_photo.jpeg,194853
+M50,robot_photo,teams/M50_LF Rescue Unit/robot_photo.jpg,M50/robot_photo.jpg,94861
+M50,poster,teams/M50_LF Rescue Unit/poster.pdf,M50/poster.pdf,4599193
+M50,video,teams/M50_LF Rescue Unit/video.mp4,M50/video.mp4,63165321
+M50,video_thumbnail,teams/M50_LF Rescue Unit/video-thumbnail.png,M50/video_thumbnail.png,288972
+M50,bom,teams/M50_LF Rescue Unit/bom.pdf,M50/bom.pdf,101725
+M50,source_code,teams/M50_LF Rescue Unit/code.zip,M50/source_code.zip,2939
+M51,team_photo,teams/M51_LIGHTNING/team_photo.jpg,M51/team_photo.jpg,1682962
+M51,robot_photo,teams/M51_LIGHTNING/robot_photo.jpg,M51/robot_photo.jpg,1710835
+M51,poster,teams/M51_LIGHTNING/poster.pdf,M51/poster.pdf,11230943
+M51,video,teams/M51_LIGHTNING/video.mp4,M51/video.mp4,476113656
+M51,video_thumbnail,teams/M51_LIGHTNING/video-thumbnail.png,M51/video_thumbnail.png,284069
+M51,bom,teams/M51_LIGHTNING/bom.pdf,M51/bom.pdf,122943
+M52,team_photo,teams/M52_Optimaze/team_photo.jpeg,M52/team_photo.jpeg,419672
+M52,robot_photo,teams/M52_Optimaze/robot_photo.jpeg,M52/robot_photo.jpeg,311117
+M52,poster,teams/M52_Optimaze/poster.pdf,M52/poster.pdf,11947004
+M52,video,teams/M52_Optimaze/video.mp4,M52/video.mp4,406017475
+M52,video_thumbnail,teams/M52_Optimaze/video-thumbnail.png,M52/video_thumbnail.png,286933
+M52,bom,teams/M52_Optimaze/bom.pdf,M52/bom.pdf,142772
+M52,tdp_pdf_optional,teams/M52_Optimaze/tdp.pdf,M52/tdp_pdf_optional.pdf,2363660
+M53,team_photo,teams/M53_PCMS_ET/team_photo.jpeg,M53/team_photo.jpeg,302901
+M53,robot_photo,teams/M53_PCMS_ET/robot_photo.jpeg,M53/robot_photo.jpeg,149140
+M53,poster,teams/M53_PCMS_ET/poster.pdf,M53/poster.pdf,2210813
+M53,video,teams/M53_PCMS_ET/video.MP4,M53/video.MP4,270972924
+M53,video_thumbnail,teams/M53_PCMS_ET/video-thumbnail.png,M53/video_thumbnail.png,301070
+M53,bom,teams/M53_PCMS_ET/bom.pdf,M53/bom.pdf,245489
+M53,source_code,teams/M53_PCMS_ET/code.zip,M53/source_code.zip,14822
+M53,engineering_journal_optional,teams/M53_PCMS_ET/journal.pdf,M53/engineering_journal_optional.pdf,3499226
+M55,team_photo,teams/M55_PRIMEX FCoEE/team_photo.jpg,M55/team_photo.jpg,835258
+M55,robot_photo,teams/M55_PRIMEX FCoEE/robot_photo.png,M55/robot_photo.png,2877470
+M55,poster,teams/M55_PRIMEX FCoEE/poster.pdf,M55/poster.pdf,1442982
+M55,video,teams/M55_PRIMEX FCoEE/video.mp4,M55/video.mp4,500376432
+M55,video_thumbnail,teams/M55_PRIMEX FCoEE/video-thumbnail.png,M55/video_thumbnail.png,215871
+M55,bom,teams/M55_PRIMEX FCoEE/bom.pdf,M55/bom.pdf,225429
+M55,source_code,teams/M55_PRIMEX FCoEE/code.zip,M55/source_code.zip,8104990
+M55,tdp_pdf_optional,teams/M55_PRIMEX FCoEE/tdp.pdf,M55/tdp_pdf_optional.pdf,1306882
+M56,team_photo,teams/M56_Pi-rates/team_photo.jpg,M56/team_photo.jpg,373366
+M56,robot_photo,teams/M56_Pi-rates/robot_photo.jpg,M56/robot_photo.jpg,1233514
+M56,poster,teams/M56_Pi-rates/poster.pdf,M56/poster.pdf,18445626
+M56,video,teams/M56_Pi-rates/video.mp4,M56/video.mp4,491321000
+M56,video_thumbnail,teams/M56_Pi-rates/video-thumbnail.png,M56/video_thumbnail.png,30577
+M56,bom,teams/M56_Pi-rates/bom.pdf,M56/bom.pdf,112243
+M56,source_code,teams/M56_Pi-rates/code.zip,M56/source_code.zip,14781
+M56,tdp_pdf_optional,teams/M56_Pi-rates/tdp.pdf,M56/tdp_pdf_optional.pdf,1349893
+M57,team_photo,teams/M57_RC UANL/team_photo.jpeg,M57/team_photo.jpeg,1765842
+M57,robot_photo,teams/M57_RC UANL/robot_photo.jpeg,M57/robot_photo.jpeg,821885
+M57,poster,teams/M57_RC UANL/poster.pdf,M57/poster.pdf,4352298
+M57,video,teams/M57_RC UANL/video.mp4,M57/video.mp4,120918642
+M57,video_thumbnail,teams/M57_RC UANL/video-thumbnail.png,M57/video_thumbnail.png,382751
+M57,bom,teams/M57_RC UANL/bom.pdf,M57/bom.pdf,99656
+M57,source_code,teams/M57_RC UANL/code.zip,M57/source_code.zip,19519
+M57,tdp_pdf_optional,teams/M57_RC UANL/tdp.pdf,M57/tdp_pdf_optional.pdf,1282125
+M58,team_photo,teams/M58_RRR Kabelmüsli/team_photo.png,M58/team_photo.png,782713
+M58,robot_photo,teams/M58_RRR Kabelmüsli/robot_photo.jpeg,M58/robot_photo.jpeg,88014
+M58,poster,teams/M58_RRR Kabelmüsli/poster.pdf,M58/poster.pdf,4310642
+M58,video,teams/M58_RRR Kabelmüsli/video.mp4,M58/video.mp4,313426907
+M58,video_thumbnail,teams/M58_RRR Kabelmüsli/video-thumbnail.png,M58/video_thumbnail.png,160340
+M58,bom,teams/M58_RRR Kabelmüsli/bom.pdf,M58/bom.pdf,221155
+M58,tdp_pdf_optional,teams/M58_RRR Kabelmüsli/tdp.pdf,M58/tdp_pdf_optional.pdf,13407736
+M59,team_photo,teams/M59_Rescue Rats/team_photo.jpg,M59/team_photo.jpg,471347
+M59,robot_photo,teams/M59_Rescue Rats/robot_photo.jpg,M59/robot_photo.jpg,753224
+M59,poster,teams/M59_Rescue Rats/poster.pdf,M59/poster.pdf,3852097
+M59,video,teams/M59_Rescue Rats/video.mp4,M59/video.mp4,148902653
+M59,video_thumbnail,teams/M59_Rescue Rats/video-thumbnail.png,M59/video_thumbnail.png,263349
+M59,bom,teams/M59_Rescue Rats/bom.pdf,M59/bom.pdf,116280
+M59,tdp_pdf_optional,teams/M59_Rescue Rats/tdp.pdf,M59/tdp_pdf_optional.pdf,976676
+M60,team_photo,teams/M60_Robodanesh/team_photo.png,M60/team_photo.png,4399564
+M60,robot_photo,teams/M60_Robodanesh/robot_photo.png,M60/robot_photo.png,320186
+M60,poster,teams/M60_Robodanesh/poster.pdf,M60/poster.pdf,10903358
+M60,video,teams/M60_Robodanesh/video.mp4,M60/video.mp4,114271202
+M60,video_thumbnail,teams/M60_Robodanesh/video-thumbnail.png,M60/video_thumbnail.png,309705
+M60,tdp_pdf_optional,teams/M60_Robodanesh/tdp.pdf,M60/tdp_pdf_optional.pdf,2069893
+M61,team_photo,teams/M61_SERŠ TEAM/team_photo.jpg,M61/team_photo.jpg,281830
+M61,robot_photo,teams/M61_SERŠ TEAM/robot_photo.jpg,M61/robot_photo.jpg,380803
+M61,poster,teams/M61_SERŠ TEAM/poster.pdf,M61/poster.pdf,2546192
+M61,video,teams/M61_SERŠ TEAM/video.mp4,M61/video.mp4,428496198
+M61,video_thumbnail,teams/M61_SERŠ TEAM/video-thumbnail.png,M61/video_thumbnail.png,209417
+M61,bom,teams/M61_SERŠ TEAM/bom.pdf,M61/bom.pdf,159966
+M62,team_photo,teams/M62_Simple/team_photo.png,M62/team_photo.png,1838829
+M62,robot_photo,teams/M62_Simple/robot_photo.jpeg,M62/robot_photo.jpeg,3598027
+M62,poster,teams/M62_Simple/poster.pdf,M62/poster.pdf,13408911
+M62,video,teams/M62_Simple/video.mp4,M62/video.mp4,117797974
+M62,video_thumbnail,teams/M62_Simple/video-thumbnail.png,M62/video_thumbnail.png,212332
+M62,bom,teams/M62_Simple/bom.pdf,M62/bom.pdf,618688
+M62,source_code,teams/M62_Simple/code.zip,M62/source_code.zip,35470
+M62,tdp_pdf_optional,teams/M62_Simple/tdp.pdf,M62/tdp_pdf_optional.pdf,5479581
+M62,engineering_journal_optional,teams/M62_Simple/journal.pdf,M62/engineering_journal_optional.pdf,2486276
+M63,team_photo,teams/M63_Stenbackens Gård Robotik/team_photo.png,M63/team_photo.png,2275160
+M63,robot_photo,teams/M63_Stenbackens Gård Robotik/robot_photo.jpg,M63/robot_photo.jpg,813728
+M63,poster,teams/M63_Stenbackens Gård Robotik/poster.pdf,M63/poster.pdf,468917
+M63,video,teams/M63_Stenbackens Gård Robotik/video.mp4,M63/video.mp4,209390801
+M63,video_thumbnail,teams/M63_Stenbackens Gård Robotik/video-thumbnail.png,M63/video_thumbnail.png,299949
+M63,bom,teams/M63_Stenbackens Gård Robotik/bom.pdf,M63/bom.pdf,372093
+M64,team_photo,teams/M64_TOKAI Susano/team_photo.jpg,M64/team_photo.jpg,342293
+M64,robot_photo,teams/M64_TOKAI Susano/robot_photo.jpg,M64/robot_photo.jpg,439702
+M64,poster,teams/M64_TOKAI Susano/poster.pdf,M64/poster.pdf,1535522
+M64,video,teams/M64_TOKAI Susano/video.mp4,M64/video.mp4,17328941
+M64,video_thumbnail,teams/M64_TOKAI Susano/video-thumbnail.png,M64/video_thumbnail.png,345361
+M64,bom,teams/M64_TOKAI Susano/bom.pdf,M64/bom.pdf,117599
+M64,source_code,teams/M64_TOKAI Susano/code.zip,M64/source_code.zip,95446
+M64,tdp_pdf_optional,teams/M64_TOKAI Susano/tdp.pdf,M64/tdp_pdf_optional.pdf,1010693
+M64,engineering_journal_optional,teams/M64_TOKAI Susano/journal.pdf,M64/engineering_journal_optional.pdf,522187
+M65,team_photo,teams/M65_Tachyons/team_photo.jpg,M65/team_photo.jpg,445732
+M65,robot_photo,teams/M65_Tachyons/robot_photo.png,M65/robot_photo.png,700677
+M65,poster,teams/M65_Tachyons/poster.pdf,M65/poster.pdf,19609215
+M65,video,teams/M65_Tachyons/video.mp4,M65/video.mp4,327030104
+M65,video_thumbnail,teams/M65_Tachyons/video-thumbnail.png,M65/video_thumbnail.png,197504
+M65,tdp_pdf_optional,teams/M65_Tachyons/tdp.pdf,M65/tdp_pdf_optional.pdf,9038823
+M66,team_photo,teams/M66_Team Jup Maze/team_photo.jpg,M66/team_photo.jpg,257101
+M66,robot_photo,teams/M66_Team Jup Maze/robot_photo.jpg,M66/robot_photo.jpg,173767
+M66,poster,teams/M66_Team Jup Maze/poster.pdf,M66/poster.pdf,1993716
+M66,video,teams/M66_Team Jup Maze/video.mp4,M66/video.mp4,15808
+M66,video_thumbnail,teams/M66_Team Jup Maze/video-thumbnail.png,M66/video_thumbnail.png,6937
+M66,bom,teams/M66_Team Jup Maze/bom.pdf,M66/bom.pdf,52166
+M66,source_code,teams/M66_Team Jup Maze/code.zip,M66/source_code.zip,1285
+M67,team_photo,teams/M67_The Worriers/team_photo.png,M67/team_photo.png,272294
+M67,robot_photo,teams/M67_The Worriers/robot_photo.png,M67/robot_photo.png,512853
+M67,poster,teams/M67_The Worriers/poster.pdf,M67/poster.pdf,3837319
+M67,video,teams/M67_The Worriers/video.mp4,M67/video.mp4,417787049
+M67,video_thumbnail,teams/M67_The Worriers/video-thumbnail.png,M67/video_thumbnail.png,195457
+M67,bom,teams/M67_The Worriers/bom.pdf,M67/bom.pdf,117597
+M67,source_code,teams/M67_The Worriers/code.zip,M67/source_code.zip,63219
+M67,tdp_pdf_optional,teams/M67_The Worriers/tdp.pdf,M67/tdp_pdf_optional.pdf,5085910
+M68,team_photo,teams/M68_Theseus/team_photo.png,M68/team_photo.png,74459
+M68,robot_photo,teams/M68_Theseus/robot_photo.jpg,M68/robot_photo.jpg,1566762
+M68,poster,teams/M68_Theseus/poster.pdf,M68/poster.pdf,9502193
+M68,video,teams/M68_Theseus/video.mp4,M68/video.mp4,188900538
+M68,video_thumbnail,teams/M68_Theseus/video-thumbnail.png,M68/video_thumbnail.png,152841
+M68,bom,teams/M68_Theseus/bom.pdf,M68/bom.pdf,126281
+M68,source_code,teams/M68_Theseus/code.zip,M68/source_code.zip,26012
+M68,tdp_pdf_optional,teams/M68_Theseus/tdp.pdf,M68/tdp_pdf_optional.pdf,8982730
+M69,team_photo,teams/M69_Top Class/team_photo.jpg,M69/team_photo.jpg,4566447
+M69,robot_photo,teams/M69_Top Class/robot_photo.jpg,M69/robot_photo.jpg,1168206
+M69,poster,teams/M69_Top Class/poster.pdf,M69/poster.pdf,8620512
+M69,video,teams/M69_Top Class/video.mp4,M69/video.mp4,125210551
+M69,video_thumbnail,teams/M69_Top Class/video-thumbnail.png,M69/video_thumbnail.png,239973
+M69,bom,teams/M69_Top Class/bom.pdf,M69/bom.pdf,114683
+M69,source_code,teams/M69_Top Class/code.zip,M69/source_code.zip,143855
+M70,team_photo,teams/M70_Tuton/team_photo.jpg,M70/team_photo.jpg,294490
+M70,robot_photo,teams/M70_Tuton/robot_photo.jpg,M70/robot_photo.jpg,214879
+M70,poster,teams/M70_Tuton/poster.pdf,M70/poster.pdf,2729825
+M70,video,teams/M70_Tuton/video.mp4,M70/video.mp4,277320338
+M70,video_thumbnail,teams/M70_Tuton/video-thumbnail.png,M70/video_thumbnail.png,287362
+M70,bom,teams/M70_Tuton/bom.pdf,M70/bom.pdf,237796
+M70,source_code,teams/M70_Tuton/code.zip,M70/source_code.zip,7644859
+M70,tdp_pdf_optional,teams/M70_Tuton/tdp.pdf,M70/tdp_pdf_optional.pdf,1621011
+M70,engineering_journal_optional,teams/M70_Tuton/journal.pdf,M70/engineering_journal_optional.pdf,1004927
+M71,team_photo,teams/M71_VAST/team_photo.jpg,M71/team_photo.jpg,299956
+M71,robot_photo,teams/M71_VAST/robot_photo.jpeg,M71/robot_photo.jpeg,179173
+M71,poster,teams/M71_VAST/poster.pdf,M71/poster.pdf,2721608
+M71,video,teams/M71_VAST/video.mp4,M71/video.mp4,65230739
+M71,video_thumbnail,teams/M71_VAST/video-thumbnail.png,M71/video_thumbnail.png,93121
+M71,bom,teams/M71_VAST/bom.pdf,M71/bom.pdf,89667
+M71,source_code,teams/M71_VAST/code.zip,M71/source_code.zip,15740
+S81,team_photo,teams/S81_Anyang/team_photo.png,S81/team_photo.png,2283682
+S81,poster,teams/S81_Anyang/poster.pdf,S81/poster.pdf,6208383
+S81,video,teams/S81_Anyang/video.mp4,S81/video.mp4,95314654
+S81,video_thumbnail,teams/S81_Anyang/video-thumbnail.png,S81/video_thumbnail.png,111740
+S81,launching_video,teams/S81_Anyang/launching_video.mp4,S81/launching_video.mp4,185711313
+S81,launching_video_thumbnail,teams/S81_Anyang/launching_video-thumbnail.png,S81/launching_video_thumbnail.png,78561
+S81,bom,teams/S81_Anyang/bom.pdf,S81/bom.pdf,91659
+S81,source_code,teams/S81_Anyang/code.zip,S81/source_code.zip,42726
+S81,tdp_pdf_optional,teams/S81_Anyang/tdp.pdf,S81/tdp_pdf_optional.pdf,11076283
+S82,team_photo,teams/S82_Black Radiators/team_photo.jpg,S82/team_photo.jpg,308045
+S82,poster,teams/S82_Black Radiators/poster.pdf,S82/poster.pdf,8322258
+S82,video,teams/S82_Black Radiators/video.mp4,S82/video.mp4,35617795
+S82,video_thumbnail,teams/S82_Black Radiators/video-thumbnail.png,S82/video_thumbnail.png,38792
+S82,launching_video,teams/S82_Black Radiators/launching_video.mp4,S82/launching_video.mp4,17207853
+S82,launching_video_thumbnail,teams/S82_Black Radiators/launching_video-thumbnail.png,S82/launching_video_thumbnail.png,73977
+S82,bom,teams/S82_Black Radiators/bom.pdf,S82/bom.pdf,93604
+S82,source_code,teams/S82_Black Radiators/code.zip,S82/source_code.zip,5666651
+S82,tdp_pdf_optional,teams/S82_Black Radiators/tdp.pdf,S82/tdp_pdf_optional.pdf,1254570
+S83,team_photo,teams/S83_CAETI UAI/team_photo.jpeg,S83/team_photo.jpeg,2257260
+S83,poster,teams/S83_CAETI UAI/poster.pdf,S83/poster.pdf,1718168
+S83,video,teams/S83_CAETI UAI/video.mp4,S83/video.mp4,445152109
+S83,video_thumbnail,teams/S83_CAETI UAI/video-thumbnail.png,S83/video_thumbnail.png,308776
+S83,launching_video,teams/S83_CAETI UAI/launching_video.mp4,S83/launching_video.mp4,6803176
+S83,launching_video_thumbnail,teams/S83_CAETI UAI/launching_video-thumbnail.png,S83/launching_video_thumbnail.png,276076
+S83,bom,teams/S83_CAETI UAI/bom.pdf,S83/bom.pdf,5637
+S83,source_code,teams/S83_CAETI UAI/code.zip,S83/source_code.zip,1107434
+S83,tdp_pdf_optional,teams/S83_CAETI UAI/tdp.pdf,S83/tdp_pdf_optional.pdf,3886207
+S84,team_photo,teams/S84_Danesh Auriga/team_photo.png,S84/team_photo.png,2169639
+S84,poster,teams/S84_Danesh Auriga/poster.pdf,S84/poster.pdf,6398552
+S84,video,teams/S84_Danesh Auriga/video.mp4,S84/video.mp4,118188800
+S84,video_thumbnail,teams/S84_Danesh Auriga/video-thumbnail.png,S84/video_thumbnail.png,105223
+S84,launching_video,teams/S84_Danesh Auriga/launching_video.mp4,S84/launching_video.mp4,72529582
+S84,launching_video_thumbnail,teams/S84_Danesh Auriga/launching_video-thumbnail.png,S84/launching_video_thumbnail.png,177877
+S84,bom,teams/S84_Danesh Auriga/bom.pdf,S84/bom.pdf,11769
+S84,source_code,teams/S84_Danesh Auriga/code.zip,S84/source_code.zip,9398848
+S84,tdp_pdf_optional,teams/S84_Danesh Auriga/tdp.pdf,S84/tdp_pdf_optional.pdf,1609775
+S85,team_photo,teams/S85_Kavosh_Simul/team_photo.png,S85/team_photo.png,1547301
+S85,poster,teams/S85_Kavosh_Simul/poster.pdf,S85/poster.pdf,2216213
+S85,video,teams/S85_Kavosh_Simul/video.mp4,S85/video.mp4,483188886
+S85,video_thumbnail,teams/S85_Kavosh_Simul/video-thumbnail.png,S85/video_thumbnail.png,190230
+S85,launching_video,teams/S85_Kavosh_Simul/launching_video.mp4,S85/launching_video.mp4,310505503
+S85,launching_video_thumbnail,teams/S85_Kavosh_Simul/launching_video-thumbnail.png,S85/launching_video_thumbnail.png,1725092
+S85,bom,teams/S85_Kavosh_Simul/bom.pdf,S85/bom.pdf,41261
+S86,team_photo,teams/S86_Labyrinthos/team_photo.JPG,S86/team_photo.JPG,309371
+S86,poster,teams/S86_Labyrinthos/poster.pdf,S86/poster.pdf,16293250
+S86,video,teams/S86_Labyrinthos/video.mp4,S86/video.mp4,23877653
+S86,video_thumbnail,teams/S86_Labyrinthos/video-thumbnail.png,S86/video_thumbnail.png,79603
+S86,launching_video,teams/S86_Labyrinthos/launching_video.mp4,S86/launching_video.mp4,484302113
+S86,launching_video_thumbnail,teams/S86_Labyrinthos/launching_video-thumbnail.png,S86/launching_video_thumbnail.png,255466
+S86,bom,teams/S86_Labyrinthos/bom.pdf,S86/bom.pdf,31179
+S86,source_code,teams/S86_Labyrinthos/code.zip,S86/source_code.zip,7808366
+S87,team_photo,teams/S87_OGEE/team_photo.jpeg,S87/team_photo.jpeg,219064
+S87,poster,teams/S87_OGEE/poster.pdf,S87/poster.pdf,645208
+S87,video,teams/S87_OGEE/video.mp4,S87/video.mp4,190550553
+S87,video_thumbnail,teams/S87_OGEE/video-thumbnail.png,S87/video_thumbnail.png,67008
+S87,launching_video,teams/S87_OGEE/launching_video.mp4,S87/launching_video.mp4,10639835
+S87,launching_video_thumbnail,teams/S87_OGEE/launching_video-thumbnail.png,S87/launching_video_thumbnail.png,62138
+S87,bom,teams/S87_OGEE/bom.pdf,S87/bom.pdf,98391
+S87,source_code,teams/S87_OGEE/code.zip,S87/source_code.zip,9937
+S88,team_photo,teams/S88_Robomanics/team_photo.jpeg,S88/team_photo.jpeg,280184
+S88,poster,teams/S88_Robomanics/poster.pdf,S88/poster.pdf,19103478
+S88,video,teams/S88_Robomanics/video.mp4,S88/video.mp4,105514422
+S88,video_thumbnail,teams/S88_Robomanics/video-thumbnail.png,S88/video_thumbnail.png,100005
+S88,bom,teams/S88_Robomanics/bom.pdf,S88/bom.pdf,30112
+S88,source_code,teams/S88_Robomanics/code.zip,S88/source_code.zip,6648
+S89,team_photo,teams/S89_Robotics Barcelinhos/team_photo.jpeg,S89/team_photo.jpeg,289059
+S89,poster,teams/S89_Robotics Barcelinhos/poster.pdf,S89/poster.pdf,221524
+S89,video,teams/S89_Robotics Barcelinhos/video.mp4,S89/video.mp4,277646201
+S89,video_thumbnail,teams/S89_Robotics Barcelinhos/video-thumbnail.png,S89/video_thumbnail.png,86952
+S89,launching_video,teams/S89_Robotics Barcelinhos/launching_video.mp4,S89/launching_video.mp4,8129789
+S89,launching_video_thumbnail,teams/S89_Robotics Barcelinhos/launching_video-thumbnail.png,S89/launching_video_thumbnail.png,47574
+S89,bom,teams/S89_Robotics Barcelinhos/bom.pdf,S89/bom.pdf,97435
+S89,source_code,teams/S89_Robotics Barcelinhos/code.zip,S89/source_code.zip,19103
+S90,team_photo,teams/S90_Speshari/team_photo.png,S90/team_photo.png,888988
+S90,poster,teams/S90_Speshari/poster.pdf,S90/poster.pdf,10958022
+S90,video,teams/S90_Speshari/video.mp4,S90/video.mp4,124087675
+S90,video_thumbnail,teams/S90_Speshari/video-thumbnail.png,S90/video_thumbnail.png,81875
+S90,launching_video,teams/S90_Speshari/launching_video.mp4,S90/launching_video.mp4,10435670
+S90,launching_video_thumbnail,teams/S90_Speshari/launching_video-thumbnail.png,S90/launching_video_thumbnail.png,225525
+S90,bom,teams/S90_Speshari/bom.pdf,S90/bom.pdf,97881
+S91,team_photo,teams/S91_UNIQA CRO Team/team_photo.png,S91/team_photo.png,1570369
+S91,poster,teams/S91_UNIQA CRO Team/poster.pdf,S91/poster.pdf,3439830
+S91,video,teams/S91_UNIQA CRO Team/video.mp4,S91/video.mp4,146656630
+S91,video_thumbnail,teams/S91_UNIQA CRO Team/video-thumbnail.png,S91/video_thumbnail.png,227815
+S91,launching_video,teams/S91_UNIQA CRO Team/launching_video.mp4,S91/launching_video.mp4,4814922
+S91,launching_video_thumbnail,teams/S91_UNIQA CRO Team/launching_video-thumbnail.png,S91/launching_video_thumbnail.png,144560
+S91,bom,teams/S91_UNIQA CRO Team/bom.pdf,S91/bom.pdf,114071
+S91,source_code,teams/S91_UNIQA CRO Team/code.zip,S91/source_code.zip,5708668
+S91,tdp_pdf_optional,teams/S91_UNIQA CRO Team/tdp.pdf,S91/tdp_pdf_optional.pdf,404878
+S91,engineering_journal_optional,teams/S91_UNIQA CRO Team/journal.pdf,S91/engineering_journal_optional.pdf,463819
+S92,team_photo,teams/S92_learnsteam/team_photo.png,S92/team_photo.png,19157
+S92,poster,teams/S92_learnsteam/poster.pdf,S92/poster.pdf,148191
+S92,video,teams/S92_learnsteam/video.mp4,S92/video.mp4,53472239
+S92,video_thumbnail,teams/S92_learnsteam/video-thumbnail.png,S92/video_thumbnail.png,121455
+S92,launching_video,teams/S92_learnsteam/launching_video.mp4,S92/launching_video.mp4,4592703
+S92,launching_video_thumbnail,teams/S92_learnsteam/launching_video-thumbnail.png,S92/launching_video_thumbnail.png,79069
+S92,bom,teams/S92_learnsteam/bom.pdf,S92/bom.pdf,43188
+S92,source_code,teams/S92_learnsteam/code.zip,S92/source_code.zip,114667
+S92,tdp_pdf_optional,teams/S92_learnsteam/tdp.pdf,S92/tdp_pdf_optional.pdf,3717654
+S93,team_photo,teams/S93_Águabots/team_photo.png,S93/team_photo.png,581645
+S93,poster,teams/S93_Águabots/poster.pdf,S93/poster.pdf,6227325
+S93,video,teams/S93_Águabots/video.mp4,S93/video.mp4,212530483
+S93,video_thumbnail,teams/S93_Águabots/video-thumbnail.png,S93/video_thumbnail.png,161337
+S93,launching_video,teams/S93_Águabots/launching_video.mp4,S93/launching_video.mp4,18209669
+S93,launching_video_thumbnail,teams/S93_Águabots/launching_video-thumbnail.png,S93/launching_video_thumbnail.png,264750
+S93,bom,teams/S93_Águabots/bom.pdf,S93/bom.pdf,52424
+S93,source_code,teams/S93_Águabots/code.zip,S93/source_code.zip,17979764
