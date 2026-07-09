@@ -1,0 +1,83 @@
+{
+  "source": "Computed from completed run scores normalized by normalizationGroup maxima in data/runs_group_refs.json.",
+  "leagues": {
+    "Line": [
+      {
+        "place": 1,
+        "team_code": "L25",
+        "team_name": "TOKAI Ghost",
+        "normalized_total": 7.455482,
+        "raw_total": 10364.0,
+        "runs": 8
+      },
+      {
+        "place": 2,
+        "team_code": "L04",
+        "team_name": "BioBrause",
+        "normalized_total": 6.317784,
+        "raw_total": 8359.0,
+        "runs": 8
+      },
+      {
+        "place": 3,
+        "team_code": "L05",
+        "team_name": "Brainbots",
+        "normalized_total": 4.131685,
+        "raw_total": 5880.0,
+        "runs": 8
+      }
+    ],
+    "Maze": [
+      {
+        "place": 1,
+        "team_code": "M70",
+        "team_name": "Tuton",
+        "normalized_total": 6.181341,
+        "raw_total": 3690.0,
+        "runs": 8
+      },
+      {
+        "place": 2,
+        "team_code": "M43",
+        "team_name": "Bodensee Dogs",
+        "normalized_total": 5.718363,
+        "raw_total": 3615.0,
+        "runs": 8
+      },
+      {
+        "place": 3,
+        "team_code": "M51",
+        "team_name": "LIGHTNING",
+        "normalized_total": 5.45338,
+        "raw_total": 3445.0,
+        "runs": 8
+      }
+    ],
+    "Simulation": [
+      {
+        "place": 1,
+        "team_code": "S90",
+        "team_name": "Speshari",
+        "normalized_total": 7.850392,
+        "raw_total": 22297.39,
+        "runs": 8
+      },
+      {
+        "place": 2,
+        "team_code": "S84",
+        "team_name": "Danesh Auriga",
+        "normalized_total": 7.778195,
+        "raw_total": 21837.35,
+        "runs": 8
+      },
+      {
+        "place": 3,
+        "team_code": "S83",
+        "team_name": "CAETI UAI",
+        "normalized_total": 7.559767,
+        "raw_total": 20936.49,
+        "runs": 8
+      }
+    ]
+  }
+}

@@ -15,6 +15,9 @@
       --muted: #94a3b8;
       --accent: #38bdf8;
       --accent-2: #7dd3fc;
+      --gold: #fbbf24;
+      --silver: #cbd5e1;
+      --bronze: #d97706;
       --shadow: rgba(2, 6, 23, .34);
     }
     * { box-sizing: border-box; }
@@ -35,7 +38,7 @@
       padding: 10px 12px;
     }
     button { cursor: pointer; }
-    button:hover, a.card:hover { border-color: var(--accent); }
+    button:hover, a.card:hover, .league-card:hover { border-color: var(--accent); }
     header.app {
       position: sticky;
       top: 0;
@@ -72,12 +75,85 @@
       padding: 0 20px 16px;
     }
     main { padding: 20px; }
+    .landing { display: grid; gap: 22px; }
+    .landing h2, .league-view h2 { margin: 0; font-size: clamp(24px, 3vw, 38px); letter-spacing: -.03em; }
+    .league-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(250px, 1fr));
+      gap: 18px;
+    }
+    .league-card {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 14px;
+      background: linear-gradient(180deg, rgba(17, 24, 39, .97), rgba(11, 18, 32, .97));
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 16px;
+      min-height: 460px;
+      box-shadow: 0 16px 36px var(--shadow);
+    }
+    .league-art {
+      aspect-ratio: 16 / 9;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      color: #e0f2fe;
+      background:
+        radial-gradient(circle at 25% 20%, rgba(125, 211, 252, .22), transparent 9rem),
+        linear-gradient(135deg, rgba(56, 189, 248, .18), rgba(15, 23, 42, .3));
+      overflow: hidden;
+    }
+    .league-art span { font-size: clamp(34px, 4vw, 60px); font-weight: 800; letter-spacing: -.06em; opacity: .9; }
+    .league-head { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
+    .league-head h3 { margin: 0; font-size: 26px; }
+    .league-actions { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+    .show-more, .winner-link {
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      border-radius: 999px;
+      padding: 8px 12px;
+    }
+    .show-more:hover, .winner-link:hover { border-color: var(--accent); color: #e0f2fe; }
+    .winners { display: grid; gap: 8px; align-content: start; }
+    .winner-row {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 10px;
+      align-items: center;
+      color: var(--text);
+      text-decoration: none;
+      background: rgba(15, 23, 42, .72);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 9px 10px;
+    }
+    .winner-row:hover { border-color: var(--accent); }
+    .place {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: inline-grid;
+      place-items: center;
+      font-weight: 800;
+      color: #020617;
+      border: 2px solid rgba(255, 255, 255, .35);
+      box-shadow: 0 8px 18px rgba(2, 6, 23, .28);
+      flex: 0 0 auto;
+    }
+    .place-1 { background: linear-gradient(135deg, #fde68a, var(--gold)); }
+    .place-2 { background: linear-gradient(135deg, #f8fafc, var(--silver)); }
+    .place-3 { background: linear-gradient(135deg, #fdba74, var(--bronze)); color: #111827; }
     .directory {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 16px;
     }
     .team-card {
+      position: relative;
       display: grid;
       gap: 12px;
       text-decoration: none;
@@ -89,6 +165,7 @@
       min-height: 100%;
       box-shadow: 0 16px 36px var(--shadow);
     }
+    .team-card .place { position: absolute; top: 12px; right: 12px; z-index: 2; }
     .thumbs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
     .thumb {
       position: relative;
@@ -136,7 +213,7 @@
       text-align: center;
       background: rgba(17, 24, 39, .6);
     }
-    .detail { display: grid; gap: 18px; }
+    .league-view, .detail { display: grid; gap: 18px; }
     .back { justify-self: start; width: auto; }
     .hero {
       display: grid;
@@ -161,6 +238,7 @@
       box-shadow: 0 16px 36px var(--shadow);
     }
     .hero-copy h2 { margin: 0 0 6px; font-size: clamp(28px, 4vw, 48px); line-height: 1.05; letter-spacing: -.04em; }
+    .title-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
     .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin: 18px 0; }
     .fact { background: rgba(15, 23, 42, .75); border: 1px solid var(--line); border-radius: 12px; padding: 10px; }
     .fact strong { display: block; color: #f8fafc; font-size: 18px; }
@@ -195,14 +273,15 @@
       border-radius: 14px;
       background: #020617;
     }
-    .asset.video-feature {
-      grid-column: 1 / -1;
-      padding: 14px;
-    }
+    .asset.video-feature { grid-column: 1 / -1; padding: 14px; }
     .asset.video-feature h3 { font-size: 24px; }
     .asset.video-feature iframe { aspect-ratio: 16 / 9; }
     .asset.compact { display: grid; align-content: start; gap: 12px; }
     .asset.compact p { margin: 0; color: var(--muted); }
+    @media (max-width: 1080px) {
+      .league-grid { grid-template-columns: 1fr; }
+      .league-card { min-height: auto; }
+    }
     @media (max-width: 980px) {
       .topbar { grid-template-columns: 1fr; }
       nav.tabs { justify-content: start; }
@@ -214,6 +293,8 @@
       .directory { grid-template-columns: 1fr; }
       .asset-grid { grid-template-columns: 1fr; }
       .hero-media { grid-template-columns: 1fr; }
+      .winner-row { grid-template-columns: auto 1fr; }
+      .winner-row .code { grid-column: 2; }
     }
   </style>
 </head>
@@ -225,13 +306,13 @@
       <div id="summary" class="summary">Loading…</div>
     </div>
     <nav class="tabs" aria-label="Primary navigation">
-      <a id="directoryTab" class="tab active" href="#">Team directory</a>
+      <a id="directoryTab" class="tab active" href="#">Leagues</a>
       <a id="detailTab" class="tab" href="#" hidden>Team details</a>
     </nav>
   </div>
   <div class="filters" role="search">
-    <input id="q" type="search" placeholder="Search team, country, topic, keyword…" autocomplete="off" />
-    <select id="league"><option value="">All leagues</option></select>
+    <input id="q" type="search" placeholder="Search selected league by team, country, topic, keyword…" autocomplete="off" />
+    <select id="league"><option value="">Choose league</option></select>
     <select id="country"><option value="">All countries</option></select>
     <select id="topic"><option value="">All topics</option></select>
   </div>
@@ -252,15 +333,20 @@ const labels = {
   tdp_pdf_optional: 'Team description paper',
   engineering_journal_optional: 'Engineering journal'
 };
+const leagueOrder = ['Line', 'Maze', 'Simulation'];
 const detailOrder = ['poster', 'video', 'launching_video', 'bom', 'tdp_pdf_optional', 'engineering_journal_optional', 'source_code'];
 const topicOrder = ['team_photo', 'robot_photo', ...detailOrder];
-let teams = [], assets = [], assetsByTeam = new Map();
+let teams = [], assets = [], assetsByTeam = new Map(), winners = {}, winnerByTeam = new Map();
 
 function normalize(value) { return String(value ?? '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, ''); }
+function params() { return new URLSearchParams(location.hash.replace(/^#/, '')); }
+function selectedCode() { return params().get('team'); }
+function selectedLeague() { return params().get('league'); }
 function assetLabel(asset) { return labels[asset.artifact] || asset.artifact.replaceAll('_', ' '); }
 function isPublished(asset) { return asset.status === 'ok' && asset.consent === 'Agree' && asset.publishable && Boolean(asset.preview_url || asset.view_url || asset.download_url); }
 function visibleAsset(asset) { return isPublished(asset) && !asset.artifact.endsWith('_thumbnail'); }
 function teamAssets(team) { return assetsByTeam.get(team.team_code) || []; }
+function leagueTeams(league) { return teams.filter(team => team.league === league); }
 function orderedAssets(list, order = topicOrder) {
   const weight = new Map(order.map((name, index) => [name, index]));
   return [...list].sort((a, b) => (weight.get(a.artifact) ?? 99) - (weight.get(b.artifact) ?? 99) || assetLabel(a).localeCompare(assetLabel(b)));
@@ -270,32 +356,38 @@ function thumbnailUrl(asset, size = 700) {
   return `https://drive.google.com/thumbnail?id=${encodeURIComponent(asset.drive_file_id)}&sz=w${size}`;
 }
 function primaryImage(team, artifact) { return teamAssets(team).find(asset => asset.artifact === artifact && isPublished(asset)); }
-function topicLabels(team) {
-  return orderedAssets(teamAssets(team).filter(visibleAsset)).map(assetLabel);
-}
+function topicLabels(team) { return orderedAssets(teamAssets(team).filter(visibleAsset)).map(assetLabel); }
+function winnerInfo(teamOrCode) { return winnerByTeam.get(typeof teamOrCode === 'string' ? teamOrCode : teamOrCode.team_code); }
+function placeIcon(info) { return info ? `<span class="place place-${info.place}" title="${info.place}. place">${info.place}</span>` : ''; }
 function searchableText(team) {
+  const win = winnerInfo(team);
   return normalize([
     team.team_code,
     team.team_name,
     team.league,
     team.country,
+    win ? `${win.place} place winner top three podium` : '',
     ...topicLabels(team),
     ...teamAssets(team).filter(visibleAsset).map(asset => asset.artifact.replaceAll('_', ' '))
   ].join(' '));
-}
-function selectedCode() {
-  const params = new URLSearchParams(location.hash.replace(/^#/, ''));
-  return params.get('team');
 }
 function setSelected(code) {
   if (code) location.hash = `team=${encodeURIComponent(code)}`;
   else history.pushState('', document.title, location.pathname + location.search);
   render();
 }
+function setLeague(league) {
+  if (league) location.hash = `league=${encodeURIComponent(league)}`;
+  else history.pushState('', document.title, location.pathname + location.search);
+  render();
+}
 function selectedTeam() { return teams.find(team => team.team_code === selectedCode()); }
-function passes(team) {
+function activeLeague() {
+  const team = selectedTeam();
+  return team?.league || selectedLeague() || $('#league').value;
+}
+function passes(team, league) {
   const q = normalize($('#q').value).trim();
-  const league = $('#league').value;
   const country = $('#country').value;
   const topic = $('#topic').value;
   const list = teamAssets(team).filter(visibleAsset);
@@ -316,18 +408,61 @@ function renderTopics(team, limit = 5) {
   const extra = names.length - shown.length;
   return `<div class="topics">${shown.map(name => `<span class="topic">${esc(name)}</span>`).join('')}${extra > 0 ? `<span class="topic">+${extra} more</span>` : ''}</div>`;
 }
-function renderDirectory() {
-  const visible = teams.filter(passes);
+function renderTeamCard(team) {
+  const win = winnerInfo(team);
+  return `<a class="team-card card${win ? ' winner' : ''}" href="#team=${encodeURIComponent(team.team_code)}" aria-label="Open ${esc(team.team_name)}">
+    ${placeIcon(win)}
+    <div class="thumbs">${renderThumb(team, 'team_photo', 'Team')}${renderThumb(team, 'robot_photo', 'Robot')}</div>
+    <div class="team-title"><div><h2>${esc(team.team_name)}</h2><div class="muted">${esc(team.league)} · ${esc(team.country)}</div></div><span class="code">${esc(team.team_code)}</span></div>
+    ${renderTopics(team)}
+  </a>`;
+}
+function leagueStats(league) {
+  const t = leagueTeams(league);
+  const resources = t.reduce((sum, team) => sum + teamAssets(team).filter(visibleAsset).length, 0);
+  return { teams: t.length, resources };
+}
+function renderWinnerRow(entry) {
+  return `<a class="winner-row" href="#team=${encodeURIComponent(entry.team_code)}">${placeIcon(entry)}<span>${esc(entry.team_name)}</span><span class="code">${esc(entry.team_code)}</span></a>`;
+}
+function renderLanding() {
+  $('#league').value = '';
   $('#directoryTab').classList.add('active');
+  $('#directoryTab').textContent = 'Leagues';
+  $('#directoryTab').href = '#';
   $('#detailTab').hidden = true;
   $('#detailTab').classList.remove('active');
-  $('#summary').textContent = `${visible.length}/${teams.length} teams · ${assets.filter(visibleAsset).length} published resources`;
-  $('#main').innerHTML = visible.length ? `<section class="directory">${visible.map(team => `
-    <a class="team-card card" href="#team=${encodeURIComponent(team.team_code)}" aria-label="Open ${esc(team.team_name)}">
-      <div class="thumbs">${renderThumb(team, 'team_photo', 'Team')}${renderThumb(team, 'robot_photo', 'Robot')}</div>
-      <div class="team-title"><div><h2>${esc(team.team_name)}</h2><div class="muted">${esc(team.league)} · ${esc(team.country)}</div></div><span class="code">${esc(team.team_code)}</span></div>
-      ${renderTopics(team)}
-    </a>`).join('')}</section>` : '<section class="empty">No teams match the current search.</section>';
+  $('#summary').textContent = `Choose a league · ${leagueOrder.length} leagues · ${Object.values(winners).flat().length} highlighted teams`;
+  $('#main').innerHTML = `<section class="landing">
+    <div><h2>Choose a league</h2><div class="muted">Top teams are shown as a preview. Open a league to browse and search all published teams in that league.</div></div>
+    <section class="league-grid">${leagueOrder.map(league => {
+      const stats = leagueStats(league);
+      const leagueWinners = winners[league] || [];
+      return `<article class="league-card">
+        <div class="league-art"><span>${esc(league)}</span></div>
+        <div class="league-head"><div><h3>${esc(league)}</h3><div class="muted">${stats.teams} teams · ${stats.resources} published resources</div></div></div>
+        <div class="winners"><strong>Top 3 ${esc(league)}</strong>${leagueWinners.map(renderWinnerRow).join('')}</div>
+        <div class="league-actions"><span class="muted">Images can be added later.</span><a class="show-more" href="#league=${encodeURIComponent(league)}">Show more</a></div>
+      </article>`;
+    }).join('')}</section>
+  </section>`;
+}
+function renderLeague(league) {
+  $('#league').value = league;
+  $('#directoryTab').classList.add('active');
+  $('#directoryTab').textContent = `${league} teams`;
+  $('#directoryTab').href = `#league=${encodeURIComponent(league)}`;
+  $('#detailTab').hidden = true;
+  $('#detailTab').classList.remove('active');
+  const all = leagueTeams(league);
+  const visible = all.filter(team => passes(team, league));
+  const resourceCount = visible.reduce((sum, team) => sum + teamAssets(team).filter(visibleAsset).length, 0);
+  $('#summary').textContent = `${visible.length}/${all.length} ${league} teams · ${resourceCount} published resources`;
+  $('#main').innerHTML = `<section class="league-view">
+    <button class="back" type="button" onclick="setLeague('')">Back to league selection</button>
+    <div><h2>${esc(league)} teams</h2><div class="muted">Search and filter published team documents within this league.</div></div>
+    ${visible.length ? `<section class="directory">${visible.map(renderTeamCard).join('')}</section>` : '<section class="empty">No teams match the current search.</section>'}
+  </section>`;
 }
 function renderAsset(asset) {
   const title = assetLabel(asset);
@@ -341,20 +476,24 @@ function renderAsset(asset) {
 function renderDetail(team) {
   const list = orderedAssets(teamAssets(team).filter(visibleAsset), detailOrder).filter(asset => detailOrder.includes(asset.artifact));
   const topics = orderedAssets(teamAssets(team).filter(visibleAsset));
+  const win = winnerInfo(team);
+  $('#league').value = team.league;
   $('#directoryTab').classList.remove('active');
+  $('#directoryTab').textContent = `${team.league} teams`;
+  $('#directoryTab').href = `#league=${encodeURIComponent(team.league)}`;
   $('#detailTab').hidden = false;
   $('#detailTab').classList.add('active');
   $('#detailTab').textContent = `${team.team_code} details`;
   $('#detailTab').href = `#team=${encodeURIComponent(team.team_code)}`;
   $('#summary').textContent = `${team.team_name} · ${team.league} · ${team.country}`;
   $('#main').innerHTML = `<section class="detail">
-    <button class="back" type="button" onclick="setSelected('')">Back to team directory</button>
+    <button class="back" type="button" onclick="setLeague('${esc(team.league)}')">Back to ${esc(team.league)} teams</button>
     <section class="hero">
       <div class="hero-media">${renderThumb(team, 'team_photo', 'Team photo')}${renderThumb(team, 'robot_photo', 'Robot photo')}</div>
       <div class="hero-copy">
-        <div class="code">${esc(team.team_code)}</div>
+        <div class="title-row">${placeIcon(win)}<div class="code">${esc(team.team_code)}</div></div>
         <h2>${esc(team.team_name)}</h2>
-        <div class="muted">${esc(team.league)} league · ${esc(team.country)}</div>
+        <div class="muted">${esc(team.league)} league · ${esc(team.country)}${win ? ` · ${win.place}. place` : ''}</div>
         <div class="facts"><div class="fact"><span class="muted">Published resources</span><strong>${list.length}</strong></div><div class="fact"><span class="muted">Topics</span><strong>${topics.length}</strong></div><div class="fact"><span class="muted">Country</span><strong>${esc(team.country || 'Unknown')}</strong></div></div>
         <div class="quicklinks">${list.map(asset => `<a href="#asset-${esc(asset.artifact)}">${esc(assetLabel(asset))}</a>`).join('') || '<span class="muted">No published resources configured for this team.</span>'}</div>
       </div>
@@ -365,15 +504,21 @@ function renderDetail(team) {
 }
 function render() {
   const team = selectedTeam();
+  const league = selectedLeague();
   if (selectedCode() && team) renderDetail(team);
-  else renderDirectory();
+  else if (league) renderLeague(league);
+  else renderLanding();
 }
 async function init() {
-  const [teamData, assetData] = await Promise.all([
+  const [teamData, assetData, winnersData] = await Promise.all([
     fetch('data/teams.json').then(resp => resp.json()),
-    fetch('data/assets.json').then(resp => resp.json())
+    fetch('data/assets.json').then(resp => resp.json()),
+    fetch('data/winners.json').then(resp => resp.json())
   ]);
   teams = teamData.teams;
+  winners = winnersData.leagues || {};
+  winnerByTeam = new Map();
+  for (const [league, entries] of Object.entries(winners)) for (const entry of entries) winnerByTeam.set(entry.team_code, { ...entry, league });
   const teamByCode = new Map(teams.map(team => [team.team_code, team]));
   assets = assetData.assets.filter(asset => isPublished(asset) && !(teamByCode.get(asset.team_code)?.league === 'Simulation' && (asset.artifact === 'launching_video' || asset.artifact === 'launching_video_thumbnail')));
   assetsByTeam = new Map();
@@ -381,10 +526,11 @@ async function init() {
     if (!assetsByTeam.has(asset.team_code)) assetsByTeam.set(asset.team_code, []);
     assetsByTeam.get(asset.team_code).push(asset);
   }
-  for (const league of [...new Set(teams.map(team => team.league))].sort()) $('#league').insertAdjacentHTML('beforeend', `<option>${esc(league)}</option>`);
+  for (const league of leagueOrder.filter(league => teams.some(team => team.league === league))) $('#league').insertAdjacentHTML('beforeend', `<option>${esc(league)}</option>`);
   for (const country of [...new Set(teams.map(team => team.country))].filter(Boolean).sort()) $('#country').insertAdjacentHTML('beforeend', `<option>${esc(country)}</option>`);
   for (const artifact of topicOrder.filter(artifact => assets.some(asset => asset.artifact === artifact))) $('#topic').insertAdjacentHTML('beforeend', `<option value="${esc(artifact)}">${esc(labels[artifact])}</option>`);
-  ['q', 'league', 'country', 'topic'].forEach(id => $('#' + id).addEventListener('input', () => { if (selectedCode()) setSelected(''); else render(); }));
+  $('#league').addEventListener('input', () => { $('#q').value = ''; setLeague($('#league').value); });
+  ['q', 'country', 'topic'].forEach(id => $('#' + id).addEventListener('input', () => { const team = selectedTeam(); if (team) setLeague(team.league); else render(); }));
   window.addEventListener('hashchange', render);
   render();
 }
