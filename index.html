@@ -177,22 +177,30 @@
       text-decoration: none;
     }
     .section-title { margin: 10px 0 0; font-size: 24px; }
-    .asset-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+    .asset-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; align-items: start; }
     .asset {
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 18px;
-      padding: 14px;
+      padding: 12px;
       min-width: 0;
     }
-    .asset h3 { margin: 0 0 10px; font-size: 20px; }
+    .asset h3 { margin: 0 0 10px; font-size: 18px; }
     .asset iframe {
+      display: block;
       width: 100%;
-      height: min(72vh, 620px);
+      aspect-ratio: 16 / 9;
+      height: auto;
       border: 1px solid var(--line);
       border-radius: 14px;
       background: #020617;
     }
+    .asset.video-feature {
+      grid-column: 1 / -1;
+      padding: 14px;
+    }
+    .asset.video-feature h3 { font-size: 24px; }
+    .asset.video-feature iframe { aspect-ratio: 16 / 9; }
     .asset.compact { display: grid; align-content: start; gap: 12px; }
     .asset.compact p { margin: 0; color: var(--muted); }
     @media (max-width: 980px) {
@@ -328,7 +336,7 @@ function renderAsset(asset) {
   if (asset.artifact === 'source_code') {
     return `<article id="asset-${esc(asset.artifact)}" class="asset compact"><h3>${esc(title)}</h3><p>Download or inspect the published source archive in Drive.</p><p><a class="open-link" href="${esc(openUrl)}" target="_blank" rel="noopener">Open ${esc(title)}</a></p></article>`;
   }
-  return `<article id="asset-${esc(asset.artifact)}" class="asset"><h3>${esc(title)}</h3><iframe src="${esc(url)}" title="${esc(title)} for ${esc(asset.team_code)}" loading="lazy" allow="autoplay; fullscreen"></iframe><p><a class="open-link" href="${esc(openUrl)}" target="_blank" rel="noopener">Open in Drive</a></p></article>`;
+  return `<article id="asset-${esc(asset.artifact)}" class="asset${asset.artifact === 'video' ? ' video-feature' : ''}"><h3>${esc(title)}</h3><iframe src="${esc(url)}" title="${esc(title)} for ${esc(asset.team_code)}" loading="lazy" allow="autoplay; fullscreen"></iframe><p><a class="open-link" href="${esc(openUrl)}" target="_blank" rel="noopener">Open in Drive</a></p></article>`;
 }
 function renderDetail(team) {
   const list = orderedAssets(teamAssets(team).filter(visibleAsset), detailOrder).filter(asset => detailOrder.includes(asset.artifact));
@@ -366,7 +374,8 @@ async function init() {
     fetch('data/assets.json').then(resp => resp.json())
   ]);
   teams = teamData.teams;
-  assets = assetData.assets.filter(isPublished);
+  const teamByCode = new Map(teams.map(team => [team.team_code, team]));
+  assets = assetData.assets.filter(asset => isPublished(asset) && !(teamByCode.get(asset.team_code)?.league === 'Simulation' && (asset.artifact === 'launching_video' || asset.artifact === 'launching_video_thumbnail')));
   assetsByTeam = new Map();
   for (const asset of assets) {
     if (!assetsByTeam.has(asset.team_code)) assetsByTeam.set(asset.team_code, []);

@@ -815,7 +815,7 @@
     {
       "team_code": "S81",
       "team_name": "Anyang",
-      "league": "Erebus",
+      "league": "Simulation",
       "country": "Republic of Korea",
       "consent": {
         "tdp": "Agree",
@@ -829,7 +829,7 @@
     {
       "team_code": "S82",
       "team_name": "Black Radiators",
-      "league": "Erebus",
+      "league": "Simulation",
       "country": "Italy",
       "consent": {
         "tdp": "Agree",
@@ -843,7 +843,7 @@
     {
       "team_code": "S83",
       "team_name": "CAETI UAI",
-      "league": "Erebus",
+      "league": "Simulation",
       "country": "Argentina",
       "consent": {
         "tdp": "Agree",
@@ -857,7 +857,7 @@
     {
       "team_code": "S84",
       "team_name": "Danesh Auriga",
-      "league": "Erebus",
+      "league": "Simulation",
       "country": "Iran",
       "consent": {
         "tdp": "Agree",
@@ -871,7 +871,7 @@
     {
       "team_code": "S85",
       "team_name": "Kavosh_Simul",
-      "league": "Erebus",
+      "league": "Simulation",
       "country": "Canada",
       "consent": {
         "tdp": "Agree",
@@ -885,7 +885,7 @@
     {
       "team_code": "S86",
       "team_name": "Labyrinthos",
-      "league": "Erebus",
+      "league": "Simulation",
       "country": "Taiwan",
       "consent": {
         "tdp": "Agree",
@@ -899,7 +899,7 @@
     {
       "team_code": "S87",
       "team_name": "OGEE",
-      "league": "Erebus",
+      "league": "Simulation",
       "country": "Türkiye",
       "consent": {
         "tdp": "Agree",
@@ -913,7 +913,7 @@
     {
       "team_code": "S88",
       "team_name": "Robomanics",
-      "league": "Erebus",
+      "league": "Simulation",
       "country": "Egypt",
       "consent": {
         "tdp": "Agree",
@@ -927,7 +927,7 @@
     {
       "team_code": "S89",
       "team_name": "Robotics Barcelinhos",
-      "league": "Erebus",
+      "league": "Simulation",
       "country": "Portugal",
       "consent": {
         "tdp": "Agree",
@@ -941,7 +941,7 @@
     {
       "team_code": "S90",
       "team_name": "Speshari",
-      "league": "Erebus",
+      "league": "Simulation",
       "country": "Slovakia",
       "consent": {
         "tdp": "Agree",
@@ -955,7 +955,7 @@
     {
       "team_code": "S91",
       "team_name": "UNIQA CRO Team",
-      "league": "Erebus",
+      "league": "Simulation",
       "country": "Croatia",
       "consent": {
         "tdp": "Agree",
@@ -969,7 +969,7 @@
     {
       "team_code": "S92",
       "team_name": "learnsteam",
-      "league": "Erebus",
+      "league": "Simulation",
       "country": "Republic of Korea",
       "consent": {
         "tdp": "Agree",
@@ -983,7 +983,7 @@
     {
       "team_code": "S93",
       "team_name": "Águabots",
-      "league": "Erebus",
+      "league": "Simulation",
       "country": "Brazil",
       "consent": {
         "tdp": "Agree",

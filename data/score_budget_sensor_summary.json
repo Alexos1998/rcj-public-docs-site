@@ -213,7 +213,7 @@
       "metric_p90": 6.0
     },
     {
-      "league_scope": "Erebus",
+      "league_scope": "Simulation",
       "metric": "robot_cost_usd_priced_rows",
       "n": 0,
       "pearson_vs_score_percentile": null,
@@ -223,7 +223,7 @@
       "metric_p90": null
     },
     {
-      "league_scope": "Erebus",
+      "league_scope": "Simulation",
       "metric": "sensor_count_estimated",
       "n": 13,
       "pearson_vs_score_percentile": null,
@@ -233,7 +233,7 @@
       "metric_p90": 0.0
     },
     {
-      "league_scope": "Erebus",
+      "league_scope": "Simulation",
       "metric": "sensor_weighted_points",
       "n": 13,
       "pearson_vs_score_percentile": null,
@@ -243,7 +243,7 @@
       "metric_p90": 0.0
     },
     {
-      "league_scope": "Erebus",
+      "league_scope": "Simulation",
       "metric": "sensor_type_count",
       "n": 13,
       "pearson_vs_score_percentile": null,
@@ -253,7 +253,7 @@
       "metric_p90": 0.0
     },
     {
-      "league_scope": "Erebus",
+      "league_scope": "Simulation",
       "metric": "sensor_model_count",
       "n": 13,
       "pearson_vs_score_percentile": null,

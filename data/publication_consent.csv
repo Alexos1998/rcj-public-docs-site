@@ -57,16 +57,16 @@ M68,Theseus,Maze,Canada,6a25ee91105b411f7b0654e1,teams/M68_Theseus,teams/M68_The
 M69,Top Class,Maze,Republic of Korea,6a25ee91105b411f7b0654e3,teams/M69_Top Class,teams/M69_Top Class/poster.pdf,ok,8620512,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
 M70,Tuton,Maze,Japan,6a25ee91105b411f7b0654e5,teams/M70_Tuton,teams/M70_Tuton/poster.pdf,ok,2729825,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
 M71,VAST,Maze,India,6a25ee91105b411f7b0654e7,teams/M71_VAST,teams/M71_VAST/poster.pdf,ok,2721608,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
-S81,Anyang,Erebus,Republic of Korea,6a25ee91105b411f7b0654e9,teams/S81_Anyang,teams/S81_Anyang/poster.pdf,ok,6208383,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
-S82,Black Radiators,Erebus,Italy,6a25ee91105b411f7b0654eb,teams/S82_Black Radiators,teams/S82_Black Radiators/poster.pdf,ok,8322258,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
-S83,CAETI UAI,Erebus,Argentina,6a25ee91105b411f7b0654ed,teams/S83_CAETI UAI,teams/S83_CAETI UAI/poster.pdf,ok,1718168,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
-S84,Danesh Auriga,Erebus,Iran,6a25ee91105b411f7b0654ef,teams/S84_Danesh Auriga,teams/S84_Danesh Auriga/poster.pdf,ok,6398552,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
-S85,Kavosh_Simul,Erebus,Canada,6a25ee91105b411f7b0654f1,teams/S85_Kavosh_Simul,teams/S85_Kavosh_Simul/poster.pdf,ok,2216213,False,Agree,Agree,Agree,Agree,Disagree,partial_or_declined,Source Code,,,True,False
-S86,Labyrinthos,Erebus,Taiwan,6a25ee91105b411f7b0654f3,teams/S86_Labyrinthos,teams/S86_Labyrinthos/poster.pdf,ok,16293250,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
-S87,OGEE,Erebus,Türkiye,6a25ee91105b411f7b0654f5,teams/S87_OGEE,teams/S87_OGEE/poster.pdf,ok,645208,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
-S88,Robomanics,Erebus,Egypt,6a25ee91105b411f7b0654f7,teams/S88_Robomanics,teams/S88_Robomanics/poster.pdf,ok,19103478,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
-S89,Robotics Barcelinhos,Erebus,Portugal,6a25ee91105b411f7b0654f9,teams/S89_Robotics Barcelinhos,teams/S89_Robotics Barcelinhos/poster.pdf,ok,221524,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
-S90,Speshari,Erebus,Slovakia,6a25ee91105b411f7b0654fb,teams/S90_Speshari,teams/S90_Speshari/poster.pdf,ok,10958022,False,Agree,Agree,Agree,Agree,Disagree,partial_or_declined,Source Code,,,True,False
-S91,UNIQA CRO Team,Erebus,Croatia,6a25ee91105b411f7b0654fd,teams/S91_UNIQA CRO Team,teams/S91_UNIQA CRO Team/poster.pdf,ok,3439830,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
-S92,learnsteam,Erebus,Republic of Korea,6a25ee91105b411f7b0654ff,teams/S92_learnsteam,teams/S92_learnsteam/poster.pdf,ok,148191,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
-S93,Águabots,Erebus,Brazil,6a25ee91105b411f7b065501,teams/S93_Águabots,teams/S93_Águabots/poster.pdf,ok,6227325,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S81,Anyang,Simulation,Republic of Korea,6a25ee91105b411f7b0654e9,teams/S81_Anyang,teams/S81_Anyang/poster.pdf,ok,6208383,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S82,Black Radiators,Simulation,Italy,6a25ee91105b411f7b0654eb,teams/S82_Black Radiators,teams/S82_Black Radiators/poster.pdf,ok,8322258,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S83,CAETI UAI,Simulation,Argentina,6a25ee91105b411f7b0654ed,teams/S83_CAETI UAI,teams/S83_CAETI UAI/poster.pdf,ok,1718168,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S84,Danesh Auriga,Simulation,Iran,6a25ee91105b411f7b0654ef,teams/S84_Danesh Auriga,teams/S84_Danesh Auriga/poster.pdf,ok,6398552,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S85,Kavosh_Simul,Simulation,Canada,6a25ee91105b411f7b0654f1,teams/S85_Kavosh_Simul,teams/S85_Kavosh_Simul/poster.pdf,ok,2216213,False,Agree,Agree,Agree,Agree,Disagree,partial_or_declined,Source Code,,,True,False
+S86,Labyrinthos,Simulation,Taiwan,6a25ee91105b411f7b0654f3,teams/S86_Labyrinthos,teams/S86_Labyrinthos/poster.pdf,ok,16293250,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S87,OGEE,Simulation,Türkiye,6a25ee91105b411f7b0654f5,teams/S87_OGEE,teams/S87_OGEE/poster.pdf,ok,645208,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S88,Robomanics,Simulation,Egypt,6a25ee91105b411f7b0654f7,teams/S88_Robomanics,teams/S88_Robomanics/poster.pdf,ok,19103478,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S89,Robotics Barcelinhos,Simulation,Portugal,6a25ee91105b411f7b0654f9,teams/S89_Robotics Barcelinhos,teams/S89_Robotics Barcelinhos/poster.pdf,ok,221524,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S90,Speshari,Simulation,Slovakia,6a25ee91105b411f7b0654fb,teams/S90_Speshari,teams/S90_Speshari/poster.pdf,ok,10958022,False,Agree,Agree,Agree,Agree,Disagree,partial_or_declined,Source Code,,,True,False
+S91,UNIQA CRO Team,Simulation,Croatia,6a25ee91105b411f7b0654fd,teams/S91_UNIQA CRO Team,teams/S91_UNIQA CRO Team/poster.pdf,ok,3439830,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S92,learnsteam,Simulation,Republic of Korea,6a25ee91105b411f7b0654ff,teams/S92_learnsteam,teams/S92_learnsteam/poster.pdf,ok,148191,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
+S93,Águabots,Simulation,Brazil,6a25ee91105b411f7b065501,teams/S93_Águabots,teams/S93_Águabots/poster.pdf,ok,6227325,False,Agree,Agree,Agree,Agree,Agree,all_agree,,,,True,True
