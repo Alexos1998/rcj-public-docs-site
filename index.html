@@ -70,10 +70,11 @@
     .tab.active { border-color: var(--accent); color: #e0f2fe; background: rgba(56, 189, 248, .13); }
     .filters {
       display: grid;
-      grid-template-columns: minmax(240px, 2fr) repeat(3, minmax(150px, 1fr));
+      grid-template-columns: minmax(240px, 2fr) repeat(2, minmax(150px, 1fr));
       gap: 10px;
       padding: 0 20px 16px;
     }
+    .filters[hidden] { display: none; }
     main { padding: 20px; }
     .landing { display: grid; gap: 22px; }
     .landing h2, .league-view h2 { margin: 0; font-size: clamp(24px, 3vw, 38px); letter-spacing: -.03em; }
@@ -310,9 +311,8 @@
       <a id="detailTab" class="tab" href="#" hidden>Team details</a>
     </nav>
   </div>
-  <div class="filters" role="search">
-    <input id="q" type="search" placeholder="Search selected league by team, country, topic, keyword…" autocomplete="off" />
-    <select id="league"><option value="">Choose league</option></select>
+  <div id="filters" class="filters" role="search" hidden>
+    <input id="q" type="search" placeholder="Search this league by team, country, topic, keyword…" autocomplete="off" />
     <select id="country"><option value="">All countries</option></select>
     <select id="topic"><option value="">All topics</option></select>
   </div>
@@ -382,10 +382,6 @@ function setLeague(league) {
   render();
 }
 function selectedTeam() { return teams.find(team => team.team_code === selectedCode()); }
-function activeLeague() {
-  const team = selectedTeam();
-  return team?.league || selectedLeague() || $('#league').value;
-}
 function passes(team, league) {
   const q = normalize($('#q').value).trim();
   const country = $('#country').value;
@@ -425,8 +421,10 @@ function leagueStats(league) {
 function renderWinnerRow(entry) {
   return `<a class="winner-row" href="#team=${encodeURIComponent(entry.team_code)}">${placeIcon(entry)}<span>${esc(entry.team_name)}</span><span class="code">${esc(entry.team_code)}</span></a>`;
 }
+function clearFilters() { $('#q').value = ''; $('#country').value = ''; $('#topic').value = ''; }
 function renderLanding() {
-  $('#league').value = '';
+  clearFilters();
+  $('#filters').hidden = true;
   $('#directoryTab').classList.add('active');
   $('#directoryTab').textContent = 'Leagues';
   $('#directoryTab').href = '#';
@@ -448,7 +446,7 @@ function renderLanding() {
   </section>`;
 }
 function renderLeague(league) {
-  $('#league').value = league;
+  $('#filters').hidden = false;
   $('#directoryTab').classList.add('active');
   $('#directoryTab').textContent = `${league} teams`;
   $('#directoryTab').href = `#league=${encodeURIComponent(league)}`;
@@ -477,7 +475,7 @@ function renderDetail(team) {
   const list = orderedAssets(teamAssets(team).filter(visibleAsset), detailOrder).filter(asset => detailOrder.includes(asset.artifact));
   const topics = orderedAssets(teamAssets(team).filter(visibleAsset));
   const win = winnerInfo(team);
-  $('#league').value = team.league;
+  $('#filters').hidden = true;
   $('#directoryTab').classList.remove('active');
   $('#directoryTab').textContent = `${team.league} teams`;
   $('#directoryTab').href = `#league=${encodeURIComponent(team.league)}`;
@@ -526,11 +524,9 @@ async function init() {
     if (!assetsByTeam.has(asset.team_code)) assetsByTeam.set(asset.team_code, []);
     assetsByTeam.get(asset.team_code).push(asset);
   }
-  for (const league of leagueOrder.filter(league => teams.some(team => team.league === league))) $('#league').insertAdjacentHTML('beforeend', `<option>${esc(league)}</option>`);
   for (const country of [...new Set(teams.map(team => team.country))].filter(Boolean).sort()) $('#country').insertAdjacentHTML('beforeend', `<option>${esc(country)}</option>`);
   for (const artifact of topicOrder.filter(artifact => assets.some(asset => asset.artifact === artifact))) $('#topic').insertAdjacentHTML('beforeend', `<option value="${esc(artifact)}">${esc(labels[artifact])}</option>`);
-  $('#league').addEventListener('input', () => { $('#q').value = ''; setLeague($('#league').value); });
-  ['q', 'country', 'topic'].forEach(id => $('#' + id).addEventListener('input', () => { const team = selectedTeam(); if (team) setLeague(team.league); else render(); }));
+  ['q', 'country', 'topic'].forEach(id => $('#' + id).addEventListener('input', () => { const team = selectedTeam(); if (team) setLeague(team.league); else if (selectedLeague()) render(); }));
   window.addEventListener('hashchange', render);
   render();
 }
