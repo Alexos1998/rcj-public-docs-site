@@ -5,6 +5,19 @@
       "team_name": "Alpha",
       "league": "Line",
       "country": "Mexico",
+      "keywords": [
+        "mathematics",
+        "AI model",
+        "mask",
+        "weights",
+        "binarization",
+        "Gaussian",
+        "Linux",
+        "Colab",
+        "serial",
+        "I2C"
+      ],
+      "introduction": "The robot developed is primarily designed for line following with a high level of precision and stability, aiming for outstanding performance in track tests. To achieve this, a Raspberry Pi 5 was integrated as the central processing unit, responsible for decision-making, data analysis, and overall coordination of the electronic systems. It acts as the master controller for the Teensy, which manages the robot's mechanical movements.\n\nThe motion control system is based on two TB6612FNG H-bridges, enabling precise speed and direction control. A distinguishing feature of our robot is its navigation system, which exhibits superior autonomous intelligence compared to typical line followers. Another key aspect is the use of different hardware components, allowing for the assignment of tasks based on the most suitable role for each component, whether sensors or actuators.",
       "consent": {
         "tdp": "Agree",
         "video": "Disagree",
@@ -19,6 +32,14 @@
       "team_name": "Angora Goasbock",
       "league": "Line",
       "country": "Austria",
+      "keywords": [
+        "sensor fusion approach",
+        "C++ programming",
+        "mechanum wheels",
+        "universal movement",
+        "3D printing"
+      ],
+      "introduction": "Angora Goasbock, is a RoboCupJunior Rescue Line team from HTL Zeltweg, Austria. Our team consists of three students who are responsible for programming, robot design, construction, and project management.\n\nA fully custom robot was built around a 3D‑printed chassis and an Arduino‑based control system. The robot is required to follow a black line reliably, avoid obstacles, and autonomously identify, collect, and sort victims—represented by silver and black spheres—inside the evacuation zone.\n\nMechanically, the robot is engineered to withstand competition‑specific loads while remaining lightweight, modular, and manufacturable via FDM/MSLA additive manufacturing. Generative Design and FEM‑based topology optimisation were used to create structurally efficient components such as the drivetrain body, lifting arm, and ball‑sorting assembly.\n\nOn the software side, the system integrates multiple sensors, including infrared line sensors, ToF distance sensors, and two camera systems (Pixy2 and ESP32‑CAM). Image‑processing algorithms enable object detection under varying lighting conditions, while optimised C++ code ensures real‑time performance on embedded hardware.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -33,6 +54,18 @@
       "team_name": "Antares",
       "league": "Line",
       "country": "Uruguay",
+      "keywords": [
+        "Micropython",
+        "EV3",
+        "Arduino",
+        "Visual Studio Code",
+        "Array",
+        "ev3dev",
+        "Shield",
+        "NANO",
+        "Color Sensor"
+      ],
+      "introduction": "This is our first time participating in RoboCup, so we have no prior\n\nexperience in this competition. Regarding the robot, we decided to use a\n\nQTR-8A (Arduino light sensor) connected to an Arduino Nano,\n\ncommunicating with an EV3.We also used Lego color sensors for green\n\ndetection, which we were also going to use for line following, but we\n\nrealized that the color change to infrared could freeze the program, so\n\nwe opted to change the method for line following.\n\nWe learned a lot through trial and error, constantly changing our ideas\n\nuntil we felt it could handle the challenge.\n\nNow, with this sensor, it receives more information about the line, which\n\nsignificantly improves its tracking. It's much more precise and offers\n\nmany advantages. It's more complex to prevent the robot from getting\n\nstuck, and it handles different challenges on the line better. We used four\n\nmotors, which operate synchronously, with the rear motors following their\n\nrespective front motors. The power supply was changed to an EV3\n\nbattery that provides a constant 9V. Inclined and declined planes are\n\nmuch easier to navigate with all four motors. We had this problem at the\n\nbeginning of the work for this competition and we worked to solve it,\n\ncoming to the conclusion that we needed four motors.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -47,6 +80,18 @@
       "team_name": "BioBrause",
       "league": "Line",
       "country": "Germany",
+      "keywords": [
+        "Raspberry Pi",
+        "Python",
+        "Computer Vision",
+        "AI / Neural Networks",
+        "Arduino",
+        "PCB Design",
+        "CAD",
+        "3D Printing",
+        "Fusion360"
+      ],
+      "introduction": "BioBrause is a RoboCupJunior Rescue Line robot designed to autonomously navigate complex competition environments, complete the rescue mission, and reliably operate under changing conditions. The robot follows the line, overcomes ramps, gaps, intersections, obstacles, and speed bumps, and is capable of locating, classifying, collecting, and evacuating victims in the rescue zone.\n\nThe robot combines custom-designed mechanical components, a Raspberry Pi based control system, multiple cameras, distance sensors, and a dedicated microcontroller for low-level hardware control. A modular software architecture separates high-level decision making from hardware interaction, making the system easier to test, maintain, and extend.\n\nWhat sets BioBrause apart is its error-aware design philosophy. Instead of assuming that sensors and movements are always correct, the software continuously evaluates possible uncertainties and failures. Navigation, victim detection, and rescue strategies are designed around the expectation that measurements can be inaccurate and that unexpected situations will occur. This allows the robot to detect problems, recover from mistakes, and continue operating without human intervention.\n\nExtensive testing and validation were used throughout development to improve reliability and robustness. By combining modular hardware, structured software, and advanced error handling, BioBrause achieves stable autonomous performance even in challenging and unpredictable competition scenarios.",
       "consent": {
         "tdp": "Agree",
         "video": "Disagree",
@@ -61,6 +106,19 @@
       "team_name": "Brainbots",
       "league": "Line",
       "country": "Brazil",
+      "keywords": [
+        "Computer Vision",
+        "Artificial Intelligence",
+        "Hailo-8",
+        "Raspberry Pi 5",
+        "Arduino Mega",
+        "OpenCV",
+        "Autonomous Navigation",
+        "Victim Detection",
+        "Bi-vectorial Navigation",
+        "Rescue Robotics"
+      ],
+      "introduction": "Our robot was developed for the RoboCupJunior Rescue Line competition and is built around a computer-vision architecture, where visual perception serves as the primary source of navigation and decision-making. Unlike traditional Rescue Line robots that rely heavily on dedicated line sensors, our system employs two cameras operating simultaneously: one for real-time line following and track analysis, and another for victim detection and evacuation-zone operations.\n\nThe robot uses a heterogeneous processing architecture consisting of an Arduino Mega for low-level control, sensor acquisition, and motor management, alongside a Raspberry Pi 5 equipped with a Hailo-8 AI accelerator for computer vision, artificial intelligence inference, and high-level decision-making. To improve navigation accuracy, we developed a bi-vectorial line-following system that combines information from near and far sections of the detected path, reducing premature steering corrections and improving performance in complex track layouts.\n\nVictim recognition is performed using a custom-trained AI model accelerated by the Hailo-8, enabling reliable real-time detection. The robot also incorporates a custom 3D-printed modular chassis, a dedicated rescue mechanism with independently controlled arms, and a custom electronics board for power distribution and system integration. The combination of computer vision, artificial intelligence, and modular engineering enables the robot to achieve robust autonomous navigation and efficient evacuation-zone operations while maintaining high reliability under competition conditions.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -75,6 +133,8 @@
       "team_name": "Bricks",
       "league": "Line",
       "country": "Republic of Korea",
+      "keywords": [],
+      "introduction": "Our team developed an autonomous rescue robot capable of real-time navigation and victim rescue in complex environments. The main objective of this project was to create a robot that could accurately follow lines, detect rescue zones, and safely transport victims while overcoming obstacles commonly found in rescue environments. Since disaster-response scenarios often involve unstable terrain, obstacles, and limited accessibility, the robot had to be both mechanically durable and computationally reliable. Unlike ordinary robots that focus only on movement, our robot was designed with both mobility and rescue capabilityin mind. The system combines stable hardware, sensor-based environmental recognition, and optimized software algorithms to perform rescue missions autonomously. In particular, the robot was developed to satisfy competition requirements while maintaining practical performance in challenging situations To improve mobility and reduce unnecessary weight, the robot uses medium motors instead of large motors, making the entire structure lighter without significantly sacrificing performance. By reducing total weight, the robot achieved better maneuverability and efficiency during long operations. At the same time, a gear reduction system was implemented to compensate for the lower motor power and ensure sufficient torque for lifting victims and climbing slopes. The robot uses color sensors and a gyro sensorto recognize environmental conditions and maintain driving stability. Color sensors allow the robot to detect lines and identify rescue areas, while the gyro sensor continuously monitors the robot’s tilt and angle. Through this system, the robot can adjust speed and maintain balance when climbing slopes or moving across uneven terrain. Additionally, a lifting mechanism powered by medium motors enables the robot to pick up and transport victims safely.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -89,6 +149,11 @@
       "team_name": "Chien-Tai && Min-Jen Joint Team",
       "league": "Line",
       "country": "Taiwan",
+      "keywords": [
+        "X4RCU",
+        "PID"
+      ],
+      "introduction": "Our robot is participating in the 'Rescue Line sub-league' competition,\n\nand this year marks our team's debut.\n\nThe key to successfully launching and operating this robot lies in\n\ncomputer vision and artificial intelligence, which enable it to accomplish\n\nall the required tasks throughout the event.\n\nAmong these technologies, computer vision is particularly critical; its\n\nfunctions include line tracking, intersection recognition, and victim\n\nidentification.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -103,6 +168,13 @@
       "team_name": "DMS-Kaede",
       "league": "Line",
       "country": "Japan",
+      "keywords": [
+        "Arduino",
+        "Open MV",
+        "Photo sensor",
+        "Color sensor"
+      ],
+      "introduction": "This robot is equipped with an arm for retrieving balls. It also has suspension installed at the rear to help it navigate steps and other obstacles more easily.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -117,6 +189,19 @@
       "team_name": "Dry Lettuce",
       "league": "Line",
       "country": "Australia",
+      "keywords": [
+        "Custom PCB",
+        "ROS2",
+        "Python",
+        "C++",
+        "Raspberry Pi",
+        "STM32",
+        "Machine learning",
+        "SLAM",
+        "Vision inference",
+        "Github"
+      ],
+      "introduction": "Our robot is four-wheel-drive and custom built around a tightly integrated hardware and software stack. All electronics, apart from the Raspberry Pi and most sensors, are consolidated onto a single custom PCB, which houses an STM32 microcontroller responsible for driving motors, servos, and all PWM driven components. This approach reduces wiring complexity and improves overall signal integrity.\n\nAccurate locomotion is achieved through a closed-loop feedback control system that combines data from the onboard IMU and motor encoders, allowing for precise and consistent movement which is especially useful during the rescue section of the course. The four-wheel-drive configuration provides more traction and stability across inclines, debris fields, and speed bumps.\n\nThe robot uses the ROS2 framework, allowing modular, maintainable software architecture and seamless integration between subsystems. A forward-facing camera paired with a custom-trained machine learning model enables the detection of rescue victims, while Simultaneous Localisation and Mapping (SLAM) allow the robot to build and navigate a map of the rescue zone.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -131,6 +216,13 @@
       "team_name": "FATEN",
       "league": "Line",
       "country": "USA",
+      "keywords": [
+        "Rapid Prototyping",
+        "K230D",
+        "State Machine",
+        "Asymmetric PID"
+      ],
+      "introduction": "FATEN is a RoboCupJunior Rescue Line robot designed with reliability as the main goal. The robot was not designed only to complete one good run. It was designed to make the same behavior repeat even when the field condition changes. For this reason, our design focused on three main ideas: stable contact with the ground, separated sensing systems, and modular decision making.\n\nMechanically, the robot uses a flexible enhanced-acrylic suspension plate. This suspension lets the wheels keep contact with the field even when the ground height changes. The robot is about 140 mm by 180 mm and weighs about 800 g, with mainly laser-cut acrylic parts. It uses four STS3032 serial servos, custom 3D-printed wheels with silicone molded tires, and an arm mechanism that can pick up and hold two victims.\n\nElectronically and computationally, the robot is separated into several clear roles. The Teensy 4.1 handles the main control, motor output, state logic, mapping, and sensors. The XIAO ESP32-S3 with an OV2640 camera handles line and feature detection. The K230D runs a YOLOv8n model for victim detection in the evacuation zone. This separation makes debugging easier because each controller has a clear responsibility.\n\nTesting showed that the robot could run line following and intersection behavior for 40 minutes continuously without a mistake, and the suspension could pass over a 60 mm height difference. The evacuation-zone AI system is still being improved, especially the ONNX to kmodel conversion process, but the current design gives a stable base for the 2026 competition.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -145,6 +237,17 @@
       "team_name": "Fusion Zero",
       "league": "Line",
       "country": "New Zealand",
+      "keywords": [
+        "Raspberry Pi 5",
+        "OpenCV",
+        "Python",
+        "custom PCB",
+        "AI victim detection",
+        "victim sorting",
+        "VL53L0X",
+        "BNO085 IMU"
+      ],
+      "introduction": "Fusion Zero’s 2026 robot is a compact RoboCupJunior Rescue Line robot designed around reliable sensing, modular software, and fast repairability. The robot uses a Raspberry Pi 5 as its main controller, with a Raspberry Pi Camera Module 3 Wide and Raspberry Pi AI Camera for visual line, colour, and evacuation-zone processing. Three VL53L0X time-of-flight sensors provide distance feedback for wall following, obstacle handling, and victim approach, while a BNO085 IMU gives yaw, pitch, and roll data for accurate turns and terrain awareness. The drive system uses four Pololu 380:1 micro metal gearmotors controlled through TB6612FNG motor drivers, powered by a 3S 18650 battery system.\n\nWhat sets the robot apart is its rescue-zone design. The robot uses a two-servo victim mechanism that can grab, store, sort, and release victims without being restricted to a specific collection order. This is supported by a compact single-servo dump mechanism, reducing mechanical complexity while keeping control over which victim is released. For victim detection, the robot combines a custom AI model with an additional reflection-based validation method: bright light patches on silver victims are used to double-check live-victim confidence and reduce false detections. A custom PCB, secure connectors, and modular software make the robot easier to debug, repair, and improve during competition.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -159,6 +262,17 @@
       "team_name": "IES-SÄ",
       "league": "Line",
       "country": "Sweden",
+      "keywords": [
+        "ESP32",
+        "M5Stack",
+        "micropython",
+        "MG90S servo",
+        "Visual Studio Code",
+        "PID Controller",
+        "N20",
+        "RGB sensor"
+      ],
+      "introduction": "Our project is about building and improving a rescue line robot for the RoboCupJunior competition. At first, we used LEGO SPIKE Prime for the national competition, but later we changed to ESP32 and M5Stack because we wanted more control and better performance. Our goal was to make a robot that can follow a black line, detect green markers, stop at red lines, avoid obstacles, handle gaps in the line, and later complete tasks in the evacuation zone.\n\nThe robot uses an ESP32 controller, IR sensors, RGB colour sensors, a ToF distance sensor, N20 motors, servos, and a 3D-printed chassis. For the software, we used line-position calculations and PID control to help the robot move more smoothly and stay on the line. We also made special solutions for sharp corners, gaps, obstacles, and colour detection.\n\nDuring the project, we faced many problems, such as limited time, delayed parts, strict size rules, and last-minute changes in the competition rules. By testing the robot many times, we found problems and improved both the design and the code. Overall, this project helped us learn more about robotics, programming, electronics, teamwork, and problem-solving.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -173,6 +287,19 @@
       "team_name": "IITA Rescuebot",
       "league": "Line",
       "country": "Argentina",
+      "keywords": [
+        "Github",
+        "YOLOv8",
+        "TensorFlow Lite",
+        "Python",
+        "Raspberry Pi",
+        "Teensy",
+        "OpenCV",
+        "Encoder",
+        "Easy Eda",
+        "Fusion 360"
+      ],
+      "introduction": "RescueBot IITA is a fully autonomous RoboCupJunior Rescue Line robot built to complete the whole mission: line following, green-marker decisions, obstacle handling, rescue-zone entry, victim collection, sorting, evacuation-zone deposit and exit. It uses a dual-controller architecture: a Raspberry Pi 4B runs camera processing, high-level state decisions and AI object detection, while a Teensy 4.1 handles deterministic motor control, sensors, servos, serial parsing and safety routines. The robot combines a custom Fusion 360 3D-printed chassis, four encoder motors, a five-servo rescue mechanism, a team-designed PCB, separated power rails, a wide-angle camera, ToF and ultrasonic sensors, a BNO055 IMU and APDS9960 floor sensing. Its competitive advantage is integration: classical vision gives fast, deterministic line and marker decisions; an exported TFLite detector handles the rescue zone; and the Teensy keeps low-level movement and fail-safe behavior alive even while the Pi is under heavy vision load. For 2026 the team prioritized robustness, serviceability, documented testing and evidence-based iteration, validated against the 2026 rules (including the new LED-wall) and our own measured test log.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -187,6 +314,19 @@
       "team_name": "Inžinieri",
       "league": "Line",
       "country": "Slovakia",
+      "keywords": [
+        "RaspberryPi Pico",
+        "3D printing",
+        "Fusion360",
+        "Line sensor",
+        "Arduino IDE",
+        "Custom PCB",
+        "Pixy camera",
+        "State-based system",
+        "Clean design",
+        "Swing axle"
+      ],
+      "introduction": "The robot features a swing axle that helps maintain equal weight distribution across all four wheels. We also utilize a gathering mechanism driven by a servo motor. The gathering mechanism includes additional servos that control mechanical arms used to collect victims. After collection, the mechanism transfers the victims to a dedicated storage area located at the rear of the robot.\n\nOur robot consists of two stacked levels, both of which serve as printed circuit boards. The first level contains all the electronics required for the line-following section of the program, while the second level houses the brain of the robot—a Raspberry Pi Pico 2—along with a Pixy2 camera and the complete victim collection system.\n\nThe entire robot was designed in Fusion 360, a process that took approximately six months. The design is based on a previous version that we used at our most recent RoboCup competition. We focused on optimizing the model for efficient 3D printing and precise component placement.\n\nWhat truly distinguishes our robot from many competitors is its custom-designed printed circuit board.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -201,6 +341,19 @@
       "team_name": "Kavosh_Line",
       "league": "Line",
       "country": "Canada",
+      "keywords": [
+        "Teensy 4.1",
+        "Arduino",
+        "Fusion",
+        "Servo Motors",
+        "PCB",
+        "Infrared Line Detection",
+        "Colour Sensor",
+        "Distance sensor",
+        "Centre-Oriented Line Following",
+        "Rescue Robot"
+      ],
+      "introduction": "Kavosh Rescue Line Robot is a compact, reliable, and competition-ready autonomous robot designed for accurate navigation, fast decision-making, and consistent rescue performance in the RoboCupJunior Rescue Line challenge. The robot is built around a Teensy 4.1 controller, a four-wheel DYNAMIXEL XC430 drive system, custom 3D-printed rubber-coated wheels, and a modular sensor layout. It uses 16 TCRT5000 reflective sensors for precise line tracking, three APDS9960 color sensors for floor-marker and evacuation-zone color detection, four VL53L1X time-of-flight distance sensors for obstacle and evacuation-zone awareness, and micro switches for reliable mechanical feedback. The main capabilities of the robot include stable line following, intersection decision-making, obstacle avoidance, ramp and gap handling, evacuation-zone entry, structured victim search, victim collection, and safe-zone placement. What sets the robot apart is the combination of mechanical simplicity, strong sensor coverage, fast processing, modular electronics, and easy repair during competition. Each subsystem was tested separately before full integration, which improved debugging and reliability under competition pressure. The project is also supported by Team Kavosh’s long-term RoboCup experience, giving the team a strong background in building practical and robust autonomous rescue robots.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -215,6 +368,15 @@
       "team_name": "Mittens",
       "league": "Line",
       "country": "Singapore",
+      "keywords": [
+        "LEGO SPIKE Prime",
+        "Python",
+        "Color and Distance Sensor",
+        "PID Control",
+        "Line Following Algorithm",
+        "obstacle detection"
+      ],
+      "introduction": "Our robot is a compact, highly adaptable rescue platform built on a robust LEGO SPIKE Prime chassis, designed to handle the full range of challenges present in the RoboCup Junior Rescue competition. Its most distinctive feature is its modular, reconfigurable architecture — components can be added, removed, or repositioned on-the-fly to dynamically shift the centre of gravity depending on track conditions. The wide wheel stance and front stabiliser arms allow the robot to traverse speed bumps and descend ramps smoothly without tipping, while high-grip drive wheels and slim blade-profiled rear elements maximise traction and enable tight, precise turns. On the software side, the robot runs a PID control algorithm for accurate and consistent line following, paired with a distance sensor for reliable obstacle detection and avoidance. The codebase has been extensively tested and proven to perform stably and consistently across the vast majority of runs attempted, reflecting the team's rigorous approach to software reliability. Together, these hardware and software design choices produce a robot that balances stability, manoeuvrability, and adaptability.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -229,6 +391,19 @@
       "team_name": "NLO Rescue CRO Team",
       "league": "Line",
       "country": "Croatia",
+      "keywords": [
+        "Teensy",
+        "Arduino",
+        "Raspberry Pi",
+        "Phyton",
+        "OpenCV",
+        "Hailo",
+        "3D printing",
+        "PCB",
+        "neural network",
+        "computer vision"
+      ],
+      "introduction": "Our robot was designed and built specifically for the RoboCupJunior Rescue Line 2026 category. We started work on the 3D design and parts testing in September 2025. During development we built two different robots: the first one in December 2025 and the second one in March 2026. The robot is based on a modular architecture using a Teensy 4.1 microcontroller and a Raspberry Pi for vision processing. We use two cameras: one for line tracking and one for the evacuation zone. Both cameras are connected to the Raspberry Pi and programmed in OpenCV, allowing precise image processing. To keep the lighting stable regardless of the environment, we developed a custom diode-based lighting system around the line camera. All low-level control, including motors and sensors, is handled by the Teensy 4.1, while the Raspberry Pi processes visual data and runs a custom neural network for victim detection. The two controllers communicate using the UART protocol. The robot is built around a 3D printed chassis, a custom made PCB and sensors needed for the competition. Through development and testing, including multiple robot and PCB versions, we achieved a reliable and efficient robot capable of handling all challenges of the Rescue Line competition.\n\nImage 1 (first robot)\n\nImage 2 (second robot)",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -243,6 +418,8 @@
       "team_name": "Pharaoh",
       "league": "Line",
       "country": "Egypt",
+      "keywords": [],
+      "introduction": "The Egypt Pharaoh team has developed a highly autonomous, robust rescue robot utilizing a distributed computing architecture designed specifically to tackle the complexities of the RoboCup Junior Rescue Line challenge. Our robot's core processing is handled by a Raspberry Pi 5 running Python and OpenCV for environmental perception, coupled with a Google Coral USB Accelerator running a custom-trained YOLOv8 AI model for real-time victim detection. Low-level hardware actuation is synchronously controlled by an Arduino Nano via a custom C++ library (RCJBot). Mechanically, the robot features a custom-designed chassis with high ground clearance for speed bumps, REV DUO motion wheels for superior traction, and a rapid-deployment dual-micro-servo victim retrieval mechanism. To ensure absolute electrical stability, we engineered a custom Printed Circuit Board (PCB) using Altium Designer that isolates power delivery between the drive systems and the logic boards. This paper details our progressive engineering methodology, system integration, and rigorous testing protocols that led to our qualification for the World Finals.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -257,6 +434,19 @@
       "team_name": "Pishnam",
       "league": "Line",
       "country": "Iran",
+      "keywords": [
+        "IR sensor",
+        "Esp32",
+        "Altium",
+        "C++",
+        "VL53L1X",
+        "Dynamixel",
+        "APDS-9960",
+        "Solidworks",
+        "PLA+",
+        "I2C"
+      ],
+      "introduction": "Pishnam is an autonomous robot built for the RoboCupJunior Rescue Line challenge and engineered with minimal reliance on ready-made modules. Every electronic board was custom-designed in Altium Designer, and every structural and mechanical part was modelled from scratch in SolidWorks and produced by FDM 3D printing, covering the full path from design to fabrication. The control software is written in C++ for deterministic speed and reliability. The robot follows the line, detects intersections and the evacuation zone reflective silver using an array of 39 infrared sensor pairs in addition to 4 pairs that assist in detecting victims and obstacles, recognizes green intersection markers and the evacuation point colors with three APDS-9960 color sensors, measures wall clearance and obstacles with VL53L1X time-of-flight sensors, and maintains orientation with a CMPS14 inertial compass. Motion and rescue actions are driven by ten Dynamixel servo motors — six XC430 and four XL330 — coordinated by an ESP32-S3-WROOM-1 microcontroller, with all sensors and actuators integrated across ten team-designed circuit boards. What sets Pishnam apart is the depth of its custom integration: the mechanical, electronic, and software subsystems were each designed in-house and tuned together, yielding a compact, robust platform that performs reliably across the line-following, victim-rescue, and evacuation tasks.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -271,6 +461,19 @@
       "team_name": "QuantumSpeed",
       "league": "Line",
       "country": "Italy",
+      "keywords": [
+        "Raspberry Pi 5",
+        "Python",
+        "OpenCV",
+        "TensorFlow Lite",
+        "yolo26n",
+        "PID algorithm",
+        "Fusion 360",
+        "I2C",
+        "Multiprocessing",
+        "3D print"
+      ],
+      "introduction": "The robot is designed to compete in the RoboCupJunior Rescue Line. We have been working for almost three years to create a robot capable of overcoming all the challenges presented by the competition. Over time, the robot has undergone numerous modifications: we have added artificial intelligence systems; we have increased the number of sensors; we have used better and more suitable sensors for our goals and we have furthermore improved our mechanical components by the addition of a brand new tire system built from scratch. Thanks to these improvements, the robot has significantly enhanced its performance, demonstrating greater reliability in handling complex line-following sections and improved capability in overcoming physically challenging elements of the course. The entire robot was designed in 3D using Fusion 360.\n\nTo achieve greater reliability, we decided to rely only on one microcontroller, getting rid of the old serial communication system. In fact, all the computations are done by a Raspberry Pi 5, programmed in Python, connected to a Pi camera, which is used to identify and follow the line, using the tools provided by the OpenCV library, additionally the camera is used to manage the evacuation zone, recognizing the entrance and the exit of it. The Raspberry is also connected to an AI hat, using a model trained with TensorFlow Lite, it is able to recognize victims and evacuation points in the evacuation zone using a second vertical Pi camera.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -285,6 +488,19 @@
       "team_name": "Sleeping",
       "league": "Line",
       "country": "Macao (SAR China)",
+      "keywords": [
+        "Finite State Machine",
+        "Google Coral TPU",
+        "YOLO",
+        "Computer Vision",
+        "HSV Color Segmentation",
+        "Raspberry Pi 5",
+        "Arduino",
+        "Shapr3D",
+        "Custom PCB",
+        "Edge AI"
+      ],
+      "introduction": "This autonomous rescue robot features a decoupled dual-processor architecture managed by a modular Finite State Machine (FSM). High-level AI, logic branching, and computer vision pipelines run on a Raspberry Pi 5, while an Arduino Nano handles low-level motor and servo claw limits to eliminate structural processing latency.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -299,6 +515,19 @@
       "team_name": "Smart",
       "league": "Line",
       "country": "Republic of Korea",
+      "keywords": [
+        "EV3 Mindstorms",
+        "6-wheel drive",
+        "Line tracing",
+        "Obstacle avoidance",
+        "Victim triage",
+        "Robotic arm",
+        "Color sensor",
+        "Green value optimization",
+        "Proportional control",
+        "Autonomous navigation"
+      ],
+      "introduction": "Our robot is driven by two medium motors positioned on both sides. Two ground-facing color sensors installed on each side enable the robot to track the black line precisely. Additionally, by equipping an extra color sensor at the front for obstacle detection, we successfully completed the obstacle avoidance mission. Adopting a 6-wheel base enhanced our grip, allowing the robot to navigate slopes up and down with ease. Thanks to its smooth rotation, it performs turns on inclines much more stably than other teams' robots. We designed a robotic arm specifically capable of gripping ball-shaped victims (the primary mission objects) and utilized a medium motor to actuate it upward and downward. Furthermore, we created a designated payload space on top of the robot to secure the victims, along with a mechanism to distinguish between the alive and the deceased. By efficiently integrating the robotic arm with this containment and sorting space, we were able to pass through the evacuation zone much more smoothly than competing teams.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -313,6 +542,19 @@
       "team_name": "System Override",
       "league": "Line",
       "country": "India",
+      "keywords": [
+        "FOMO Object Detection",
+        "MicroPython",
+        "OpenMV H7 Plus",
+        "Raspberry Pi Pico 2 W",
+        "Multi-controller Architecture",
+        "Machine Vision",
+        "Rapid prototyping",
+        "3D Printing",
+        "Open Source Robotics",
+        "Design Thinking"
+      ],
+      "introduction": "Our robot is a fully open-source, high-performance system designed for speed, precision, and adaptability, replacing educational robotics controllers with two OpenMV H7 Plus cameras for onboard vision processing and motor control, while a Raspberry Pi Pico 2 W acts as a secondary controller to handle additional sensor inputs and communicate commands to the camera. The main OpenMV performs line following while a second one handles evacuation tasks using a custom FOMO-based object detection model trained on over 4,000 manually labelled images with Edge Impulse, enabling fast and accurate victim identification. The Pico interfaces with an I2C multiplexer that controls two time-of-flight (TOF) sensors, each configured with region-of-interest (ROI) settings for precise and flexible distance sensing, along with a BNO055 gyro for ramp stability and accurate yaw-based navigation, and an RGB light sensor for detecting entry to the evacuation zone and goal tile. The robot uses two TB6612FNG motor drivers—one for a four-motor drivetrain and another for a dual\n\nN20 motor claw for victim pickup, which also integrates a conductivity sensor system to detect live victims by completing an electrical circuit. Additionally, two servos are used for lifting the arm. The robot also features custom silicone wheels for better traction and grip. The robot is designed in Fusion 360 and manufactured through 3D printing.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -327,6 +569,18 @@
       "team_name": "TOKAI Ghost",
       "league": "Line",
       "country": "Japan",
+      "keywords": [
+        "Arduino",
+        "MicroPython",
+        "OpenCV",
+        "YOLOv8",
+        "Teensy 4.0",
+        "Raspberry Pi 5",
+        "Line sensor",
+        "ToF sensor",
+        "IMU"
+      ],
+      "introduction": "We are TOKAI Ghost, a team from Japan. Our new robot for this competition is a rescue robot designed to consistently achieve high scores in all situations. At Japan Open 2026, we achieved full marks in every round.\n\nThis robot is entirely self-built. Unlike our robot from last season, we didn’t use any kits such as LEGO for this robot. We also designed all the electronic components.\n\nOur robot has many innovative features. We developed silicone wheels and a twisting mechanism to navigate difficult ramps and bumps. For line following, we use not only sensors but also a camera this year, enabling more stable tracking. In the evacuation zone, the robot can reliably pick up and efficiently carry victims with its multifunctional rescue mechanism.\n\nFor victim detection, we trained a YOLOv8-based model on a dataset annotated using Label Studio. Since it was designed for inference on a Raspberry Pi 5, we were able to develop a highly accurate model.\n\nBy combining the strengths of a camera and multiple sensors, the robot improves both speed and stability in line following and in rescue tasks.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -341,6 +595,19 @@
       "team_name": "TPA Thailand RLine",
       "league": "Line",
       "country": "Thailand",
+      "keywords": [
+        "PID Control",
+        "Line Following",
+        "Computer Vision",
+        "Color Recognition",
+        "Ultrasonic Sensor",
+        "ZX-Sonar1M",
+        "POP32i",
+        "State Machine",
+        "Rescue Ball Detection",
+        "Servo Gripper"
+      ],
+      "introduction": "Our Rescue Line robot was developed with the objective of achieving reliable and competitive performance while making efficient use of the components and resources available to our team. Instead of relying on expensive or highly specialized hardware, we focused on optimizing the design, integration, and functionality of existing components to complete competition tasks effectively.\n\nThe robot is capable of accurate line following using a PID control system, allowing it to navigate the course with stability and precision. A camera system is utilized for rescue ball detection and color recognition, enabling the robot to identify and handle rescue objects efficiently. In addition, a ZX-Sonar1M ultrasonic sensor is integrated for obstacle avoidance and wall detection, improving the robot’s environmental awareness and decision-making capabilities.\n\nThe rescue mechanism consists of a servo-driven gripper and storage system that can collect and release rescue balls reliably in the designated rescue area. Throughout the development process, continuous testing and refinement were conducted to improve both hardware and software performance.\n\nWhat sets our robot apart is our ability to achieve effective and dependable performance using limited resources. This project demonstrates that careful planning, efficient integration, and strong teamwork can produce a capable Rescue Line robot that performs competitively alongside robots equipped with more advanced hardware.",
       "consent": {
         "tdp": "Agree",
         "video": "Disagree",
@@ -355,6 +622,18 @@
       "team_name": "Titãs da Robótica - Ligeirinho",
       "league": "Line",
       "country": "Brazil",
+      "keywords": [
+        "Dual-Front Architecture",
+        "Computer Vision PID",
+        "Silicone Tires",
+        "Custom 3D Printing",
+        "Light-Blocking Dome",
+        "Automated Victim Triage",
+        "RoboCupJunior Rescue Line",
+        "Sensor Fusion",
+        "Embedded State Machine"
+      ],
+      "introduction": "This article introduces \"Ligeirinho\", an autonomous rescue robot developed by the Titãs da Robótica team to compete in the RoboCup Junior Rescue Line category at RoboCup 2026 Incheon. Ligeirinho features an innovative dual-front mechanical architecture designed to address the challenges of the competition through distinct and dedicated operational modes. The chassis structure is almost entirely 3D printed, utilizing custom cured silicone tires mounted on plastic rims adapted from vacuum cleaner wheels to maximize traction. The robot's entire software and control system was developed in Python, running locally on the mainboard. One of the robot's fronts is designed exclusively for high-speed line following; it has a ground-facing camera housed within a completely sealed cover to eliminate variations in external light. This vision system feeds a PID control loop that identifies paths and green, red, or silver markers. The opposite front is dedicated entirely to operations in the Rescue Area, integrating a front camera for real-time victim detection and triangles. This side features an automated mechanical claw that collects victims and dynamically separates them into a two-sided bin (live and dead victims). Safe navigation is achieved through lateral distance sensors, a front sensor, and a line-following bumper on the lid for collision avoidance. A central battery drawer ensures optimal weight distribution and quick maintenance.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -369,6 +648,19 @@
       "team_name": "AURAT",
       "league": "Maze",
       "country": "Italy",
+      "keywords": [
+        "Raspberry Pi 5",
+        "Arduino Mega",
+        "OpenMV H7 Plus",
+        "Dijkstra's Algorithm",
+        "K-Nearest Neighbors (KNN)",
+        "Hough Circle Transform",
+        "Auto Centering",
+        "PID",
+        "EasyEDA",
+        "PCB"
+      ],
+      "introduction": "This paper presents the autonomous rescue robot developed by team AURAT for the RoboCupJunior Rescue Maze 2026 World Finals. Designed to achieve full exploration and precise victim identification within a strict 8-minute time limit, the robot features a robust, modular three-level physical architecture built with a custom vertical suspension system and hollow-rimmed TPU tires to safely navigate speedbumps and 25° ramps. The hardware ecosystem coordinates an Arduino Mega for low-level motion control, a custom 4-layer PCB for noise-free electronics routing, and a Raspberry Pi 5 acting as the high-level master node. To optimize computational efficiency, the software implements a concurrent, multi-threaded architecture utilizing Dijkstra’s algorithm for real-time dynamic pathfinding. Following technical challenges encountered during the national qualifiers in Catania, the vision pipeline was successfully upgraded from a blocking full-frame YOLOv8 model into an optimized, two-tiered framework. Spatial-chromatic blob localization is offloaded to an OpenMV H7 Plus edge camera, while character classification is executed on the Raspberry Pi 5 via a high-speed, rotation-invariant K-Nearest Neighbors (KNN) pipeline. System integration testing validates that these concurrent refinements guarantee deterministic obstacle navigation, robust cell alignment, and highly resilient target identification under variable arena conditions",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -383,6 +675,19 @@
       "team_name": "B.Robots Seniors",
       "league": "Maze",
       "country": "Austria",
+      "keywords": [
+        "Arduino",
+        "RaspberryPi",
+        "C++",
+        "python",
+        "A*",
+        "GitHub",
+        "OOP",
+        "Fusion",
+        "Custom PCB",
+        "3D-Printing"
+      ],
+      "introduction": "This abstract describes the autonomous rescue robot developed by Team B.Robots Seniors for the 2026 RoboCupJunior Rescue Maze Competition. The design prioritizes high reliability, modular hardware, and a deterministic software architecture. The main navigation controller, an Arduino Giga R1, executes an A* pathfinding algorithm on a weighted 3D tile graph to navigate obstacles and multi-floor ramps dynamically. A Raspberry Pi Compute Module 5 processes dual wide-angle camera streams using custom TensorFlow Lite models and HSV color scans to accurately identify victims.\n\nA key innovation that sets our robot apart is the custom \"Inter-Layer Connector.\" This system uses permanently mounted pin headers to replace messy wiring, enabling the rapid detachment and swap of entire hardware layers without unplugging individual wires. Furthermore, a custom-machined swivel axis ensures that all four wheels maintain constant ground contact over uneven terrain, which significantly improves sensor reliability.\n\nOn the software side, a strictly non-blocking C++ architecture maintains a rapid 23 ms control loop. During a run, an interactive touch display renders a live, rotating map for real-time diagnostics. A checkpoint snapshot system allows for seamless map and position restoration following manual interventions.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -397,6 +702,17 @@
       "team_name": "Bodensee Dogs",
       "league": "Maze",
       "country": "Germany",
+      "keywords": [
+        "suspension system",
+        "modular structure",
+        "ToF PCBs",
+        "sequential control system",
+        "SD card logging system",
+        "custom Haar-cascade",
+        "cognitive target identification",
+        "navigation algorithm"
+      ],
+      "introduction": "We are the Bodensee Dogs from Lake Constance, Germany.\n\nOur robot is entirely self-built, as we developed custom 3D-printed components, a linked two axle suspension system, which transmits the same impulse to diagonal wheels. Custom-molded silicone wheels that, thanks to their lack of profile, make it easier for the robot to navigate stairs. Five custom-designed boards, Main, Power, UI, ToF, and ToF Breakout, offer modularity and customizability.\n\nThe robot's software is based on a sequential control system, which, when combined with custom-programmed sensor libraries or wrappers, enables structured and rapid debugging. In addition, both the robot and the cameras feature a comprehensive SD card logging system that generates detailed crash reports, among other things.\n\nThe robot's navigation algorithm is based on a combination of the shortest path strategy and the right-hand rule.\n\nTo make it easy and quick to understand the navigation and simultaneous mapping process, we have developed a visualization tool that can display every mapping step using special “version control” logs. The tool is also used to create maps that can be used for unit tests to validate the navigation algorithm.\n\nWhat sets us apart from other teams is our decision to avoid AI-based victim identification. Instead, we use a Haar-cascade-like algorithm for recognizing visual victims, ensuring fast adaptability and easy calibration. Cognitive targets are also identified using an algorithmic approach that assigns colors to pixels using a nearest-neighbor method.\n\nTo ensure the necessary performance, we have offloaded large portions of the algorithms into the camera's firmware.",
       "consent": {
         "tdp": "Agree",
         "video": "Disagree",
@@ -411,6 +727,18 @@
       "team_name": "Byte Volta",
       "league": "Maze",
       "country": "Brazil",
+      "keywords": [
+        "OpenMV RT1062",
+        "MicroPython",
+        "C++",
+        "ESP32-P4",
+        "FreeRTOS",
+        "Dijkstra",
+        "OOP",
+        "DFS",
+        "CNN"
+      ],
+      "introduction": "Our robot was entirely designed and built by the team to compete in the RoboCup Junior Rescue Maze category. The mechanical structure was conceived as a three-floor independent modular architecture, allowing quick hardware modifications and component replacements between rounds, giving the team a significant competitive advantage in adaptability.\n\nTo handle speedbumps up to 3 cm, the robot features a custom-designed suspension system that ensures stable ground contact across uneven terrain, maintaining sensor accuracy and locomotion consistency throughout the course.\n\nNavigation is powered by a custom mapping algorithm based on Dijkstra's shortest path method, enabling the robot to efficiently explore and traverse the maze while continuously updating its internal map in real time. This approach allows fast and reliable pathfinding even in previously unknown environments.\n\nThe robot's electronics are built around a fully custom Printed Circuit Board (PCB), designed to be versatile and easily reconfigurable to meet different competition requirements. Vision capabilities are provided by a pair of OpenMV RT1062 cameras, capable of processing images at high frame rates and running embedded AI models directly on the hardware, enabling real-time victim detection without relying on external processing.\n\nTogether, these systems make our robot a robust, adaptable, and intelligent platform, engineered from the ground up for competitive performance.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -425,6 +753,8 @@
       "team_name": "CEBELÜ",
       "league": "Maze",
       "country": "Türkiye",
+      "keywords": [],
+      "introduction": "We are team “CEBELÜ” attending RoboCupJunior Rescue Maze from Türkiye. The name of our robot is “Ayla-890” in memory of the Turk martyrs of the Korean War. We will use this name when referring to the robot in later parts of this document.\n\nWe figured that for us to navigate throughout the maze with maximum efficiency and speed, we must have a small, compact and agile robot. So we fit all of our hardware into a 132x175mm chassis, therefore Ayla-890 has a total size including tires, reskit mechanism etc. 170x190mm. Combined with a maximum speed of 2,5 tile/s (75 cm/s) Ayla-890 is decent in turns. Moreover, because we encounter sharp turns very often in the maze, this sets us apart from other competitors and saves a lot of time.\n\nAfter extensive research, we have decided that none of the commercially available wheels met our requirements within our budget. Therefore we decided to cast our own specially designed tires out of 30 ShoreA RTV silicon. This allows us to have a higher road grip and overcome obstacles more easily.\n\nWe used 3 cameras on the sides and front to identify victims and a custom designed 3D printed system to deliver kits to both sides of our robot with high accuracy. For aligning the robot, navigating through the maze, detecting ramps and obstacles, we used a total of 8 Time of Flight (ToF) sensors placed; 4 on sides and 2 in front dedicated for ramp detection and better alignment, 2 looking diagonally in front of the vehicle specifically designed and trigonomically calculated for obstacle detection and also used for validation of ramp identification. We also used IMU for more reliable alignment and movement.\n\nRather than relying on complex path-planning algorithms, Ayla-890 utilizes a lightweight sensor-driven right-hand wall following navigation strategy, enabling fast and reliable exploration of unknown maze environments.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -439,6 +769,15 @@
       "team_name": "Delta",
       "league": "Maze",
       "country": "Australia",
+      "keywords": [
+        "CNC",
+        "LRF-Pivot",
+        "Artificial-Intelligence",
+        "6061-Aluminium",
+        "Dynamically-Allocated-Memory",
+        "Mapping"
+      ],
+      "introduction": "Our robot’s main capabilities include the ability to correct its alignment in the maze by using its two ToF sensors on each side to determine its skew in the maze and correct for this. It also incorporates a custom pivoting ToF sensor system for the front and rear ToF sensors allowing the sensors to always look flat at the walls even when training over bumps and when the robot will not be level with the ground.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -453,6 +792,15 @@
       "team_name": "Flying Pig",
       "league": "Maze",
       "country": "Taiwan",
+      "keywords": [
+        "ROS",
+        "SLAM",
+        "Jetson Orin",
+        "OpenCV",
+        "Machine Learning",
+        "3D Design"
+      ],
+      "introduction": "Navigation and victim identification in unknown, resource-constrained environments present significant challenges for small-scale autonomous robots. This paper presents an integrated solution featuring a dual-compute architecture centered on the NVIDIA Jetson Orin NX and a Raspberry Pi 5 for distributed vision processing. We utilize the ROS2 Jazzy framework to implement a robust navigation stack that incorporates SLAM-based mapping (slam_toolbox) and EKF-fused odometry to overcome the limitations of skid-steering kinematics. To address the difficulty of victim identification under variable lighting conditions, we introduce a hybrid vision pipeline that uses Canny edge-based HOG feature extraction and SVM classification, supplemented by a four-quadrant geometric validation algorithm to ensure high precision. Through an isolated power distribution architecture, we successfully mitigated voltage-drop issues, resulting in a stable and reliable platform capable of autonomous exploration and high-fidelity rescue kit deployment in complex maze environments.",
       "consent": {
         "tdp": "Agree",
         "video": "Disagree",
@@ -467,6 +815,19 @@
       "team_name": "Gebruder Weiss CRO team",
       "league": "Maze",
       "country": "Croatia",
+      "keywords": [
+        "Teensy 4.1",
+        "RaspberryPI",
+        "YOLO",
+        "Pololu",
+        "3D print",
+        "PCB",
+        "C++",
+        "Python",
+        "Canny algorithm",
+        "Gaussian blur"
+      ],
+      "introduction": "We are Gebruder Weiss Cro Team consisting of 2 members. Our robot for the competition has been developed thought the last 2 years. From the last year World RCJ to this year’s, we increased the precision of our robot movement and decreased the number of victim misidentifications. We also developed a system so that the robot can continue moving after LOP.\n\nApart from sensors, our robot was constructed based on the design of our robot from previous years, but also having in mind observed limitations and problems that existed. We designed both 3D printed parts (including Rescue kits), as well as the PCB, which we have been perfectioning over the past 3 years.\n\n﻿The most innovative components of our robot include the kit dispenser, wheels that we designed for the movement over speedbumps, usage of both IR and colour sensor for the coloured tiles detection, communication between teensy and RPi 5, the usage of RPi cameras in contrast to OpenMV used by most other teams and in connected with this, the usage of a combined system using 2 algorithms for victim detection.",
       "consent": {
         "tdp": "Agree",
         "video": "Disagree",
@@ -481,6 +842,15 @@
       "team_name": "LF Rescue Unit",
       "league": "Maze",
       "country": "Portugal",
+      "keywords": [
+        "LEGO EV3",
+        "Raspberry Pi",
+        "MicroPython",
+        "Python",
+        "OpenCV",
+        "Pi Camera 3"
+      ],
+      "introduction": "Our robot is based on a combination of a LEGO EV3 and a Raspberry Pi. It is autonomous and designed to navigate complex maze environments, detect victims, avoid obstacles, and deploy rescue kits reliably. The robot is capable of following walls, identifying floor markings, recognizing victims through both color and letter detection.\n\nA major focus of the project was reliability and modularity. The robot uses a distributed architecture in which navigation and vision processing operate independently while remaining coordinated through event-based communication. This approach improves stability during movement and allows the robot to continue navigating smoothly even while image processing tasks are being performed.\n\nAnother important aspect of the design is the use of mostly standard and easily replaceable components instead of highly specialized custom-built systems. This simplifies maintenance, reduces construction complexity, and allows the team to focus more on software development, testing, and system integration.\n\nThroughout development, the robot was improved through iterative testing and redesign. Special attention was given to navigation consistency, victim detection reliability under varying lighting conditions, and stable rescue kit deployment. The final result is a robust and adaptable robot capable of performing reliably in Rescue Maze challenges.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -495,6 +865,19 @@
       "team_name": "LIGHTNING",
       "league": "Maze",
       "country": "Hungary",
+      "keywords": [
+        "Arduino Mega and Micro",
+        "OpenMV H7",
+        "VL53L0X distance sensors",
+        "coordinate based mapping",
+        "tile number path planning",
+        "pixel-based victim recognition",
+        "dual-side rescue kit dispenser",
+        "dual power supply",
+        "low centre of mass",
+        "individually driven wheels"
+      ],
+      "introduction": "Our robot is designed to solve the Rescue Maze task through a combination of mechanical stability, reliable sensing, and optimised software. Its structure was developed from the ground up by our team, with every major component designed to fit the physical limits of the competition while remaining durable and easy to maintain. A key mechanical feature is the kinematically balanced rear suspension, which improves contact with the field on ramps, speed bumps, and uneven tiles, while the low and central centre of mass helps the robot turn without tipping. For victim handling, we developed a precise rescue kit dispensing system that supports accurate rescue kit placement.\n\nThe robot navigates primarily with distance sensors and uses a wall-based map representation to plan movement, avoid dead ends, and return to the start. Victim detection is performed with OpenMV cameras using colour filtering, shape analysis, and separate logic for cognitive targets and Greek-letter victims. The main software is organised into a memory-conscious state-based architecture, allowing movement, mapping, victim handling, and restart recovery to work together reliably. What sets our robot apart is the tight integration of custom mechanical design, sensor placement, camera processing, and maze-solving logic, developed and tested step by step through continuous testing and improvement.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -509,6 +892,19 @@
       "team_name": "Optimaze",
       "league": "Maze",
       "country": "Israel",
+      "keywords": [
+        "Python",
+        "Arduino",
+        "Raspberry Pi",
+        "Camera",
+        "BFS",
+        "Serial communication",
+        "3D design",
+        "Computer vision",
+        "Simulation based develpment",
+        "Proportional correction"
+      ],
+      "introduction": "Our rescue robot has been designed to explore an unknown maze environment, find victims, and deliver the necessary rescue kits to them.\n\nThe hardware includes ToF sensors to detect the wall, an IMU sensor to track the orientation of the robot, a color sensor to recognize colored tiles, cameras to detect the victims, and a stepper motor to drop the rescue kits. For software and navigation, we used a BFS algorithm for both the mapping of the maze environment and the calculation of the optimal path to the victim.\n\nWhat makes our robot unique is its error correction capabilities of the robot and accurate navigation in the maze. The use of the IMU sensor allows us to constantly correct any localization errors. With the error correction, the mapping, and the maze navigating technique, our robot will explore the whole maze and help the victims.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -523,6 +919,19 @@
       "team_name": "PCMS_ET",
       "league": "Maze",
       "country": "China",
+      "keywords": [
+        "ESP-32",
+        "Laser Distance Sensors",
+        "K210 Camera",
+        "Thonny",
+        "Gyroscope Closed-Loop Control",
+        "Maze Exploration Algorithm",
+        "3D Printing",
+        "Custom PCB",
+        "Autonomous Rescue Robot",
+        "Bidirectional Turntable Mechanism"
+      ],
+      "introduction": "This paper presents PCMS_ET, an advanced autonomous rescue robot engineered for efficient navigation and victim identification within complex maze environments. Evolved through rigorous iterative testing from a first-generation prototype, the second-generation robot features a highly optimized 3D-printed chassis. By replacing the generic control board with a compact ESP-32 microcontroller and integrating two custom-designed PCBs, the robot significantly eliminates circuit clutter and operational latency. For robust mobility, it utilizes GA25-370 micro-motors and custom wheels with annular grooves that prevent silicone tire slippage, while the electronics box is repositioned to the chassis center to achieve a lower center of gravity for stable slope climbing.\n\nEnvironment sensing is driven by high-precision laser distance sensors for precise obstacle avoidance, coupled with dual K210 camera lenses for millisecond-level wall pattern recognition. Developed using Python in Thonny, the software architecture implements a gyroscope closed-loop turning algorithm that automatically corrects boundary degree calculation discrepancies. It also deploys a high-level maze exploration decision matrix (Left-Turn Priority) that records paths using a coordinate grid and computes the shortest route back to the start.\n\nWhat sets PCMS_ET apart from its competitors is its exceptional engineering maturity achieved through iterative hardware and software optimization. The integration of laser tracking, custom electronics, and intelligent decision logic delivers a 20% increase in locomotion speed and over 90% accuracy in both victim identification and precise cargo drop-offs via its bidirectional turntable mechanism.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -537,6 +946,19 @@
       "team_name": "PRIMEX FCoEE",
       "league": "Maze",
       "country": "Malaysia",
+      "keywords": [
+        "Autonomous maze exploration",
+        "Right-Hand Rule navigation",
+        "convolutional neural network",
+        "cognitive target detection",
+        "concentric ring template",
+        "TensorFlow inference",
+        "OpenCV image processing",
+        "encoder odometry",
+        "carbon fibre 3D printing",
+        "dual-processor architecture"
+      ],
+      "introduction": "PRIMEX FCoEE is a fully autonomous maze-solving rescue robot developed by a student team from the Faizuddin Center of Educational Excellence (FCoEE) for the RoboCupJunior Rescue Maze 2026 competition. The robot is built on a dual-processor architecture, with a Jetson Orin Nano handling all vision and navigation decisions and an ESP32-S3 managing real-time motor and actuator control, mounted on a fully custom chassis 3D-printed using engineering-grade carbon fiber reinforced materials (ABS-CF and PETG-CF) for structural rigidity and durability under field conditions. The robot explores unknown mazes autonomously using a Right-Hand Rule algorithm with real-time 2D grid mapping, requiring no pre-mapping and no hardcoded field logic. It detects two types of victims. The first victim is Greek letter victims (Φ, Ψ, Ω) using a custom TensorFlow deep learning model trained on a manually captured dataset covering varied angles, distances, and lighting, achieving 90% accuracy. The second victim is cognitive targets, detected using outermost-circle-first template strategy that anchors inner ring boundaries and computes the health status sum from color values, achieving 80% ring layer detection and 90% per-ring color classification. Floor tile types are reliably identified by a downward-facing mBot2 color sensor with local calibration performed before each run, allowing the robot to adapt to changing venue lighting conditions.\n\nThe full system integrates high-performance hardware, autonomous maze navigation, trained letter victim detection, template-based cognitive target detection, and adaptive floor color sensing into a single cohesive whole. The combination reflects the team's commitment to building a robot that is not only technically capable across every scoring dimension of the competition, but also robust and consistent under real field conditions.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -551,6 +973,18 @@
       "team_name": "Pi-rates",
       "league": "Maze",
       "country": "USA",
+      "keywords": [
+        "Raspberry Pi",
+        "YOLO",
+        "You Only Look Once",
+        "BFS",
+        "Breadth-First-Search",
+        "File system",
+        "silicone wheels",
+        "battery mount",
+        "rescue kit dropper"
+      ],
+      "introduction": "We are the Pi-rates from Branchburg, New Jersey. Our robot is created by using different actuators, sensors, and microcontrollers, packed into a 3D-printed chassis. Actuators on the robot include geared metal motors for drive and a combination of a stepper motor and a servo, which are used to deliver rescue kits to victims in the maze. Some sensors of the Pi-rates team robot include time-of-flight, encoders, IMU sensors, and wide-angle Raspberry Pi cameras. Along with the actuators and sensors, the robot uses a Pico and a Raspberry Pi 5 to process sensor inputs and generate navigation outputs. Our robot is capable of traversing the maze, identifying victims, avoiding obstacles, and dropping rescue kits along the way. After visiting every tile, the robot is able to traverse back to the point of origin. Some capabilities that set our team apart from competitors are how we handle challenges such as alignment and weight distribution. Members of our team have past knowledge in different aspects of robotics, which gave us the capability to refine our hardware and software.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -565,6 +999,19 @@
       "team_name": "RC UANL",
       "league": "Maze",
       "country": "Mexico",
+      "keywords": [
+        "Teensy 4.1",
+        "OpenMV",
+        "Depth-First Search",
+        "Dijkstra's Algorithm",
+        "PID Controller",
+        "Convolutional Neural Network",
+        "Edge Impulse",
+        "Time-of-Flight Sensors",
+        "EasyEDA",
+        "SolidWorks"
+      ],
+      "introduction": "The most important aspect of the system it’s the navigation this incorporates multiple systems in the programming logic this is because we incorporate ways to improve navigation like a constant alignment between the halls of the maze this enables the robot to don’t lose more tiles between the navigation of the maze also improving in some ways the turns of different degrees through the navigation, orientation and general orientation errors, reducing the accumulated errors between the navigation.\n\nIn addition to the software solutions, the robot includes several mechanical systems that enhance the navigation of the robot in the maze. These systems include a suspension mechanism as well as alignment mechanisms based on limit switches and the frontal tof of the main board, which help maintain proper positioning throughout navigation.\n\nDuring operation, the robot can identify various elements within its environment, such as victims and specific tile types, while also detecting and avoiding obstacles that may appear along its navigation, including stairs, bumpers and ramps being helped by custom tires made of silicon.\n\nTo integrate all these systems, a custom-designed PCB was developed. This board manages the connections between multiple sensors and electronic systems, including the OpenMV cameras, which are responsible for visual processing. Together with the various electronic and mechanical components, these systems provide the robot with the ability to respond to changes in its surroundings, enabling reliable operation across different maze difficulties.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -579,6 +1026,19 @@
       "team_name": "RRR Kabelmüsli",
       "league": "Maze",
       "country": "Germany",
+      "keywords": [
+        "RoboCupJunior Rescue Maze",
+        "central PCB",
+        "passive suspension",
+        "silicone tires",
+        "victim detection",
+        "ultra-wide-angle cameras",
+        "synthetic training data",
+        "mapping",
+        "checkpoint recovery",
+        "telemetry dashboard"
+      ],
+      "introduction": "Side Note: The web version of our TDP uploaded in these input fields is significantly simplified and does not meet all requirements. Please refer to the main PDF file instead. Thank you for your understanding.\n\nWe built a completely new RoboCupJunior Rescue Maze robot for the 2026 season. The goal was a compact, competition-ready platform with higher consistency and better integration than our earlier robots. Compared to previous seasons, this build replaces a cable-heavy architecture with a central custom PCB, a tighter mechanical package, and a cleaner split between embedded sensing, Raspberry Pi decision making, and telemetry.\n\nOur robot uses four driven wheels, a passive suspension based on coupled rocking axles, custom cast silicone tires, eight side-facing VL53L1X distance sensors, three forward multi-target ToF sensors, RGB and reflectance floor sensing, dual ultra-wide-angle victim cameras, and a directional rescue-kit mechanism. The software stack combines live sensor fusion, a three-dimensional tile map, shortest-path navigation, persistent silver checkpoint recovery, dual-model victim recognition, and a local dashboard.\n\nThis paper focuses on the design rationale, the integration strategy, and the validation loops that shaped the final system. Special attention is given to compact packaging, maintainability, checkpoint recovery, and synthetic-data victim training.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -593,6 +1053,19 @@
       "team_name": "Rescue Rats",
       "league": "Maze",
       "country": "Slovakia",
+      "keywords": [
+        "Raspberry Pi 5",
+        "ESP32-S3",
+        "OpenCV",
+        "Dijkstra's algorithm",
+        "Computer vision",
+        "Python",
+        "C++",
+        "VL53L1X laser sensors",
+        "BNO055 IMU",
+        "KiCAD"
+      ],
+      "introduction": "Our robot is a fully autonomous maze-navigating robot designed to locate victims and deploy rescue kits without any human input during a run. It is built around a dual-controller architecture, combining a Raspberry Pi 5 for high-level decision-making with an ESP32-based microcontroller for precise low-level hardware control. The two controllers communicate in real time over a UART serial connection at 115200 baud, with the Raspberry Pi 5 sending movement commands and the ESP32 returning sensor data and execution confirmations.\n\nThe chassis was fully designed in-house using 3D modeling software and printed by our team, giving us complete control over the layout, weight distribution, and component placement. Navigation relies on eight VL53L1X laser distance sensors covering all four directions, and an BNO055 gyroscope which tracks heading and actively corrects drift during straight movement. A TCS34725 color sensor on the underside detects floor tile colors to trigger rescue kit deployments automatically. Victim detection runs on the Raspberry Pi 5 using OpenCV, identifying colored ring targets by analyzing concentric color rings and recognizing letter victims by comparing contour shapes against pre-saved references for the Omega, Phi, and Psi symbols.\n\nWhat sets our robot apart is the combination of a fully custom mechanical design, a clean split between high-level and low-level control, and a two-stage computer vision pipeline running entirely on an embedded system. Every part of the robot was built, programmed, and tested by our four-member team.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -607,6 +1080,19 @@
       "team_name": "Robodanesh",
       "league": "Maze",
       "country": "Iran",
+      "keywords": [
+        "ESP32",
+        "Raspberry Pi",
+        "A* Algorithm",
+        "BFS Algorithm",
+        "CNN Classification",
+        "FreeRTOS",
+        "Wheel's Axles",
+        "Solidworks",
+        "Altium Designer",
+        "Contour Detection"
+      ],
+      "introduction": "This paper presents the design and development of an autonomous rescue robot by Team RoboDanesh for the RoboCup Rescue Maze competition. The robot is designed to operate reliably in complex and dynamic environments, simulating the challenges of real-world disaster scenarios. Its main capabilities include autonomous navigation, path planning, obstacle and wall detection, ramp traversal, victim identification, and rescue kit deployment.\n\nThe robot is built on an integrated mechanical, electronic, and software architecture. The mechanical design emphasizes stability, durability, and modularity, allowing reliable movement over uneven surfaces. The electronics are centered around a main controller supported by custom circuit boards, enabling efficient sensor integration, motor control, and communication. Environmental perception is achieved using VL53L1X distance sensors for walls and obstacles, Microswitches for physical contact, APDS-9960 and IR sensors for surface color recognition, and a CMPS14 digital compass for orientation. The software architecture combines structured navigation and decision-making algorithms with vision-based victim detection. Image processing is handled on a Raspberry Pi 5 using Python and established computer vision libraries. Particular focus was placed on integrating subsystems, validating performance through testing, and refining the robot iteratively. These design choices result in a stable, responsive, and adaptable robot capable of reliable performance in challenging rescue maze scenarios.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -621,6 +1107,14 @@
       "team_name": "SERŠ TEAM",
       "league": "Maze",
       "country": "Slovenia",
+      "keywords": [
+        "STM32",
+        "custom PCB",
+        "aluminum chassis",
+        "Raspberry Pi",
+        "Dijkstra"
+      ],
+      "introduction": "This document presents our fully autonomous rescue robot, which is expressly designed to navigate complex maze-like environments and locate \"victims\" in real-time. Among its most distinguishing features is its durable, modular hardware architecture, centered around a custom-made multi-layer printed circuit board featuring an STM32F767ZI microcontroller. The setup includes provisions for several sensors—from Time-of-Flight distance modules to inertial measurement units—that collectively help build a three-dimensional map of the environment. The robot applies a Dijkstra's algorithm to systematically explore unvisited tiles, repeatedly altering its route as it acquires more information.\n\nTo enhance movement accuracy, highly calibrated Proportional-Integral-Derivative (PID) controllers are applied at the motor driver level as well as in the high-level driving loop to minimize unintentional speed differences between motors and alignment errors between successive maneuvers. In the background, an improved Convolutional Neural Network (CNN) on a Raspberry PI 5 SBC (Single Board Computer) conducts video frame analysis for recognizing specific letters indicating victims. Upon passing a threshold confidence level, the system triggers an interrupt in the main controller for instant response without manual polling.\n\nIn short, our design focuses on the optimal combination of hardware, software, and control logic to develop an efficient platform that maintains peak performance under various conditions. With the incorporation of accurate mapping, precise movement, and efficient victim detection, this robot is characterized by its agility and stability in competitive environments.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -635,6 +1129,19 @@
       "team_name": "Simple",
       "league": "Maze",
       "country": "Republic of Korea",
+      "keywords": [
+        "SPIKE Prime",
+        "OpenMV H7",
+        "Rule-Based Vision",
+        "VL53L4CD ToF Sensors",
+        "PUPRemote",
+        "Asynchronous Sensor Processing",
+        "Coordinate-Based Mapping",
+        "Dead-End Propagation",
+        "BFS Return Navigation",
+        "Bidirectional Rescue-Kit Dispenser"
+      ],
+      "introduction": "Our articulated rescue robot combines SPIKE Prime and OpenMV control, rule-based vision, adaptive mapping, and a bidirectional rescue-kit dispenser for fast and reliable maze navigation.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -649,6 +1156,8 @@
       "team_name": "Stenbackens Gård Robotik",
       "league": "Maze",
       "country": "Sweden",
+      "keywords": [],
+      "introduction": "Our robot is designed as an autonomous system optimized for navigation in complex maze environments. Its core architecture combines computer vision, sensor fusion and a robust decision‑making pipeline to ensure consistent performance under induced white stable lighting.\n\nThe vision system uses HSV‑based color segmentation, template matching and image filtering to detect victims with precision.\n\nDistance calculation are integrated into the environment perception loop, enabling the robot to evaluate obstacles and passage paths in a reliable manner.\n\nNavigation is handled through a weighted depth‑first search algorithm adapted for dynamic environments. This allows the robot to prioritize unexplored paths while continuously updating its internal grid‑based map.\n\nThe robot’s control system is built around a hybrid architecture where a LEGO Hub performs motor control, while a secondary processor handles I2C sensor fusion and communication with the M5Stack UnitV cameras.\n\nWhat sets our robot apart is the combination of deterministic behavior, modular environment sensing, and a perception pipeline tuned specifically for reliability rather than brute‑force computation. The result is a system that is quite modular and efficient and also remains predictable and possible to debug even under harsh environmental constraints.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -663,6 +1172,19 @@
       "team_name": "TOKAI Susano",
       "league": "Maze",
       "country": "Japan",
+      "keywords": [
+        "Coordinate Management",
+        "Backup System",
+        "Red Zone Exit",
+        "microSD Data Saving and Recovery",
+        "Multi-Floor Coordinate Management",
+        "Weighted Euclidean Distance",
+        "Frontier Exploration",
+        "Self-Made Silicone Tires",
+        "Low-Center-of-Gravity Design",
+        "OpenMV Camera"
+      ],
+      "introduction": "TOKAI Susano is a team taking on RoboCupJunior Rescue Maze for the first time. Our initial goal was to place highly in the Japan Open, and through three prototypes we gradually developed stable driving, reliable exploration, victim detection, and rescue-kit deployment. The current robot combines a compact, low-center-of-gravity four-wheel-drive structure, self-made silicone tires, multiple ToF sensors, an IMU, a color sensor, and OpenMV cameras. In particular, we emphasized backup systems for dealing with errors and restarts during the competition, including tile-by-tile coordinate management, recording wall information, saving and restoring data with a microSD card, and coordinate matching after leaving the red zone. As a result, the robot has achieved a high return success rate in flat mazes and continues to be improved so that it can handle obstacles and multi-floor courses. This TDP describes TOKAI Susano's mechanical design, electronic design, software architecture, performance evaluation, and the problems encountered during development and how they were solved.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -677,6 +1199,17 @@
       "team_name": "Tachyons",
       "league": "Maze",
       "country": "Italy",
+      "keywords": [
+        "Teamwork",
+        "Innovation",
+        "Research",
+        "Dijkstra",
+        "Arduino",
+        "Arduino Uno Q",
+        "OpenCV",
+        "YOLO"
+      ],
+      "introduction": "Q-Botto is a robot developed by the Tachyons team, its main objective since the beginning of the project was to develop and introduce new technologies to the rescuemaze competition, both for their educational value to the team’s members, and to differentiate the robot from other teams in the competition.\n\nIts main chassis is CNC milled out of aluminum, it was designed by us and manufactured on a CNC lended by INFN LNS (the italian National Institute of Nuclear Physics National Laboratories of the South), and features a custom PCB, designed by us and manufactured by JLCPCB. The components were soldered by hand.\n\nIts motors are Stepper motors driven by TMC2209 stepper drivers for high reliability and good performance.\n\nThe robot’s wheels are custom designed and Injection molded with silicone by us.\n\nThe suspensions are a type Christie suspension milled in aluminum in the same way as the chassis with some 3d printed parts for parts with more complex geometries",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -691,6 +1224,19 @@
       "team_name": "Team Jup Maze",
       "league": "Maze",
       "country": "Netherlands",
+      "keywords": [
+        "LEGO SPIKE Prime",
+        "Raspberry Pi 5",
+        "Computer Vision",
+        "Roboflow",
+        "Victim Detection",
+        "Bluetooth Communication",
+        "Autonomous Navigation",
+        "Ultrasonic Sensors",
+        "Grid Mapping",
+        "Rescue Kit Deployment"
+      ],
+      "introduction": "Team JUP is a RoboCup Junior Maze team from the Netherlands competing with a fully autonomous rescue robot designed to navigate complex maze environments, detect victims, and deploy rescue kits without human intervention.\n\nThe robot is built using a LEGO Technic chassis combined with custom 3D-printed components, creating a compact, durable, and highly adaptable platform. Navigation is performed using three ultrasonic sensors that continuously monitor obstacles and available paths. A grid-based mapping system allows the robot to keep track of explored areas and make navigation decisions throughout a run.\n\nOne of the robot’s distinguishing features is its dual-computer architecture. 2 LEGO SPIKE Prime Hubs handle navigation and motor control, while a Raspberry Pi 5 processes camera data for victim recognition. Communication between both systems is established through Bluetooth, allowing each device to focus on its own tasks while improving overall reliability.\n\nVictim detection is performed using a Raspberry Pi Camera and a custom machine-learning dataset developed by the team. More than 500 images were collected, labelled, and processed using Roboflow to create a dedicated recognition model.\n\nFollowing lessons learned during the European Championship, Team JUP redesigned significant parts of its software architecture and navigation system, resulting in improved stability, reliability, and competition readiness for the World Championship in Seoul.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -705,6 +1251,19 @@
       "team_name": "The Worriers",
       "league": "Maze",
       "country": "India",
+      "keywords": [
+        "ACK-gated Architecture",
+        "UART Communication Protocol",
+        "Frontier Exploration",
+        "Turn-aware Dijkstra Routing",
+        "PD Wall Following",
+        "Blind Odometry",
+        "Sensor Fusion",
+        "IMU-based Ramp Traversal",
+        "Continuous Ranging",
+        "Self-Healing Sensor Pipeline"
+      ],
+      "introduction": "Our team aims to develop a robot that operates with exceptional targeted precision, rescuing victims and overcoming all obstacles in accordance with the Robocup Junior Rescue Maze Rules .. What makes it unique is a strict three-tier body / mind / dev architecture: a Cytron Motion 2350 Pro (RP2350) handles all real-time sensing and closed-loop motion primitives, a Raspberry Pi 5 runs the mapping, frontier exploration and turn-aware Dijkstra routing, and a laptop is used only for development. The two boards speak a simple ACK-gated ASCII protocol over UART, so exactly one command is ever in flight and every motion is verified by sensors rather than assumed.\n\nSix VL53L0X time-of-flight sensors (four for mapping, two dedicated to wall-following), an AS7341 spectral sensor for floor colour, and a BNO055 IMU sit behind a PCA9548A I²C multiplexer. A ~70 Hz control loop (rebuilt from an original 5 Hz blocking design) drives absolute-cardinal turns, calibrated single-tile moves with residual-error carry, PD wall-following, a blind-odometry fallback for long corridors, and IMU-based ramp traversal across multiple floors. The robot persists its map at every silver checkpoint and can resume after a Lack of Progress in any orientation, relocalising itself by matching sensed walls against the saved map",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -719,6 +1278,19 @@
       "team_name": "Theseus",
       "league": "Maze",
       "country": "Canada",
+      "keywords": [
+        "Arduino Giga",
+        "BFS",
+        "FOMO detection",
+        "Computer Vision",
+        "State Machine",
+        "PID control",
+        "Bitset Tile data structure",
+        "Memory saving",
+        "Multicore Threading",
+        "Encoder-controlled movement"
+      ],
+      "introduction": "What sets the Theseus Maze Robot apart from competitors utilizes a fusion of information from disparate sensors to accurately and reliably traverse the maze. Instead of using a single type of sensor to control movement, data from the gyro, TOF and magnetic encoder sensors are combined to allow for smooth and precise movement through the maze. The robot uses a state machine as its software architecture for navigating the maze, and uses a 2-D Array consisting of our own custom tile bitset to map out its route. To detect victims, a powerful FOMO network was trained on over a thousand augmented images through an edge impulse pipeline to detect victims. We also have many hardware innovations, including a suspension system for smoother movement in uneven terrain as well as a rotating dispenser allowing for selective dispensing on both sides of the robot. However, our team has placed most of our efforts into improving the software, as we believe that better navigation, movement and detection would give us the advantage over a team with custom hardware, but with worse code.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -733,6 +1305,8 @@
       "team_name": "Top Class",
       "league": "Maze",
       "country": "Republic of Korea",
+      "keywords": [],
+      "introduction": "",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -747,6 +1321,17 @@
       "team_name": "Tuton",
       "league": "Maze",
       "country": "Japan",
+      "keywords": [
+        "RaspberryPi",
+        "STM32",
+        "Articulated Chassis",
+        "Deformable Silicone Wheels",
+        "Python",
+        "Orientation-aware Dijkstra's Algorithm",
+        "Dynamic 3D Mapping",
+        "LiDAR"
+      ],
+      "introduction": "Our robot is designed to efficiently navigate and complete tasks in the RoboCup Rescue Maze competition. Through experience gained in previous competitions, we found that a well-structured design and thorough project planning are essential for achieving high performance and reliability.\n\nTo address the challenges of uneven terrain, we developed a custom articulated chassis equipped with deformable silicone tires, enabling stable traversal of bumps, ramps, and stairs. The robot employs a distributed architecture consisting of multiple STM32 microcontrollers and a Raspberry Pi, improving modularity, maintainability, and stable electronic operation. LiDAR-based mapping and an orientation-aware Dijkstra’s algorithm enable efficient autonomous exploration.\n\nThe victim detection system, refined through extensive development and testing, ensures reliable victim identification and rescue kit deployment. Through rigorous performance evaluation, we validated the robot's capabilities under competition-like conditions and confirmed compliance with competition requirements.\n\nOur team remains committed to continuous improvement and innovation, striving for excellence in the RoboCup Rescue Maze competition.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -761,6 +1346,19 @@
       "team_name": "VAST",
       "league": "Maze",
       "country": "India",
+      "keywords": [
+        "Depth-First Search",
+        "BFS flood-fill",
+        "MPU-6050",
+        "ultrasonic sensing",
+        "time-calibrated navigation",
+        "ramp detection",
+        "finite state machine",
+        "Cytron Maker Pi RP2040",
+        "OpenMV H7+",
+        "Edge Impulse"
+      ],
+      "introduction": "VAST is a three-member team from India competing internationally at RoboCup Junior Rescue Maze. Our robot, Samarth — Sanskrit for \"equal to the task at hand\" — is a fully autonomous maze-solving robot built on the Cytron Maker Pi RP2040.\n\nWhat sets Samarth apart is its two-tier navigation architecture: a greedy Depth-First Search drives real-time exploration, while a BFS flood-fill planner handles recovery and relocation across confirmed-safe cells to the nearest unexplored frontier or back to start. This hybrid approach gives Samarth both speed and resilience, it doesn't just explore, it always knows how to recover. Three ultrasonic sensors, an MPU-6050 gyro, and a TCS34725 color sensor support reliable navigation and tile identification. We deliberately prioritize a guaranteed return to start over strict blue tile avoidance, securing full maze completion points.\n\nBuilding on our nationals foundation, we continuously advanced Samarth's hardware and software: the chassis was redesigned in Fusion 360 into a 217×119×139mm PLA frame with dedicated mounting points for every component, and our codebase evolved from proven algorithms into a more robust, competition-ready system. The rescue kit deployment mechanism is a servo-driven dual chute carrying up to 12 kits and also doubles as the robot's handle, keeping the design compact.\n\nVictim detection via an OpenMV H7+ running an Edge Impulse model keeps detection fully autonomous. The camera identifies victims, triggers color-coded LED signals, and feeds results directly into Samarth's decision-making, pushing it beyond navigation into a robot that genuinely perceives and responds to its environment.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -775,6 +1373,19 @@
       "team_name": "Anyang",
       "league": "Simulation",
       "country": "Republic of Korea",
+      "keywords": [
+        "YOLOv5",
+        "LiDAR Mapping",
+        "Occupancy Grid Mapping",
+        "Sensor Fusion",
+        "Frontier Exploration",
+        "Pyhon",
+        "Autonomous Navigation",
+        "GitHub",
+        "Computer vision",
+        "Path Planning"
+      ],
+      "introduction": "Our robot utilizes LiDAR sensors for mapping, integrated with an A* pathfinding algorithm and frontier-based exploration to ensure precise map reconstruction and exhaustive coverage of the entire arena. To maximize performance in the RoboCup simulation league, we have implemented a robust obstacle avoidance system and a multi-sensor fusion framework that enables seamless navigation in complex environments.\n\nFor victim identification, we employ camera data processed through a custom-trained YOLO model, achieving high accuracy in detecting victim letters. Furthermore, our system features a highly optimized recognition module for wall tokens, ensuring accurate classification and distinguishing them from victims across various mission scenarios.\n\nBeyond basic navigation, our architecture incorporates a dynamic re-planning strategy that allows the robot to adapt to unexpected obstacles in real-time. By utilizing a multi-threaded GUI debug viewer, we monitor internal system logic and environmental data continuously. This ensures that the robot not only identifies targets efficiently but also maintains operational stability throughout the mission, effectively bridging the gap between raw sensor input and intelligent, mission-critical decision-making.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -789,6 +1400,19 @@
       "team_name": "Black Radiators",
       "league": "Simulation",
       "country": "Italy",
+      "keywords": [
+        "Python",
+        "Webots/Erebus",
+        "computer vision",
+        "OpenCV",
+        "YOLO",
+        "camera",
+        "LiDAR",
+        "path planning",
+        "occupancy-grid mapping",
+        "GitHub"
+      ],
+      "introduction": "Black Radiators' entry is a fully autonomous virtual robot for the RoboCupJunior Rescue Simulation, built on the Webots/Erebus platform and programmed in Python. It is a compact two-wheel differential-drive robot equipped with a LiDAR, a GPS, an inertial unit, a downward colour sensor, a wheel encoder, and two 64×64 cameras mounted on the left and right so it can read wall tokens on both sides of a corridor at once.\n\nThe controller is organised into four cooperating modules — perception, navigation, mapping and communication. The robot explores online by right-wall following on a 1 cm occupancy grid inflated into a configuration space, so it can plan as a single point and never clip a corner. When the local area is exhausted, a padding-tolerant breadth-first search drives it to the nearest unexplored frontier along a line-of-sight-smoothed path, while a GPS-based watchdog recovers it from holes, swamps and dead ends. Victims are detected with a hybrid pipeline: a YOLO neural network classifies the letter victims, a deterministic colour scanline sums the concentric rings of the hazardous-material signs, and a LiDAR depth test rejects fake three-dimensional letters.\n\nWhat sets our robot apart is this combination: a low-cost twin-camera layout, a configuration-space planner that is both safe and able to squeeze through narrow gaps, and a perception system that pairs a learned letter detector with a fully explainable arithmetic hazmat detector.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -803,6 +1427,19 @@
       "team_name": "CAETI UAI",
       "league": "Simulation",
       "country": "Argentina",
+      "keywords": [
+        "Python",
+        "Computer vision",
+        "Camera",
+        "Path planning",
+        "Dynamic mapping",
+        "LiDAR positioning",
+        "OpenCV",
+        "Autonomous navigation",
+        "Github",
+        "Webot"
+      ],
+      "introduction": "Our team will present a robot designed for the RoboCupJunior Rescue Simulation 2026 competition, built for autonomous navigation in disaster environments. The robot uses three cameras — left, front, and right — for sign detection, victim recognition, cognitive target classification, and tile identification. A front-facing distance sensor works alongside the LIDAR for obstacle detection: the front camera helps filter out false positives by excluding known colours such as cognitive target rings and wall tones, ensuring only true obstacles are confirmed. The LIDAR also serves as the primary positioning tool: its front ray acts as a virtual ruler, calculating displacement from movement-to-movement distance differences, complemented by GPS averaging during stationary moments and stronger corrections after Lack of Progress events.\n\nThe robot navigates using a hybrid pathfinding system combining Dijkstra's algorithm for global route planning and Greedy Best-First Search at the pixel level for tight spaces. The map expands dynamically as the robot explores, with obstacles recorded as non-traversable and marked as \"X\" in the matrix representation. Fake tokens are identified through the image processing pipeline itself — tokens that cannot be matched to a known pattern are rejected by elimination, without requiring separate hardware. Cognitive targets are classified through a colour scoring system applied along the visible arc of the token.\n\nOur robot stands out for integrating reliable positioning, robust detection, and adaptive mapping into a fully autonomous system capable of tackling the specific challenges of the 2026 ruleset.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -817,6 +1454,15 @@
       "team_name": "Danesh Auriga",
       "league": "Simulation",
       "country": "Iran",
+      "keywords": [
+        "A* algorithm",
+        "YOLO",
+        "Motion Model",
+        "PID Controller",
+        "Occupancy Grid Mapping",
+        "Path Planning"
+      ],
+      "introduction": "This paper presents the design and implementation of an autonomous two-wheeled robot developed for efficient exploration, mapping, localization, navigation, and wall-token detection in simulated environments. The software is implemented in Python and integrates LiDAR, GPS, IMU, wheel-motion data, and three RGB cameras. The environment is represented as a high-resolution occupancy map and explored through A*-based path planning. A graph-based navigation strategy extends the standard grid representation by detecting traversable points between grid nodes, enabling the robot to pass through narrow passages that would otherwise remain inaccessible. For visual perception, three downward-angled cameras provide simultaneous coverage of the front, left, and right walls, improve the distinction between real and fake victims, and increase the visibility of cognitive targets at short distances. A deep-learning-based detection pipeline identifies wall tokens and estimates target centers for subsequent classification. The system was evaluated across 70 standard worlds, and the selected version achieved the best overall performance, with an average score of 1536.94 and a mean map-correctness percentage of 88.28%. These results demonstrate the effectiveness and stability of the proposed integrated approach.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -831,6 +1477,19 @@
       "team_name": "Kavosh_Simul",
       "league": "Simulation",
       "country": "Canada",
+      "keywords": [
+        "YOLO11s",
+        "OpenCV",
+        "ROI-based detection",
+        "HSV color segmentation",
+        "temporal confirmation",
+        "3D fake-victim rejection",
+        "sensor fusion",
+        "duplicate suppression",
+        "LiDAR mapping",
+        "wall-focused navigation"
+      ],
+      "introduction": "Kavosh_Simul is an autonomous Rescue Simulation robot designed around efficient wall inspection, reliable token detection, and modular software integration. The robot uses a two-wheel structure with two side-facing cameras, GPS/location sensing, IMU, LiDAR, color sensing, and distance sensors, including a downward-facing distance sensor for early hole detection. Its software is organized into independent modules for sensing, vision, mapping support, navigation, motion control, and reporting.\n\nThe main strength of our system is its perception pipeline. Instead of sending every full camera frame directly to a neural network, the robot first searches for meaningful wall candidates, crops only the region of interest, and then sends the ROI to a YOLO11s detector for Greek victim symbols. Cognitive targets are handled separately using an OpenCV-based rule pipeline with HSV segmentation, circular filtering, ring sampling, and numerical classification. To improve reliability, detections are verified through confidence checks, temporal confirmation, 3D fake-victim rejection using depth information, and GPS/yaw/LiDAR-based duplicate suppression.\n\nWhat sets our robot apart is its focus on practical reliability rather than raw detection count. Our next development step is to complete our Python-based SLAM mapping system and connect it with wall-focused path planning to inspect all important wall areas with minimum unnecessary travel.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -845,6 +1504,19 @@
       "team_name": "Labyrinthos",
       "league": "Simulation",
       "country": "Taiwan",
+      "keywords": [
+        "Autonomous Rescue Robot",
+        "Erebus Simulator",
+        "Webots",
+        "Hybrid Depth-First Search",
+        "Wall-Hugging Greedy Strategy",
+        "Dijkstra's Algorithm",
+        "Local Grid Mapping",
+        "LiDAR Point Cloud",
+        "TensorFlow Victim Identification",
+        "letter_recognition_8_model_v3b.keras"
+      ],
+      "introduction": "This paper introduces an autonomous rescue robot built for the RoboCupJunior Rescue Simulation competition in the Erebus environment. The robot can navigate, map, and find victims inside an unknown maze.\n\nOur robot uses a simple dual-layer system for movement. It explores the maze using a grid-based Depth-First Search (DFS) algorithm. When it hits a dead-end, it switches to Dijkstra’s algorithm to find the shortest path back to unvisited areas. For mapping, the robot processes 256 LiDAR rays and projects them onto a local 9×9 grid window. This method filters out simulator sensor noise and saves CPU power. To avoid traps like black holes, we added a validation step that requires consistent detections before updating the map. Finally, a TensorFlow-based vision model identifies victim types from camera images.\n\nWhat makes our robot better than others is its efficiency. By using a small local window for mapping and dynamic rerouting, it achieves fast exploration with low computing limits, ensuring an accurate map for the final submission.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -859,6 +1531,18 @@
       "team_name": "OGEE",
       "league": "Simulation",
       "country": "Türkiye",
+      "keywords": [
+        "Autonomous Rescue",
+        "Webots Simulation",
+        "Dijkstra Algorithm",
+        "Grid-Based SLAM",
+        "OpenCV",
+        "Computer Vision",
+        "Sensor Fusion",
+        "Path Planning",
+        "Robot Customizer Tool"
+      ],
+      "introduction": "This paper presents the autonomous virtual rescue robot developed by Team OGEE for the RoboCupJunior Rescue Simulation 2026 competition.The system is designed to navigate a highly hazardous, simulated rescue environment completely autonomously, identifying victims and generating real-time environmental maps. Our robot platform integrates a differential-drive chassis with a specialized sensor array featuring high-resolution LiDAR, multi-angle RGB cameras, a Global Positioning System (GPS), and an Inertial Measurement Unit (IMU), staying strictly within the 3000-unit competition budget constraint. What sets our system apart from competitors is its highly integrated, modular sensor-fusion architecture. Locomotion is governed by an innovative dual-Dijkstra pathfinding system equipped with path-smoothing turn penalties and a strict hysteresis gate to eliminate frontier oscillations in tight corridors. For victim identification, the robot utilizes a custom OpenCV computer vision pipeline featuring a geometric Kasa least-squares circle-fit filter to discard fake 3D distractors and a robust connected-components apportionment engine to decode complex, multi-layered cognitive targets under severe camera skew. Simultaneously, a grid-based SLAM module fuses spatial sensor inputs into a 5 mm resolution matrix to secure the mapping bonus multiplier. The resulting architecture balances computational efficiency with exceptional resilience to sensor noise.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -873,6 +1557,19 @@
       "team_name": "Robomanics",
       "league": "Simulation",
       "country": "Egypt",
+      "keywords": [
+        "Python",
+        "Rescue Simulation",
+        "Occupancy Grid Mapping",
+        "Frontier Exploration",
+        "Path Planning",
+        "Autonomous Navigation",
+        "Victim Detection",
+        "Cognitive Target Detection",
+        "Computer Vision",
+        "GPS-IMU Localization"
+      ],
+      "introduction": "Robomanics is an autonomous rescue simulation robot designed to explore unknown environments, detect victims, solve cognitive targets, and safely return to its starting position. The system is developed in Python and follows a modular architecture consisting of perception, decision-making, and motion-control layers.\n\nThe robot continuously collects data from GPS, IMU, LiDAR, distance sensors, and RGB cameras to build an occupancy-grid representation of the environment. This map is used to identify walls, obstacles, holes, checkpoints, and unexplored areas. Using autonomous path-planning and navigation algorithms, the robot efficiently explores the arena while dynamically adapting to environmental changes and handling recovery situations when navigation difficulties occur.\n\nFor victim detection, the robot processes camera images to identify and classify rescue symbols, determine their locations, and report them accurately. In addition, a dedicated cognitive target detection module recognizes circular targets, extracts ring colors, converts them into numerical values, and classifies the target according to competition requirements.\n\nWhat distinguishes Robomanics is the integration of mapping, victim detection, cognitive target recognition, autonomous exploration, and recovery mechanisms into a unified decision-making framework. This allows the robot to operate efficiently in complex environments while maintaining reliable performance, accurate reporting, and complete mission execution from exploration to safe return.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -887,6 +1584,19 @@
       "team_name": "Robotics Barcelinhos",
       "league": "Simulation",
       "country": "Portugal",
+      "keywords": [
+        "rescue robotics",
+        "occupancy grid",
+        "extended Kalman filter",
+        "reactive navigation",
+        "Webots",
+        "Erebus",
+        "RoboCup Junior",
+        "pose estimation",
+        "victim detection",
+        "hole avoidance"
+      ],
+      "introduction": "Team Barcelinhos' entry for RoboCup Junior Rescue Simulation 2026, running on the Erebus/Webots platform. The robot autonomously navigates unknown maze environments, detects and reports victims and cognitive targets (hazmat signs), avoids floor holes, and submits a 2D occupancy map to the game supervisor.\n\nThe software stack is implemented in Python 3 across three collaborating modules, an Extended Kalman Filter (EKF) for pose estimation, a log-odds occupancy grid for persistent environment mapping, and a main controller integrating reactive navigation, victim identification, and hole avoidance without any external robotics library. All 3×3 matrix operations required by the EKF are implemented by hand, keeping the codebase fully self-contained.\n\nNavigation uses a four-level priority chain (wall stop, lateral push, steer-while-advance, heading-locked forward) evaluated every 32 ms timestep. A triple anti-stuck system with three independent detectors (GPS-based, encoder-based, and spinning detection) and an adaptive escape routine prevent the robot from being trapped in corners or cyclic patterns. Cognitive targets are identified by sampling five concentric colour rings; letter victims are distinguished by region-based dark-pixel density scores. Duplicate detections are suppressed by an 8.3 cm grid keyed to the KF position estimate. The entire controller runs under 800 lines of source code.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -901,6 +1611,19 @@
       "team_name": "Speshari",
       "league": "Simulation",
       "country": "Slovakia",
+      "keywords": [
+        "C++",
+        "LiDAR",
+        "Dijkstra's algorithm",
+        "OpenCV",
+        "Eigen",
+        "2D grid mapping",
+        "victim detection",
+        "pathfinding",
+        "odometry",
+        "CI pipline"
+      ],
+      "introduction": "Speshari presents a fully autonomous robot designed to excel in the RoboCupJunior Rescue Simulation's Erebus subleague. Our solution combines precise mapping, intelligent navigation, and accurate victim recognition. The robot constructs a multi-layered 2D grid-based model of the environment using LiDAR, IMU, GPS, and dual side-mounted cameras, enabling robust localization and situational awareness. Navigation is guided by an advanced Dijkstra-based algorithm optimized for dynamic terrain and directional cost penalties, allowing for smooth and efficient motion through complex environments. Victim detection leverages custom image processing with OpenCV, achieving a high success rate under varied lighting and various angles. A modular C++ codebase supports independent development and testing of each subsystem—mapping, movement, token recognition, and server communication—maximizing flexibility and performance. Notably, our approach includes floor-type detection from both color sensors and camera input, enhancing trap and swamp avoidance. What sets Speshari apart is the integration of sophisticated mapping fidelity, direction-sensitive pathfinding and token recognition adapted on rotated tokens, all operating seamlessly in real-time within a lightweight and synchronized architecture. This synergy of precise hardware usage, robust algorithms, and team-driven development positions our robot as a  contender in the simulation challenge.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -915,6 +1638,19 @@
       "team_name": "UNIQA CRO Team",
       "league": "Simulation",
       "country": "Croatia",
+      "keywords": [
+        "YOLOv8",
+        "A* path planning",
+        "occupancy grid",
+        "LiDAR wall detection",
+        "false-positive filtering",
+        "multi-room navigation",
+        "Erebus simulation",
+        "Webots",
+        "victim detection",
+        "map serialisation"
+      ],
+      "introduction": "The UNIQA CRO Team RoboCraft has developed a fully autonomous robot for the Erebus Rescue Simulation platform. The robot navigates procedurally generated four-room mazes, builds an accurate occupancy-grid map, and detects wall-mounted victims and hazmat signs without human intervention.\n\nNavigation is driven by a modified A* path planner on a sparse-dictionary grid whose cells store a 5x5 typed matrix. Wall detection uses a 512-ray LiDAR with a 3-ray noise filter and 20 named distance ranges. Multi-room exploration is managed via colour-sensor-based tunnel detection with automatic room-transition logic.\n\nVictim detection combines a YOLOv8 neural network trained on Erebus data with a six-stage false-positive filter cascade including a pixel-level wall-rejection pre-filter, bounding-box geometry checks, and ROI colour analysis. A position-aware deduplication system prevents duplicate reports.\n\nMap submission applies a nine-stage post-processing pipeline including BFS phantom-wall removal and a Room 4 bounding-box fill algorithm. A universal exception safety net ensures the robot always submits a valid map. The controller is approximately 3 200 lines of Python 3 using NumPy, OpenCV, PyTorch, and Ultralytics YOLO.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -929,6 +1665,18 @@
       "team_name": "learnsteam",
       "league": "Simulation",
       "country": "Republic of Korea",
+      "keywords": [
+        "Keywords: Pathfinding",
+        "A* Algorithm",
+        "Dijkstra’s Algorithm",
+        "Wall Token Detection",
+        "OpenCV",
+        "Mapping",
+        "NumPy",
+        "LiDAR",
+        "Sensor Noise Reduction"
+      ],
+      "introduction": "Team RM developed an autonomous rescue simulation robot designed to explore unknown\n\nenvironments, detect victims and hazardous materials, generate maps, and return to the\n\nstarting point within the given time limit. The robot uses two motors, three cameras, GPS, a\n\ngyroscope, and a 360-degree LiDAR sensor. LiDAR is used for obstacle detection,\n\npoint-cloud generation, and real-time mapping, while GPS and gyroscope data help estimate\n\nthe robot’s position and direction. The front, left, and right cameras identify wall tokens,\n\nvictims, hazardous signs, and floor types through OpenCV-based image processing.\n\nThe main feature of our robot is the integration of multiple sensors with a noise-aware\n\nnavigation and mapping system. Instead of relying only on simple obstacle detection, the\n\nrobot uses A* pathfinding, navigation preference values, and continuously updated map\n\nlayers to select safer routes. Compared with our previous version, the robot was redesigned to\n\nreduce the effects of sensor noise and improve movement stability. These improvements\n\nallowed the robot to explore more consistently, detect important objects more reliably, and\n\ncreate a more accurate map during the simulation.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",
@@ -943,6 +1691,19 @@
       "team_name": "Águabots",
       "league": "Simulation",
       "country": "Brazil",
+      "keywords": [
+        "ROS 2",
+        "Webots",
+        "semantic mapping",
+        "tile-based navigation",
+        "LiDAR",
+        "SLAM",
+        "ONNX",
+        "computer vision",
+        "victim detection",
+        "backtracking"
+      ],
+      "introduction": "Our robot for RoboCupJunior Rescue Simulation 2026 is an autonomous rescue robot designed to explore a simulated maze, detect victims and wall tokens, avoid hazardous areas, build a semantic map, and return to the starting point within the competition time limit. The system combines a deterministic controller-side navigation strategy with ROS 2-based mapping and perception modules.\n\nThe movement system runs inside the Webots controller using the exploration_legacy library. It represents the arena as a discrete tile grid, reads LiDAR and ground-sensor information, selects safe neighboring tiles, executes calibrated wheel-position movements, and uses backtracking to return to the start. This approach was chosen because the Rescue Simulation maze is strongly tile-based and requires repeatable short movements rather than continuous generic path execution.\n\nROS 2 is used as a functional part of the final system for semantic mapping, victim and wall-token processing, visualization, debugging, and reporting support. The mapping module builds a tile-based semantic representation of the arena, while the vision pipeline uses ONNX neural networks and classical computer vision to detect victims and decode wall-token information.\n\nThe main strength of our system is the combination of competition-specific tile navigation, semantic mapping, and lightweight real-time perception in an integrated architecture.",
       "consent": {
         "tdp": "Agree",
         "video": "Agree",

@@ -48,6 +48,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "data" / "assets.json"
 TEAMS = ROOT / "data" / "teams.json"
+WINNERS = ROOT / "data" / "winners.json"
 STAGE_ROOT = ROOT.parent / "rcj-public-docs-upload-stage"
 
 VIDEO_ARTIFACTS = ("video", "launching_video")
@@ -67,14 +68,22 @@ def load_teams() -> dict[str, dict]:
     return {t["team_code"]: t for t in data["teams"]}
 
 
-def load_eligible_assets() -> list[dict]:
+def load_winner_codes() -> set[str]:
+    data = json.loads(WINNERS.read_text(encoding="utf-8"))
+    return {e["team_code"] for entries in data.get("leagues", {}).values() for e in entries}
+
+
+def load_eligible_assets(winner_codes: set[str]) -> list[dict]:
+    """Video/launching_video, gated by consent OR the winner override: top-3 league
+    winners get their video published regardless of their consent answer (BOM and
+    source code have no such override — this applies to video/poster only)."""
     data = json.loads(ASSETS.read_text(encoding="utf-8"))
     return [
         a for a in data["assets"]
         if a["artifact"] in VIDEO_ARTIFACTS
         and a["status"] == "ok"
-        and a["consent"] == "Agree"
-        and a["publishable"]
+        and (a["consent"] == "Agree" or a["team_code"] in winner_codes)
+        and (a["publishable"] or a["team_code"] in winner_codes)
     ]
 
 
@@ -182,7 +191,8 @@ def main() -> int:
     args = parser.parse_args()
 
     teams_by_code = load_teams()
-    eligible = load_eligible_assets()
+    winner_codes = load_winner_codes()
+    eligible = load_eligible_assets(winner_codes)
     if args.league:
         eligible = [a for a in eligible if teams_by_code.get(a["team_code"], {}).get("league") == args.league]
     done = load_done(args.results)

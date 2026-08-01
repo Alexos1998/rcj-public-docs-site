@@ -7,6 +7,11 @@ Static GitHub Pages-ready outline for browsing team documents without storing la
 - `index.html` — static frontend.
 - `images/<team_code>/team_photo.*`, `images/<team_code>/robot_photo.*` — committed directly to the repo (resized to a max 900px edge). These are the only media type hosted in-repo; `data/assets.json` `backend: "local"` entries point here with a relative path.
 - `data/teams.json` — token-free team metadata and publication consent status.
+  - `keywords` — from each team's TDP "Keywords" question (source: `docevaluation Kopie/teams/<team_code>_*/answer_raw.json`). Blank or clearly-not-a-keyword-list (prose) answers are left empty rather than guessed at.
+  - `introduction` — the TDP's "Abstract" question (TDP section 1, Introduction), extracted whole/verbatim, paragraph breaks preserved.
+  - Both are unconditional: TDP submission itself cannot be marked "Disagree" (it's mandatory to enter), so every team that submitted a TDP has these fields populated when present.
+  - A team with every consent field (`tdp`/`video`/`poster`/`bom`/`source_code`) set to `Disagree` is dropped from this file entirely, unless they are a top-3 league winner (see below).
+- **Consent policy** (also enforced live in `index.html`'s `isPublished()`, not just baked into the data): `tdp` is mandatory/always shared. `poster` and `video`/`launching_video` are optional, but a top-3 league winner's poster and video are published regardless of what they answered (`WINNER_OVERRIDE_ARTIFACTS` in `index.html`). `bom` and `source_code` are fully optional with no override, ever — a winning team that declined those still has them hidden.
 - `data/assets.json` — token-free asset manifest, keyed by `team_code`. Display always uses `team_name`; `team_code` never appears in the rendered site, only as the internal join key. `team_photo`/`robot_photo` use `backend: "local"` (path into `images/`); every other artifact is empty until uploaded to Drive/CDN/YouTube.
 - `data/publication_consent.csv` — consent audit data.
 - `data/score_budget_sensor_summary.json` and related CSVs — analysis summaries.
@@ -20,15 +25,14 @@ Videos, PDFs, ZIPs, and journals are too large for normal GitHub Pages/repo host
 
 ## Google Drive workflow
 
-1. Upload publishable files to Drive.
+1. Upload publishable files to Drive. Video is handled by the YouTube workflow below instead — Drive is for poster/BOM/TDP/journal.
 2. Share each file as `Anyone with the link can view`.
 3. Create a CSV like:
 
 ```csv
 team_code,artifact,drive_file_id
-L01,video,1AbCdEfGhIjKlMnOpQrStUvWxYz
-L01,poster,2BcDeFgHiJkLmNoPqRsTuVwXyZa
-L01,bom,3CdEfGhIjKlMnOpQrStUvWxYzAb
+L01,poster,1AbCdEfGhIjKlMnOpQrStUvWxYz
+L01,bom,2BcDeFgHiJkLmNoPqRsTuVwXyZa
 ```
 
 4. Merge it:
@@ -72,14 +76,14 @@ python3 tools/upload_to_youtube.py --client-secrets client_secret.json --limit 6
 python3 tools/merge_drive_file_ids.py tools/youtube_upload_results.csv
 ```
 
-Only assets with `consent == "Agree"` are ever uploaded.
+Assets are uploaded when `consent == "Agree"`, or — for `video`/`launching_video` only — the team is a top-3 league winner (see the consent policy note above). BOM and source code have no such override, ever.
 
 ## Consent behavior
 
 The frontend renders an asset only when:
 
 - `status == "ok"`
-- `consent == "Agree"`
+- `consent == "Agree"` (or, for `video`/`launching_video`/`poster` only, the team is a top-3 league winner)
 - a URL exists
 
 Rows with `Disagree`, `Missing`, missing files, or no configured external URL are displayed as not embedded.
