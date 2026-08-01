@@ -380,6 +380,10 @@ function setLeague(league) {
   else history.pushState('', document.title, location.pathname + location.search);
   render();
 }
+function scrollToAsset(artifact) {
+  const el = document.getElementById(`asset-${artifact}`);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 function selectedTeam() { return teams.find(team => teamKey(team) === selectedTeamKey()); }
 function passes(team, league) {
   const q = normalize($('#q').value).trim();
@@ -492,7 +496,7 @@ function renderDetail(team) {
         <h2>${esc(team.team_name)}</h2>
         <div class="muted">${esc(team.league)} league · ${esc(team.country)}${win ? ` · ${win.place}. place` : ''}</div>
         <div class="facts"><div class="fact"><span class="muted">Published resources</span><strong>${list.length}</strong></div><div class="fact"><span class="muted">Topics</span><strong>${topics.length}</strong></div><div class="fact"><span class="muted">Country</span><strong>${esc(team.country || 'Unknown')}</strong></div></div>
-        <div class="quicklinks">${list.map(asset => `<a href="#asset-${esc(asset.artifact)}">${esc(assetLabel(asset))}</a>`).join('') || '<span class="muted">No published resources configured for this team.</span>'}</div>
+        <div class="quicklinks">${list.map(asset => `<a href="javascript:void(0)" onclick="scrollToAsset('${esc(asset.artifact)}')">${esc(assetLabel(asset))}</a>`).join('') || '<span class="muted">No published resources configured for this team.</span>'}</div>
       </div>
     </section>
     <h2 class="section-title">Published team information</h2>
