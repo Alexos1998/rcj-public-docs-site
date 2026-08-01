@@ -2,3 +2,6 @@
 *.log
 node_modules/
 drive_file_map.csv
+client_secret*.json
+tools/.youtube_token.json
+tools/youtube_upload_results.csv

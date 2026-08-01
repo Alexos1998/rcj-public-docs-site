@@ -6,15 +6,16 @@ Static GitHub Pages-ready outline for browsing team documents without storing la
 
 - `index.html` — static frontend.
 - `data/teams.json` — token-free team metadata and publication consent status.
-- `data/assets.json` — token-free asset manifest. URLs are empty until files are uploaded to Drive/CDN.
+- `data/assets.json` — token-free asset manifest, keyed by `team_code`. Display always uses `team_name`; `team_code` never appears in the rendered site, only as the internal join key. URLs are empty until files are uploaded to Drive/CDN.
 - `data/publication_consent.csv` — consent audit data.
 - `data/score_budget_sensor_summary.json` and related CSVs — analysis summaries.
 - `tools/source_upload_manifest.csv` — local source paths for upload automation. Do not publish this if you do not want local path names in the repo.
-- `tools/merge_drive_file_ids.py` — fills `data/assets.json` from a Drive/CDN mapping CSV.
+- `tools/merge_drive_file_ids.py` — fills `data/assets.json` from a Drive/CDN mapping CSV (works for Google Drive, YouTube, or any CDN/backend).
+- `tools/upload_to_youtube.py` — uploads every consented `video`/`launching_video` asset to YouTube (matched to local files via `team_code`, which is also the upload-stage folder name) and appends a merge-ready CSV; see the script's `--help` / docstring for OAuth setup, quota, and usage.
 
 ## Why large files are not included
 
-Videos, PDFs, ZIPs, and journals are too large for normal GitHub Pages/repo hosting. This site expects those files to live on Google Drive, Cloudflare R2, S3, or another external host.
+Videos, PDFs, ZIPs, and journals are too large for normal GitHub Pages/repo hosting. This site expects those files to live on Google Drive, Cloudflare R2, S3, YouTube, or another external host.
 
 ## Google Drive workflow
 
@@ -47,6 +48,30 @@ L01,video,cdn,https://assets.example.org/teams/L01/video.mp4,https://assets.exam
 ```
 
 Then run the same merge tool.
+
+## YouTube workflow
+
+1. Get an OAuth client (`client_secret.json`) — see `tools/upload_to_youtube.py`'s docstring.
+2. Preview the plan without uploading or touching any API:
+
+```bash
+python3 tools/upload_to_youtube.py --dry-run
+```
+
+3. Upload (batched to stay under the daily API quota; safe to re-run — already-uploaded
+   rows are skipped):
+
+```bash
+python3 tools/upload_to_youtube.py --client-secrets client_secret.json --limit 6
+```
+
+4. Merge the results into `data/assets.json`:
+
+```bash
+python3 tools/merge_drive_file_ids.py tools/youtube_upload_results.csv
+```
+
+Only assets with `consent == "Agree"` are ever uploaded.
 
 ## Consent behavior
 

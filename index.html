@@ -122,7 +122,7 @@
     .winners { display: grid; gap: 8px; align-content: start; }
     .winner-row {
       display: grid;
-      grid-template-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr;
       gap: 10px;
       align-items: center;
       color: var(--text);
@@ -195,7 +195,6 @@
     .thumb.broken img { display: none; }
     .team-title { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
     .team-title h2 { margin: 0; font-size: 20px; line-height: 1.15; }
-    .code { color: var(--accent-2); font-weight: 700; white-space: nowrap; }
     .muted { color: var(--muted); }
     .topics { display: flex; gap: 6px; flex-wrap: wrap; }
     .topic {
@@ -295,7 +294,6 @@
       .asset-grid { grid-template-columns: 1fr; }
       .hero-media { grid-template-columns: 1fr; }
       .winner-row { grid-template-columns: auto 1fr; }
-      .winner-row .code { grid-column: 2; }
     }
   </style>
 </head>
@@ -336,16 +334,17 @@ const labels = {
 const leagueOrder = ['Line', 'Maze', 'Simulation'];
 const detailOrder = ['poster', 'video', 'launching_video', 'bom', 'tdp_pdf_optional', 'engineering_journal_optional', 'source_code'];
 const topicOrder = ['team_photo', 'robot_photo', ...detailOrder];
-let teams = [], assets = [], assetsByTeam = new Map(), winners = {}, winnerByTeam = new Map();
+let teams = [], assets = [], assetsByTeam = new Map(), winners = {}, winnerByTeam = new Map(), teamByCode = new Map();
 
 function normalize(value) { return String(value ?? '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, ''); }
 function params() { return new URLSearchParams(location.hash.replace(/^#/, '')); }
-function selectedCode() { return params().get('team'); }
+function teamKey(team) { return team.team_code; }
+function selectedTeamKey() { return params().get('team'); }
 function selectedLeague() { return params().get('league'); }
 function assetLabel(asset) { return labels[asset.artifact] || asset.artifact.replaceAll('_', ' '); }
 function isPublished(asset) { return asset.status === 'ok' && asset.consent === 'Agree' && asset.publishable && Boolean(asset.preview_url || asset.view_url || asset.download_url); }
 function visibleAsset(asset) { return isPublished(asset) && !asset.artifact.endsWith('_thumbnail'); }
-function teamAssets(team) { return assetsByTeam.get(team.team_code) || []; }
+function teamAssets(team) { return assetsByTeam.get(teamKey(team)) || []; }
 function leagueTeams(league) { return teams.filter(team => team.league === league); }
 function orderedAssets(list, order = topicOrder) {
   const weight = new Map(order.map((name, index) => [name, index]));
@@ -357,7 +356,7 @@ function thumbnailUrl(asset, size = 700) {
 }
 function primaryImage(team, artifact) { return teamAssets(team).find(asset => asset.artifact === artifact && isPublished(asset)); }
 function topicLabels(team) { return orderedAssets(teamAssets(team).filter(visibleAsset)).map(assetLabel); }
-function winnerInfo(teamOrCode) { return winnerByTeam.get(typeof teamOrCode === 'string' ? teamOrCode : teamOrCode.team_code); }
+function winnerInfo(team) { return winnerByTeam.get(teamKey(team)); }
 function placeIcon(info) { return info ? `<span class="place place-${info.place}" title="${info.place}. place">${info.place}</span>` : ''; }
 function searchableText(team) {
   const win = winnerInfo(team);
@@ -371,8 +370,8 @@ function searchableText(team) {
     ...teamAssets(team).filter(visibleAsset).map(asset => asset.artifact.replaceAll('_', ' '))
   ].join(' '));
 }
-function setSelected(code) {
-  if (code) location.hash = `team=${encodeURIComponent(code)}`;
+function setSelected(key) {
+  if (key) location.hash = `team=${encodeURIComponent(key)}`;
   else history.pushState('', document.title, location.pathname + location.search);
   render();
 }
@@ -381,7 +380,7 @@ function setLeague(league) {
   else history.pushState('', document.title, location.pathname + location.search);
   render();
 }
-function selectedTeam() { return teams.find(team => team.team_code === selectedCode()); }
+function selectedTeam() { return teams.find(team => teamKey(team) === selectedTeamKey()); }
 function passes(team, league) {
   const q = normalize($('#q').value).trim();
   const country = $('#country').value;
@@ -406,10 +405,10 @@ function renderTopics(team, limit = 5) {
 }
 function renderTeamCard(team) {
   const win = winnerInfo(team);
-  return `<a class="team-card card${win ? ' winner' : ''}" href="#team=${encodeURIComponent(team.team_code)}" aria-label="Open ${esc(team.team_name)}">
+  return `<a class="team-card card${win ? ' winner' : ''}" href="#team=${encodeURIComponent(teamKey(team))}" aria-label="Open ${esc(team.team_name)}">
     ${placeIcon(win)}
     <div class="thumbs">${renderThumb(team, 'team_photo', 'Team')}${renderThumb(team, 'robot_photo', 'Robot')}</div>
-    <div class="team-title"><div><h2>${esc(team.team_name)}</h2><div class="muted">${esc(team.league)} · ${esc(team.country)}</div></div><span class="code">${esc(team.team_code)}</span></div>
+    <div class="team-title"><div><h2>${esc(team.team_name)}</h2><div class="muted">${esc(team.league)} · ${esc(team.country)}</div></div></div>
     ${renderTopics(team)}
   </a>`;
 }
@@ -419,7 +418,7 @@ function leagueStats(league) {
   return { teams: t.length, resources };
 }
 function renderWinnerRow(entry) {
-  return `<a class="winner-row" href="#team=${encodeURIComponent(entry.team_code)}">${placeIcon(entry)}<span>${esc(entry.team_name)}</span><span class="code">${esc(entry.team_code)}</span></a>`;
+  return `<a class="winner-row" href="#team=${encodeURIComponent(entry.team_code)}">${placeIcon(entry)}<span>${esc(entry.team_name)}</span></a>`;
 }
 function clearFilters() { $('#q').value = ''; $('#country').value = ''; $('#topic').value = ''; }
 function renderLanding() {
@@ -469,7 +468,7 @@ function renderAsset(asset) {
   if (asset.artifact === 'source_code') {
     return `<article id="asset-${esc(asset.artifact)}" class="asset compact"><h3>${esc(title)}</h3><p>Download or inspect the published source archive in Drive.</p><p><a class="open-link" href="${esc(openUrl)}" target="_blank" rel="noopener">Open ${esc(title)}</a></p></article>`;
   }
-  return `<article id="asset-${esc(asset.artifact)}" class="asset${asset.artifact === 'video' ? ' video-feature' : ''}"><h3>${esc(title)}</h3><iframe src="${esc(url)}" title="${esc(title)} for ${esc(asset.team_code)}" loading="lazy" allow="autoplay; fullscreen"></iframe><p><a class="open-link" href="${esc(openUrl)}" target="_blank" rel="noopener">Open in Drive</a></p></article>`;
+  return `<article id="asset-${esc(asset.artifact)}" class="asset${asset.artifact === 'video' ? ' video-feature' : ''}"><h3>${esc(title)}</h3><iframe src="${esc(url)}" title="${esc(title)} for ${esc(teamByCode.get(asset.team_code)?.team_name || '')}" loading="lazy" allow="autoplay; fullscreen"></iframe><p><a class="open-link" href="${esc(openUrl)}" target="_blank" rel="noopener">Open in Drive</a></p></article>`;
 }
 function renderDetail(team) {
   const list = orderedAssets(teamAssets(team).filter(visibleAsset), detailOrder).filter(asset => detailOrder.includes(asset.artifact));
@@ -481,15 +480,15 @@ function renderDetail(team) {
   $('#directoryTab').href = `#league=${encodeURIComponent(team.league)}`;
   $('#detailTab').hidden = false;
   $('#detailTab').classList.add('active');
-  $('#detailTab').textContent = `${team.team_code} details`;
-  $('#detailTab').href = `#team=${encodeURIComponent(team.team_code)}`;
+  $('#detailTab').textContent = `${team.team_name} details`;
+  $('#detailTab').href = `#team=${encodeURIComponent(teamKey(team))}`;
   $('#summary').textContent = `${team.team_name} · ${team.league} · ${team.country}`;
   $('#main').innerHTML = `<section class="detail">
     <button class="back" type="button" onclick="setLeague('${esc(team.league)}')">Back to ${esc(team.league)} teams</button>
     <section class="hero">
       <div class="hero-media">${renderThumb(team, 'team_photo', 'Team photo')}${renderThumb(team, 'robot_photo', 'Robot photo')}</div>
       <div class="hero-copy">
-        <div class="title-row">${placeIcon(win)}<div class="code">${esc(team.team_code)}</div></div>
+        <div class="title-row">${placeIcon(win)}</div>
         <h2>${esc(team.team_name)}</h2>
         <div class="muted">${esc(team.league)} league · ${esc(team.country)}${win ? ` · ${win.place}. place` : ''}</div>
         <div class="facts"><div class="fact"><span class="muted">Published resources</span><strong>${list.length}</strong></div><div class="fact"><span class="muted">Topics</span><strong>${topics.length}</strong></div><div class="fact"><span class="muted">Country</span><strong>${esc(team.country || 'Unknown')}</strong></div></div>
@@ -503,7 +502,7 @@ function renderDetail(team) {
 function render() {
   const team = selectedTeam();
   const league = selectedLeague();
-  if (selectedCode() && team) renderDetail(team);
+  if (selectedTeamKey() && team) renderDetail(team);
   else if (league) renderLeague(league);
   else renderLanding();
 }
@@ -517,7 +516,7 @@ async function init() {
   winners = winnersData.leagues || {};
   winnerByTeam = new Map();
   for (const [league, entries] of Object.entries(winners)) for (const entry of entries) winnerByTeam.set(entry.team_code, { ...entry, league });
-  const teamByCode = new Map(teams.map(team => [team.team_code, team]));
+  teamByCode = new Map(teams.map(team => [team.team_code, team]));
   assets = assetData.assets.filter(asset => isPublished(asset) && !(teamByCode.get(asset.team_code)?.league === 'Simulation' && (asset.artifact === 'launching_video' || asset.artifact === 'launching_video_thumbnail')));
   assetsByTeam = new Map();
   for (const asset of assets) {
