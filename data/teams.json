@@ -127,20 +127,6 @@
       }
     },
     {
-      "team_code": "L10",
-      "team_name": "ERROR404",
-      "league": "Line",
-      "country": "Kazakhstan",
-      "consent": {
-        "tdp": "Missing",
-        "video": "Missing",
-        "poster": "Missing",
-        "bom": "Missing",
-        "source_code": "Missing",
-        "overall": "incomplete"
-      }
-    },
-    {
       "team_code": "L11",
       "team_name": "FATEN",
       "league": "Line",
@@ -463,20 +449,6 @@
       }
     },
     {
-      "team_code": "M47",
-      "team_name": "ERROR404",
-      "league": "Maze",
-      "country": "Kazakhstan",
-      "consent": {
-        "tdp": "Missing",
-        "video": "Missing",
-        "poster": "Missing",
-        "bom": "Missing",
-        "source_code": "Missing",
-        "overall": "incomplete"
-      }
-    },
-    {
       "team_code": "M48",
       "team_name": "Flying Pig",
       "league": "Maze",
@@ -558,20 +530,6 @@
         "bom": "Agree",
         "source_code": "Agree",
         "overall": "all_agree"
-      }
-    },
-    {
-      "team_code": "M54",
-      "team_name": "PERSEUS",
-      "league": "Maze",
-      "country": "Panama",
-      "consent": {
-        "tdp": "Missing",
-        "video": "Missing",
-        "poster": "Missing",
-        "bom": "Missing",
-        "source_code": "Missing",
-        "overall": "incomplete"
       }
     },
     {

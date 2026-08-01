@@ -1,12 +1,13 @@
 # RCJ Public Team Documents Site
 
-Static GitHub Pages-ready outline for browsing team documents without storing large videos/PDFs in the repository.
+Static GitHub Pages-ready outline for browsing team documents without storing large videos/PDFs/ZIPs in the repository. Team/robot photos are the exception — small enough to commit directly (see below).
 
 ## What is in this repo
 
 - `index.html` — static frontend.
+- `images/<team_code>/team_photo.*`, `images/<team_code>/robot_photo.*` — committed directly to the repo (resized to a max 900px edge). These are the only media type hosted in-repo; `data/assets.json` `backend: "local"` entries point here with a relative path.
 - `data/teams.json` — token-free team metadata and publication consent status.
-- `data/assets.json` — token-free asset manifest, keyed by `team_code`. Display always uses `team_name`; `team_code` never appears in the rendered site, only as the internal join key. URLs are empty until files are uploaded to Drive/CDN.
+- `data/assets.json` — token-free asset manifest, keyed by `team_code`. Display always uses `team_name`; `team_code` never appears in the rendered site, only as the internal join key. `team_photo`/`robot_photo` use `backend: "local"` (path into `images/`); every other artifact is empty until uploaded to Drive/CDN/YouTube.
 - `data/publication_consent.csv` — consent audit data.
 - `data/score_budget_sensor_summary.json` and related CSVs — analysis summaries.
 - `tools/source_upload_manifest.csv` — local source paths for upload automation. Do not publish this if you do not want local path names in the repo.
@@ -15,7 +16,7 @@ Static GitHub Pages-ready outline for browsing team documents without storing la
 
 ## Why large files are not included
 
-Videos, PDFs, ZIPs, and journals are too large for normal GitHub Pages/repo hosting. This site expects those files to live on Google Drive, Cloudflare R2, S3, YouTube, or another external host.
+Videos, PDFs, ZIPs, and journals are too large for normal GitHub Pages/repo hosting and stay external (Google Drive, Cloudflare R2, S3, YouTube). Team/robot photos are committed to `images/` instead: hotlinking them from Google Drive's unauthenticated thumbnail proxy (`drive.google.com/thumbnail`) hits aggressive rate limits (`429`) once a league page renders 25-30 team cards at once, and same-repo images are faster and don't depend on Drive sharing settings.
 
 ## Google Drive workflow
 
