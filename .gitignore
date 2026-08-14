@@ -1,6 +1,7 @@
 .DS_Store
 *.log
 node_modules/
+tools/.venv/
 drive_file_map.csv
 client_secret*.json
 tools/.youtube_token.json

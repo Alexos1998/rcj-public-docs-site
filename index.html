@@ -100,6 +100,7 @@
       box-shadow: 0 16px 36px var(--shadow);
     }
     .league-art {
+      position: relative;
       aspect-ratio: 16 / 9;
       border: 1px solid var(--line);
       border-radius: 18px;
@@ -112,6 +113,7 @@
       overflow: hidden;
     }
     .league-art span { font-size: clamp(34px, 4vw, 60px); font-weight: 800; letter-spacing: -.06em; opacity: .9; }
+    .league-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
     .league-head { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
     .league-head h3 { margin: 0; font-size: 26px; }
     .league-actions { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
@@ -350,6 +352,11 @@ const labels = {
   engineering_journal_optional: 'Engineering journal'
 };
 const leagueOrder = ['Line', 'Maze', 'Simulation'];
+const leagueImages = {
+  Line: { src: 'images/Line.jpg', position: 'center 65%' },
+  Maze: { src: 'images/Maze.png', position: 'center 40%' },
+  Simulation: { src: 'images/Simulation.png', position: 'center 100%' }
+};
 const detailOrder = ['poster', 'video', 'launching_video', 'bom', 'tdp_pdf_optional', 'engineering_journal_optional', 'source_code'];
 const topicOrder = ['team_photo', 'robot_photo', ...detailOrder];
 let teams = [], assets = [], assetsByTeam = new Map(), winners = {}, winnerByTeam = new Map(), teamByCode = new Map();
@@ -504,10 +511,10 @@ function renderLanding() {
       const stats = leagueStats(league);
       const leagueWinners = winners[league] || [];
       return `<article class="league-card">
-        <div class="league-art"><span>${esc(league)}</span></div>
+        <div class="league-art">${leagueImages[league] ? `<img src="${esc(leagueImages[league].src)}" alt="${esc(league)}" style="object-position: ${esc(leagueImages[league].position)}" loading="lazy">` : `<span>${esc(league)}</span>`}</div>
         <div class="league-head"><div><h3>${esc(league)}</h3><div class="muted">${stats.teams} teams · ${stats.resources} published resources</div></div></div>
         <div class="winners"><strong>Top 3 ${esc(league)}</strong>${leagueWinners.map(renderWinnerRow).join('')}</div>
-        <div class="league-actions"><span class="muted">Images can be added later.</span><a class="show-more" href="#league=${encodeURIComponent(league)}">Show more</a></div>
+        <div class="league-actions"><a class="show-more" href="#league=${encodeURIComponent(league)}">Show more</a></div>
       </article>`;
     }).join('')}</section>
   </section>`;
@@ -528,10 +535,11 @@ function renderAsset(asset) {
   const title = assetLabel(asset);
   const url = asset.preview_url || asset.view_url || asset.download_url;
   const openUrl = asset.view_url || url;
+  const backendLabel = { google_drive: 'Drive', youtube: 'YouTube', cdn: 'CDN' }[asset.backend] || 'source';
   if (asset.artifact === 'source_code') {
-    return `<article id="asset-${esc(asset.artifact)}" class="asset compact"><h3>${esc(title)}</h3><p>Download or inspect the published source archive in Drive.</p><p><a class="open-link" href="${esc(openUrl)}" target="_blank" rel="noopener">Open ${esc(title)}</a></p></article>`;
+    return `<article id="asset-${esc(asset.artifact)}" class="asset compact"><h3>${esc(title)}</h3><p>Download or inspect the published source archive in ${esc(backendLabel)}.</p><p><a class="open-link" href="${esc(openUrl)}" target="_blank" rel="noopener">Open ${esc(title)}</a></p></article>`;
   }
-  return `<article id="asset-${esc(asset.artifact)}" class="asset${asset.artifact === 'video' ? ' video-feature' : ''}"><h3>${esc(title)}</h3><iframe src="${esc(url)}" title="${esc(title)} for ${esc(teamByCode.get(asset.team_code)?.team_name || '')}" loading="lazy" allow="autoplay; fullscreen"></iframe><p><a class="open-link" href="${esc(openUrl)}" target="_blank" rel="noopener">Open in Drive</a></p></article>`;
+  return `<article id="asset-${esc(asset.artifact)}" class="asset${asset.artifact === 'video' ? ' video-feature' : ''}"><h3>${esc(title)}</h3><iframe src="${esc(url)}" title="${esc(title)} for ${esc(teamByCode.get(asset.team_code)?.team_name || '')}" loading="lazy" allow="autoplay; fullscreen"></iframe><p><a class="open-link" href="${esc(openUrl)}" target="_blank" rel="noopener">Open in ${esc(backendLabel)}</a></p></article>`;
 }
 function renderDetail(team) {
   const list = orderedAssets(teamAssets(team).filter(visibleAsset), detailOrder).filter(asset => detailOrder.includes(asset.artifact));
