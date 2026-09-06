@@ -1,0 +1,171 @@
+{
+  "source": "Official RoboCup 2026 Junior Rescue awards: Superteam and Technical Challenge winners verified against https://rescue.rcj.cloud/events/2026/RoboCup2026/results (STC/TC rankings); Community and certificate awards from the RoboCupJunior Rescue community award announcement.",
+  "leagues": {
+    "Line": [
+      {
+        "award": "Superteam Award",
+        "teams": [
+          {
+            "team_code": "L24",
+            "team_name": "System Override"
+          },
+          {
+            "team_code": "L18",
+            "team_name": "NLO Rescue CRO Team"
+          }
+        ]
+      },
+      {
+        "award": "Community Award",
+        "teams": [
+          {
+            "team_code": "L25",
+            "team_name": "TOKAI Ghost"
+          }
+        ]
+      },
+      {
+        "award": "Outstanding Presentation",
+        "teams": [
+          {
+            "team_code": "L20",
+            "team_name": "Pishnam"
+          }
+        ]
+      },
+      {
+        "award": "Outstanding Innovation Award",
+        "teams": [
+          {
+            "team_code": "L21",
+            "team_name": "QuantumSpeed"
+          }
+        ]
+      },
+      {
+        "award": "Outstanding Engineering Process",
+        "teams": [
+          {
+            "team_code": "L12",
+            "team_name": "Fusion Zero"
+          }
+        ]
+      },
+      {
+        "award": "Outstanding Innovation Award",
+        "teams": [
+          {
+            "team_code": "L04",
+            "team_name": "BioBrause"
+          }
+        ]
+      },
+      {
+        "award": "Technical Challenge Excellence",
+        "teams": [
+          {
+            "team_code": "L12",
+            "team_name": "Fusion Zero"
+          }
+        ]
+      }
+    ],
+    "Maze": [
+      {
+        "award": "Superteam Award",
+        "teams": [
+          {
+            "team_code": "M64",
+            "team_name": "TOKAI Susano"
+          },
+          {
+            "team_code": "M61",
+            "team_name": "SERŠ TEAM"
+          }
+        ]
+      },
+      {
+        "award": "Community Award",
+        "teams": [
+          {
+            "team_code": "M44",
+            "team_name": "Byte Volta"
+          }
+        ]
+      },
+      {
+        "award": "Outstanding Presentation",
+        "teams": [
+          {
+            "team_code": "M57",
+            "team_name": "RC UANL"
+          }
+        ]
+      },
+      {
+        "award": "Outstanding Innovation Award",
+        "teams": [
+          {
+            "team_code": "M44",
+            "team_name": "Byte Volta"
+          }
+        ]
+      },
+      {
+        "award": "Outstanding Engineering Process",
+        "teams": [
+          {
+            "team_code": "M53",
+            "team_name": "PCMS_ET"
+          }
+        ]
+      },
+      {
+        "award": "Outstanding Design Award",
+        "teams": [
+          {
+            "team_code": "M42",
+            "team_name": "B.Robots Seniors"
+          }
+        ]
+      },
+      {
+        "award": "Technical Challenge Excellence",
+        "teams": [
+          {
+            "team_code": "M43",
+            "team_name": "Bodensee Dogs"
+          }
+        ]
+      }
+    ],
+    "Simulation": [
+      {
+        "award": "Superteam Award",
+        "teams": [
+          {
+            "team_code": "S90",
+            "team_name": "Speshari"
+          },
+          {
+            "team_code": "S92",
+            "team_name": "learnsteam"
+          },
+          {
+            "team_code": "S85",
+            "team_name": "Kavosh_Simul"
+          }
+        ]
+      },
+      {
+        "award": "Community Award",
+        "teams": [
+          {
+            "team_code": "S83",
+            "team_name": "CAETI UAI"
+          }
+        ]
+      }
+    ]
+  }
+}
