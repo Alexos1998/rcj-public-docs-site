@@ -378,6 +378,7 @@
 'use strict';
 const $ = sel => document.querySelector(sel);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const formatBytes = bytes => !bytes ? 'unknown size' : bytes >= 1024 ** 2 ? `${(bytes / 1024 ** 2).toFixed(1)} MB` : `${Math.max(1, Math.round(bytes / 1024))} KB`;
 const labels = {
   team_photo: 'Team photo',
   robot_photo: 'Robot photo',
@@ -599,11 +600,14 @@ function renderAsset(asset) {
   const title = assetLabel(asset);
   const url = asset.preview_url || asset.view_url || asset.download_url;
   const openUrl = asset.view_url || url;
-  const backendLabel = { google_drive: 'Drive', youtube: 'YouTube', cdn: 'CDN' }[asset.backend] || 'source';
+  const teamName = teamByCode.get(asset.team_code)?.team_name || '';
+  const frameTitle = `${title} for ${teamName}`;
+  const id = `asset-${esc(asset.artifact)}`;
   if (asset.artifact === 'source_code') {
-    return `<article id="asset-${esc(asset.artifact)}" class="asset compact"><h3>${esc(title)}</h3><p>Download or inspect the published source archive in ${esc(backendLabel)}.</p><p><a class="open-link" href="${esc(openUrl)}" target="_blank" rel="noopener">Open ${esc(title)}</a></p></article>`;
+    return `<article id="${id}" class="asset compact"><h3>${esc(title)}</h3><p>Download the published source archive (${formatBytes(asset.bytes)}).</p><p><a class="open-link" href="${esc(openUrl)}" download>Download ${esc(title)}</a></p></article>`;
   }
-  return `<article id="asset-${esc(asset.artifact)}" class="asset${asset.artifact === 'video' ? ' video-feature' : ''}"><h3>${esc(title)}</h3><iframe src="${esc(url)}" title="${esc(title)} for ${esc(teamByCode.get(asset.team_code)?.team_name || '')}" loading="lazy" allow="autoplay; fullscreen"></iframe><p><a class="open-link" href="${esc(openUrl)}" target="_blank" rel="noopener">Open in ${esc(backendLabel)}</a></p></article>`;
+  const openLabel = asset.backend === 'youtube' ? 'Open in YouTube' : asset.backend === 'google_drive' ? 'Open in Drive' : `Open ${title}`;
+  return `<article id="${id}" class="asset${asset.artifact === 'video' ? ' video-feature' : ''}"><h3>${esc(title)}</h3><iframe src="${esc(url)}" title="${esc(frameTitle)}" loading="lazy" allow="autoplay; fullscreen"></iframe><p><a class="open-link" href="${esc(openUrl)}" target="_blank" rel="noopener">${esc(openLabel)}</a></p></article>`;
 }
 function renderDetail(team) {
   const list = orderedAssets(teamAssets(team).filter(visibleAsset), detailOrder).filter(asset => detailOrder.includes(asset.artifact));
