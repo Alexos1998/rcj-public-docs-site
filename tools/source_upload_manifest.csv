@@ -384,8 +384,6 @@ S81,team_photo,teams/S81_Anyang/team_photo.png,2283682
 S81,poster,teams/S81_Anyang/poster.pdf,6208383
 S81,video,teams/S81_Anyang/video.mp4,95314654
 S81,video_thumbnail,teams/S81_Anyang/video-thumbnail.png,111740
-S81,launching_video,teams/S81_Anyang/launching_video.mp4,185711313
-S81,launching_video_thumbnail,teams/S81_Anyang/launching_video-thumbnail.png,78561
 S81,bom,teams/S81_Anyang/bom.pdf,91659
 S81,source_code,teams/S81_Anyang/code.zip,42726
 S81,tdp_pdf_optional,teams/S81_Anyang/tdp.pdf,11076283
@@ -393,8 +391,6 @@ S82,team_photo,teams/S82_Black Radiators/team_photo.jpg,308045
 S82,poster,teams/S82_Black Radiators/poster.pdf,8322258
 S82,video,teams/S82_Black Radiators/video.mp4,35617795
 S82,video_thumbnail,teams/S82_Black Radiators/video-thumbnail.png,38792
-S82,launching_video,teams/S82_Black Radiators/launching_video.mp4,17207853
-S82,launching_video_thumbnail,teams/S82_Black Radiators/launching_video-thumbnail.png,73977
 S82,bom,teams/S82_Black Radiators/bom.pdf,93604
 S82,source_code,teams/S82_Black Radiators/code.zip,5666651
 S82,tdp_pdf_optional,teams/S82_Black Radiators/tdp.pdf,1254570
@@ -402,8 +398,6 @@ S83,team_photo,teams/S83_CAETI UAI/team_photo.jpeg,2257260
 S83,poster,teams/S83_CAETI UAI/poster.pdf,1718168
 S83,video,teams/S83_CAETI UAI/video.mp4,445152109
 S83,video_thumbnail,teams/S83_CAETI UAI/video-thumbnail.png,308776
-S83,launching_video,teams/S83_CAETI UAI/launching_video.mp4,6803176
-S83,launching_video_thumbnail,teams/S83_CAETI UAI/launching_video-thumbnail.png,276076
 S83,bom,teams/S83_CAETI UAI/bom.pdf,5637
 S83,source_code,teams/S83_CAETI UAI/code.zip,1107434
 S83,tdp_pdf_optional,teams/S83_CAETI UAI/tdp.pdf,3886207
@@ -411,8 +405,6 @@ S84,team_photo,teams/S84_Danesh Auriga/team_photo.png,2169639
 S84,poster,teams/S84_Danesh Auriga/poster.pdf,6398552
 S84,video,teams/S84_Danesh Auriga/video.mp4,118188800
 S84,video_thumbnail,teams/S84_Danesh Auriga/video-thumbnail.png,105223
-S84,launching_video,teams/S84_Danesh Auriga/launching_video.mp4,72529582
-S84,launching_video_thumbnail,teams/S84_Danesh Auriga/launching_video-thumbnail.png,177877
 S84,bom,teams/S84_Danesh Auriga/bom.pdf,11769
 S84,source_code,teams/S84_Danesh Auriga/code.zip,9398848
 S84,tdp_pdf_optional,teams/S84_Danesh Auriga/tdp.pdf,1609775
@@ -420,23 +412,17 @@ S85,team_photo,teams/S85_Kavosh_Simul/team_photo.png,1547301
 S85,poster,teams/S85_Kavosh_Simul/poster.pdf,2216213
 S85,video,teams/S85_Kavosh_Simul/video.mp4,483188886
 S85,video_thumbnail,teams/S85_Kavosh_Simul/video-thumbnail.png,190230
-S85,launching_video,teams/S85_Kavosh_Simul/launching_video.mp4,310505503
-S85,launching_video_thumbnail,teams/S85_Kavosh_Simul/launching_video-thumbnail.png,1725092
 S85,bom,teams/S85_Kavosh_Simul/bom.pdf,41261
 S86,team_photo,teams/S86_Labyrinthos/team_photo.JPG,309371
 S86,poster,teams/S86_Labyrinthos/poster.pdf,16293250
 S86,video,teams/S86_Labyrinthos/video.mp4,23877653
 S86,video_thumbnail,teams/S86_Labyrinthos/video-thumbnail.png,79603
-S86,launching_video,teams/S86_Labyrinthos/launching_video.mp4,484302113
-S86,launching_video_thumbnail,teams/S86_Labyrinthos/launching_video-thumbnail.png,255466
 S86,bom,teams/S86_Labyrinthos/bom.pdf,31179
 S86,source_code,teams/S86_Labyrinthos/code.zip,7808366
 S87,team_photo,teams/S87_OGEE/team_photo.jpeg,219064
 S87,poster,teams/S87_OGEE/poster.pdf,645208
 S87,video,teams/S87_OGEE/video.mp4,190550553
 S87,video_thumbnail,teams/S87_OGEE/video-thumbnail.png,67008
-S87,launching_video,teams/S87_OGEE/launching_video.mp4,10639835
-S87,launching_video_thumbnail,teams/S87_OGEE/launching_video-thumbnail.png,62138
 S87,bom,teams/S87_OGEE/bom.pdf,98391
 S87,source_code,teams/S87_OGEE/code.zip,9937
 S88,team_photo,teams/S88_Robomanics/team_photo.jpeg,280184
@@ -449,23 +435,17 @@ S89,team_photo,teams/S89_Robotics Barcelinhos/team_photo.jpeg,289059
 S89,poster,teams/S89_Robotics Barcelinhos/poster.pdf,221524
 S89,video,teams/S89_Robotics Barcelinhos/video.mp4,277646201
 S89,video_thumbnail,teams/S89_Robotics Barcelinhos/video-thumbnail.png,86952
-S89,launching_video,teams/S89_Robotics Barcelinhos/launching_video.mp4,8129789
-S89,launching_video_thumbnail,teams/S89_Robotics Barcelinhos/launching_video-thumbnail.png,47574
 S89,bom,teams/S89_Robotics Barcelinhos/bom.pdf,97435
 S89,source_code,teams/S89_Robotics Barcelinhos/code.zip,19103
 S90,team_photo,teams/S90_Speshari/team_photo.png,888988
 S90,poster,teams/S90_Speshari/poster.pdf,10958022
 S90,video,teams/S90_Speshari/video.mp4,124087675
 S90,video_thumbnail,teams/S90_Speshari/video-thumbnail.png,81875
-S90,launching_video,teams/S90_Speshari/launching_video.mp4,10435670
-S90,launching_video_thumbnail,teams/S90_Speshari/launching_video-thumbnail.png,225525
 S90,bom,teams/S90_Speshari/bom.pdf,97881
 S91,team_photo,teams/S91_UNIQA CRO Team/team_photo.png,1570369
 S91,poster,teams/S91_UNIQA CRO Team/poster.pdf,3439830
 S91,video,teams/S91_UNIQA CRO Team/video.mp4,146656630
 S91,video_thumbnail,teams/S91_UNIQA CRO Team/video-thumbnail.png,227815
-S91,launching_video,teams/S91_UNIQA CRO Team/launching_video.mp4,4814922
-S91,launching_video_thumbnail,teams/S91_UNIQA CRO Team/launching_video-thumbnail.png,144560
 S91,bom,teams/S91_UNIQA CRO Team/bom.pdf,114071
 S91,source_code,teams/S91_UNIQA CRO Team/code.zip,5708668
 S91,tdp_pdf_optional,teams/S91_UNIQA CRO Team/tdp.pdf,404878
@@ -474,8 +454,6 @@ S92,team_photo,teams/S92_learnsteam/team_photo.png,19157
 S92,poster,teams/S92_learnsteam/poster.pdf,148191
 S92,video,teams/S92_learnsteam/video.mp4,53472239
 S92,video_thumbnail,teams/S92_learnsteam/video-thumbnail.png,121455
-S92,launching_video,teams/S92_learnsteam/launching_video.mp4,4592703
-S92,launching_video_thumbnail,teams/S92_learnsteam/launching_video-thumbnail.png,79069
 S92,bom,teams/S92_learnsteam/bom.pdf,43188
 S92,source_code,teams/S92_learnsteam/code.zip,114667
 S92,tdp_pdf_optional,teams/S92_learnsteam/tdp.pdf,3717654
@@ -483,7 +461,5 @@ S93,team_photo,teams/S93_Águabots/team_photo.png,581645
 S93,poster,teams/S93_Águabots/poster.pdf,6227325
 S93,video,teams/S93_Águabots/video.mp4,212530483
 S93,video_thumbnail,teams/S93_Águabots/video-thumbnail.png,161337
-S93,launching_video,teams/S93_Águabots/launching_video.mp4,18209669
-S93,launching_video_thumbnail,teams/S93_Águabots/launching_video-thumbnail.png,264750
 S93,bom,teams/S93_Águabots/bom.pdf,52424
 S93,source_code,teams/S93_Águabots/code.zip,17979764

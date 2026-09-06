@@ -1,7 +1,7 @@
 {
-  "assets": 646,
-  "drive_mapped_assets": 482,
-  "renderable_configured_assets": 482,
+  "assets": 621,
+  "drive_mapped_assets": 458,
+  "renderable_configured_assets": 458,
   "missing_drive_uploads": [
     {
       "team_code": "M63",
@@ -59,8 +59,6 @@
     "video": 55,
     "source_code": 50,
     "tdp_pdf_optional": 35,
-    "launching_video": 12,
-    "launching_video_thumbnail": 12,
     "engineering_journal_optional": 7
   },
   "renderable_artifact_counts": {
@@ -72,8 +70,6 @@
     "video": 55,
     "source_code": 50,
     "tdp_pdf_optional": 35,
-    "launching_video": 12,
-    "launching_video_thumbnail": 12,
     "engineering_journal_optional": 7
   }
 }

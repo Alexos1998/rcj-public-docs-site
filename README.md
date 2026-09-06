@@ -11,23 +11,24 @@ Static GitHub Pages-ready outline for browsing team documents without storing la
   - `introduction` — the TDP's "Abstract" question (TDP section 1, Introduction), extracted whole/verbatim, paragraph breaks preserved.
   - Both are unconditional: TDP submission itself cannot be marked "Disagree" (it's mandatory to enter), so every team that submitted a TDP has these fields populated when present.
   - A team with every consent field (`tdp`/`video`/`poster`/`bom`/`source_code`) set to `Disagree` is dropped from this file entirely, unless they are a top-3 league winner (see below).
-- **Consent policy** (also enforced live in `index.html`'s `isPublished()`, not just baked into the data): `tdp` is mandatory/always shared. `poster` and `video`/`launching_video` are optional, but a top-3 league winner's poster and video are published regardless of what they answered (`WINNER_OVERRIDE_ARTIFACTS` in `index.html`). `bom` and `source_code` are fully optional with no override, ever — a winning team that declined those still has them hidden.
-- `data/assets.json` — token-free asset manifest, keyed by `team_code`. Display always uses `team_name`; `team_code` never appears in the rendered site, only as the internal join key. `team_photo`/`robot_photo` use `backend: "local"` (path into `images/`); every other artifact is empty until uploaded to Drive/CDN/YouTube.
+- **Consent policy** (also enforced live in `index.html`'s `isPublished()`, not just baked into the data): `tdp` is mandatory/always shared. `poster` and `video` are optional, but a top-3 league winner's poster and video are published regardless of what they answered (`WINNER_OVERRIDE_ARTIFACTS` in `index.html`). `bom` and `source_code` are fully optional with no override, ever — a winning team that declined those still has them hidden.
+- `data/assets.json` — token-free asset manifest, keyed by `team_code`. Display always uses `team_name`; `team_code` never appears in the rendered site, only as the internal join key. Documents and photos use `backend: "local"` with a repo-relative path into `files/` or `images/`; presentation videos use `backend: "youtube"`.
+- `files/<team_code>/` — published documents committed to the repo: `poster.pdf`, `bom.pdf`, `tdp.pdf`, `engineering_journal.pdf`, `source_code.zip`.
 - `data/publication_consent.csv` — consent audit data.
 - `data/score_budget_sensor_summary.json` and related CSVs — analysis summaries.
 - `tools/source_upload_manifest.csv` — local source paths for upload automation. Do not publish this if you do not want local path names in the repo.
 - `tools/merge_drive_file_ids.py` — fills `data/assets.json` from a Drive/CDN mapping CSV (works for Google Drive, YouTube, or any CDN/backend).
-- `tools/upload_to_youtube.py` — uploads every consented `video`/`launching_video` asset to YouTube (matched to local files via `team_code`, which is also the upload-stage folder name) and appends a merge-ready CSV; see the script's `--help` / docstring for OAuth setup, quota, and usage.
+- `tools/upload_to_youtube.py` — uploads every consented `video` asset to YouTube (matched to local files via `team_code`, which is also the upload-stage folder name) and appends a merge-ready CSV; see the script's `--help` / docstring for OAuth setup, quota, and usage.
 
-## Why large files are not included
+## What is hosted where
 
-Videos, PDFs, ZIPs, and journals are too large for normal GitHub Pages/repo hosting and stay external (Google Drive, Cloudflare R2, S3, YouTube). Team/robot photos are committed to `images/` instead: hotlinking them from Google Drive's unauthenticated thumbnail proxy (`drive.google.com/thumbnail`) hits aggressive rate limits (`429`) once a league page renders 25-30 team cards at once, and same-repo images are faster and don't depend on Drive sharing settings.
+Documents (posters, BOMs, TDPs, journals, source archives) and all photos live in this repo and are served straight from it — 772 MiB across `files/` and `images/`. Nothing depends on Google Drive sharing settings any more, which also avoids Drive's aggressive rate limiting (`429`) when a league page renders 25-30 team cards at once and its per-file download quotas on popular PDFs.
 
-## Google Drive workflow
+Presentation videos stay on YouTube: they are the only assets too large to commit, and YouTube handles transcoding and streaming. Launching videos are internal and are not part of this repo or of `data/assets.json`.
 
-1. Upload publishable files to Drive. Video is handled by the YouTube workflow below instead — Drive is for poster/BOM/TDP/journal.
-2. Share each file as `Anyone with the link can view`.
-3. Create a CSV like:
+## Google Drive workflow (historical)
+
+Documents were originally hosted on Drive and embedded as `drive.google.com/file/d/<id>/preview`. They have since been migrated into `files/`; `tools/merge_drive_file_ids.py` and `tools/drive_file_map_template.csv` remain for re-importing from a Drive/CDN mapping CSV if an artifact ever has to be re-sourced:
 
 ```csv
 team_code,artifact,drive_file_id
@@ -35,13 +36,9 @@ L01,poster,1AbCdEfGhIjKlMnOpQrStUvWxYz
 L01,bom,2BcDeFgHiJkLmNoPqRsTuVwXyZa
 ```
 
-4. Merge it:
-
 ```bash
 python3 tools/merge_drive_file_ids.py drive_file_map.csv
 ```
-
-The tool writes Google Drive preview/view URLs into `data/assets.json`.
 
 ## CDN workflow
 
@@ -76,14 +73,14 @@ python3 tools/upload_to_youtube.py --client-secrets client_secret.json --limit 6
 python3 tools/merge_drive_file_ids.py tools/youtube_upload_results.csv
 ```
 
-Assets are uploaded when `consent == "Agree"`, or — for `video`/`launching_video` only — the team is a top-3 league winner (see the consent policy note above). BOM and source code have no such override, ever.
+Assets are uploaded when `consent == "Agree"`, or — for `video` only — the team is a top-3 league winner (see the consent policy note above). BOM and source code have no such override, ever.
 
 ## Consent behavior
 
 The frontend renders an asset only when:
 
 - `status == "ok"`
-- `consent == "Agree"` (or, for `video`/`launching_video`/`poster` only, the team is a top-3 league winner)
+- `consent == "Agree"` (or, for `video`/`poster` only, the team is a top-3 league winner)
 - a URL exists
 
 Rows with `Disagree`, `Missing`, missing files, or no configured external URL are displayed as not embedded.

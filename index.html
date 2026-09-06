@@ -384,7 +384,6 @@ const labels = {
   robot_photo: 'Robot photo',
   poster: 'Poster',
   video: 'Video',
-  launching_video: 'Launching video',
   bom: 'Bill of materials',
   source_code: 'Source code',
   tdp_pdf_optional: 'Team description paper',
@@ -396,7 +395,7 @@ const leagueImages = {
   Maze: { src: 'images/Maze.png', position: 'center 40%' },
   Simulation: { src: 'images/Simulation.png', position: 'center 100%' }
 };
-const detailOrder = ['poster', 'video', 'launching_video', 'bom', 'tdp_pdf_optional', 'engineering_journal_optional', 'source_code'];
+const detailOrder = ['poster', 'video', 'bom', 'tdp_pdf_optional', 'engineering_journal_optional', 'source_code'];
 const topicOrder = ['team_photo', 'robot_photo', ...detailOrder];
 const awardIcons = {
   'Superteam Award': 'users',
@@ -416,7 +415,7 @@ function teamKey(team) { return team.team_code; }
 function selectedTeamKey() { return params().get('team'); }
 function selectedLeague() { return params().get('league'); }
 function assetLabel(asset) { return labels[asset.artifact] || asset.artifact.replaceAll('_', ' '); }
-const WINNER_OVERRIDE_ARTIFACTS = new Set(['video', 'launching_video', 'poster']);
+const WINNER_OVERRIDE_ARTIFACTS = new Set(['video', 'poster']);
 function isPublished(asset) {
   const winnerOverride = winnerByTeam.has(asset.team_code) && WINNER_OVERRIDE_ARTIFACTS.has(asset.artifact);
   const consentOk = asset.consent === 'Agree' || winnerOverride;
@@ -669,7 +668,7 @@ async function init() {
     }
   }
   teamByCode = new Map(teams.map(team => [team.team_code, team]));
-  assets = assetData.assets.filter(asset => isPublished(asset) && !(teamByCode.get(asset.team_code)?.league === 'Simulation' && (asset.artifact === 'launching_video' || asset.artifact === 'launching_video_thumbnail')));
+  assets = assetData.assets.filter(isPublished);
   assetsByTeam = new Map();
   for (const asset of assets) {
     if (!assetsByTeam.has(asset.team_code)) assetsByTeam.set(asset.team_code, []);
